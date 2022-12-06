@@ -1,0 +1,11 @@
+{
+  "python.analysis.typeCheckingMode": "basic",
+  "python.pipenvPath": "C:\\Users\\chris\\.virtualenvs\\LeetCode-gyt9os_N",
+  "python.analysis.logLevel": "Trace",
+  "python.analysis.diagnosticSeverityOverrides" : {
+    "reportMissingImports": "error"
+  },
+  "python.terminal.activateEnvironment": false,
+  "code-runner.customCommand": "pipenv run python ${relativeFile}",
+  "python.formatting.provider": "black"
+}
