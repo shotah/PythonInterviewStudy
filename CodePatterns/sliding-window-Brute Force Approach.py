@@ -1,4 +1,3 @@
-# code
 import sys
   
 # O(n * k) solution for finding
@@ -20,13 +19,10 @@ def maxSum(arr, n, k):
         # Update result if required.
         max_sum = max(current_sum, max_sum)
     return max_sum
-  
-  
+
 # Driver code
 arr = [1, 4, 2, 10, 2,
        3, 1, 0, 20]
 k = 4
 n = len(arr)
 print(maxSum(arr, n, k))
-  
-# This code is contributed by mits
