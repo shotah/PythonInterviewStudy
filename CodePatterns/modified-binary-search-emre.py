@@ -1,6 +1,7 @@
 # https://emre.me/coding-patterns/modified-binary-search/
 
 # How to identify?
+
 # This approach is quite useful to solve the problems whenever 
 # we are given a sorted Array or Linked List or Matrix, 
 # and we are asked to find a certain element.

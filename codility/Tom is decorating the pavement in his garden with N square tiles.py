@@ -61,7 +61,8 @@ def solution(a):
     if not a: return 0
     tile_count = len(a)
     min_count = float('inf')
-    while tile_count > 0:
+    while 0 < tile_count < min_count:
+        print(f"0 < {tile_count} < {min_count}")
         cur_count = solve_tile_pattern(a)
         a.insert(0, a.pop())
         min_count = min(min_count, cur_count)

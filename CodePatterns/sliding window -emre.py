@@ -24,7 +24,7 @@
 
 # Brute Force Solution
 class Solution:
-    def findMaxAverage(self, nums: List[int], k: int) -> float:
+    def findMaxAverage(self, nums: list[int], k: int) -> float:
         max_average = 0.0
 
         for i in range(len(nums) - k + 1):

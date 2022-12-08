@@ -16,10 +16,12 @@
 # Example 1:
 
 # Input: [3, 2, 1, 5, 6, 4] and k = 2
+# sorted order: [1, 2, 3, 4, 5, 6]
 # Output: 5
 # Example 2:
 
 # Input: [3, 2, 3, 1, 2, 4, 5, 5, 6] and k = 4
+# sorted order: [1, 2, 3, 3, 4, 5, 5, 6]
 # Output: 4
 # Note:
 
@@ -46,6 +48,8 @@ class Solution:
 
 nums = [3, 2, 3, 1, 2, 4, 5, 5, 6]
 k = 4
+nums = [3, 2, 1, 5, 6, 4] 
+k = 2
 s = Solution().findKthLargest(nums, k)
 print(s)
 
