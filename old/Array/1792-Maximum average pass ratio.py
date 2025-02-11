@@ -1,7 +1,7 @@
 class Solution:
     def percentages(self, a):
         return [str(a[0]/a[1]), a]
-    
+
     def score(self, modified_scores):
         score_sum = 0
         for score, _ in modified_scores:
@@ -25,7 +25,8 @@ class Solution:
         modified_scores = self.classes_averages(classes, extraStudents)
         return self.score(modified_scores)
 
-classes = [[1,2],[3,5],[2,2]]
+
+classes = [[1, 2], [3, 5], [2, 2]]
 extraStudents = 2
 # expected: 0.53485
 # got: 0.51548

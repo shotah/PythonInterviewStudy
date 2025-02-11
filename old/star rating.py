@@ -26,7 +26,7 @@ def StarRating(strParam):
 
 
 star = "0.38"
-star = "3"
+# star = "3"
 # star = "5"
 # star = 1
 s = StarRating(star)

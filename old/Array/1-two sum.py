@@ -7,5 +7,4 @@ class Solution:
                 return [checked_nums[test_target], idx]
             else:
                 checked_nums[num] = idx
-
-
+        return []
