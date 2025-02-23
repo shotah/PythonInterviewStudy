@@ -4,8 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flake8 = "*"
-Flake8-pyproject = "*"
+torch = "*"
+tensorflow = "*"
+transformers = "*"
 
 [dev-packages]
 pytest = "*"
@@ -20,7 +21,6 @@ flake8-annotations-complexity = "*"
 flake8-expression-complexity = "*"
 flake8-cognitive-complexity = "*"
 flake8-adjustable-complexity = "*"
-flake8-max-line-length = "100"
 
 [requires]
-python_version = "3.12"
+python_version = "3.13"
