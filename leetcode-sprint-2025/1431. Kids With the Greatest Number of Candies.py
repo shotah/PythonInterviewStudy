@@ -13,7 +13,7 @@
 class Solution:
     def kidsWithCandies(self, candies: list[int], extraCandies: int) -> list[bool]:
         max_v = max(candies)
-        return [ (v + extraCandies) >= max_v for v in candies ]
+        return [(v + extraCandies) >= max_v for v in candies]
 
 
 candies = [2, 3, 5, 1, 3]
