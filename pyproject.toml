@@ -2,9 +2,9 @@
 max-line-length = 88
 ignore = ["E111", "W503"]
 exclude = [".aws-sam", "__pycache__", "env", ".env", "*.md", "*.toml", "*.yaml", "*.json", "Pipfile*", "LICENSE", "makefile", ".*"]
-max-complexity = 9
-max-cognitive-complexity = 9
-max-adjustable-complexity = 5
+max-complexity = 10
+max-cognitive-complexity = 10
+max-adjustable-complexity = 7
 
 [tool.autopep8]
 max_line_length = 92

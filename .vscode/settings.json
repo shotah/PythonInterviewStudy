@@ -31,7 +31,8 @@
     "pypi",
     "pyproject",
     "pytest",
-    "starcoder"
+    "starcoder",
+    "Subarray"
   ],
   "python.linting.linter": "flake8",
   "python.linting.flake8Enabled": true
