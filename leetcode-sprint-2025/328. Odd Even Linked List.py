@@ -10,17 +10,26 @@ class ListNode:
 
 class Solution:
     def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        # null guard clause
         if not head or not head.next:
             return head
         odd = head
+        # Get the real even from the back of the odd
         even = head.next
+        # stash the head of even while we push even forward
         evenHead = even
         while even and even.next:
+            # grab the odd from the even stack
             odd.next = even.next
+            # the next odd is now a real odd, move fwd!
             odd = odd.next
+            # Grab the even from the odds stack
             even.next = odd.next
+            # Next is now even, move forward.
             even = even.next
+        # combine the two stacks
         odd.next = evenHead
+        # return original head that contains the new sorted stack
         return head
 
 

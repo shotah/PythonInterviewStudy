@@ -32,17 +32,18 @@ class Solution:
         f = head
         s = head
         stack = []
+        # Since this is a /2 algo, go to the middle
         while f and f.next:
             f = f.next.next
             stack.append(s.val)
             s = s.next
 
         ans = 0
+        # Now go to the end!
         while s:
             m = stack.pop() + s.val
             ans = max(ans, m)
             s = s.next
-
         return ans
 
 
