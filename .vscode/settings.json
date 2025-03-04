@@ -27,6 +27,7 @@
     "ONEDNN",
     "pipenv",
     "Pipfile",
+    "popleft",
     "pycache",
     "pypi",
     "pyproject",
