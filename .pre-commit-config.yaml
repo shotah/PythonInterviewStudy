@@ -14,10 +14,10 @@ repos:
     hooks:
       - id: isort
         name: isort (python)
-  - repo: https://github.com/hhatto/autopep8
-    rev: "v2.3.2"
-    hooks:
-      - id: autopep8
+  # - repo: https://github.com/hhatto/autopep8
+  #   rev: "v2.3.2"
+  #   hooks:
+  #     - id: autopep8
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.19.1
     hooks:
@@ -33,11 +33,11 @@ repos:
         name: flake8
         language: system
         entry: pipenv run flake8
-  - repo: local
-    hooks:
-      - id: pytest
-        name: pytest
-        language: system
-        entry: pipenv run pytest
-        pass_filenames: false
-        always_run: true
+  # - repo: local
+  #   hooks:
+  #     - id: pytest
+  #       name: pytest
+  #       language: system
+  #       entry: pipenv run pytest
+  #       pass_filenames: false
+  #       always_run: true

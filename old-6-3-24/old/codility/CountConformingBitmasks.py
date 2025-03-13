@@ -29,7 +29,7 @@ def get_bins(a: int, b: int, c: int) -> List[str]:
     """
     Method to convert ints to bins of length 30
     """
-    return ["{0:030b}".format(bin) for bin in [a, b, c]]
+    return [f"{bin:030b}" for bin in [a, b, c]]
 
 
 def solution(a: int, b: int, c: int) -> int:

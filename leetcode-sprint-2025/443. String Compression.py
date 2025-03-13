@@ -33,8 +33,6 @@ if __name__ == "__main__":
     chars = ["a", "a", "b", "b", "c", "c", "c"]
     expected = 6
     actual = Solution().compress(chars)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {chars}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {chars}, Expected: {expected}, Actual: {actual}"
     print(chars)
     print("\nInline tests finished.")

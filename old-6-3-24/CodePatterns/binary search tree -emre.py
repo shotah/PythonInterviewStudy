@@ -16,6 +16,7 @@
 
 # An empty BinarySearchTree() class will look like this;
 
+
 class BinarySearchTree:
 
     def __init__(self):
@@ -61,7 +62,7 @@ class Node:
     def has_both_children(self):
         return self.rightChild and self.leftChild
 
-# Insert Operation
+    # Insert Operation
     def put(self, key, val):
         if self.root:
             self._put(key, val, self.root)
@@ -84,7 +85,7 @@ class Node:
     def __setitem__(self, k, v):
         self.put(k, v)
 
-# Lookup (Search) Operation
+    # Lookup (Search) Operation
     def get(self, key):
         if self.root:
             result = self._get(key, self.root)
@@ -114,7 +115,7 @@ class Node:
         else:
             return False
 
-# Delete Operation
+    # Delete Operation
     def splice_out(self):
         if self.is_leaf():
             if self.is_left_child():
@@ -185,10 +186,12 @@ class Node:
                     current_node.leftChild.parent = current_node.parent
                     current_node.parent.rightChild = current_node.leftChild
                 else:
-                    current_node.replace_node_data(current_node.leftChild.key,
-                                                   current_node.leftChild.payload,
-                                                   current_node.leftChild.leftChild,
-                                                   current_node.leftChild.rightChild)
+                    current_node.replace_node_data(
+                        current_node.leftChild.key,
+                        current_node.leftChild.payload,
+                        current_node.leftChild.leftChild,
+                        current_node.leftChild.rightChild,
+                    )
             else:
                 if current_node.is_left_child():
                     current_node.rightChild.parent = current_node.parent
@@ -197,10 +200,12 @@ class Node:
                     current_node.rightChild.parent = current_node.parent
                     current_node.parent.rightChild = current_node.rightChild
                 else:
-                    current_node.replace_node_data(current_node.rightChild.key,
-                                                   current_node.rightChild.payload,
-                                                   current_node.rightChild.leftChild,
-                                                   current_node.rightChild.rightChild)
+                    current_node.replace_node_data(
+                        current_node.rightChild.key,
+                        current_node.rightChild.payload,
+                        current_node.rightChild.leftChild,
+                        current_node.rightChild.rightChild,
+                    )
 
     def delete(self, key):
         if self.size > 1:
@@ -209,12 +214,12 @@ class Node:
                 self.remove(node_to_remove)
                 self.size = self.size - 1
             else:
-                raise KeyError('Error, key not in tree')
+                raise KeyError("Error, key not in tree")
         elif self.size == 1 and self.root.key == key:
             self.root = None
             self.size = self.size - 1
         else:
-            raise KeyError('Error, key not in tree')
+            raise KeyError("Error, key not in tree")
 
     def __delitem__(self, key):
         self.delete(key)

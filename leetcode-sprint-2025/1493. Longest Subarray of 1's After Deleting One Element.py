@@ -19,14 +19,10 @@ if __name__ == "__main__":
     nums = [1, 1, 0, 1]
     expected = 3
     actual = Solution().longestSubarray(nums)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     nums = [0, 1, 1, 1, 0, 1, 1, 0, 1]
     expected = 5
     actual = Solution().longestSubarray(nums)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"

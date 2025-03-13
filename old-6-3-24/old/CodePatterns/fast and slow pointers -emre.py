@@ -27,10 +27,12 @@
 # Output: false
 # Explanation: There is no cycle in the linked list.
 
+
 class ListNode:
     def __init__(self, val):
         self.val = val
         self.next = None
+
 
 # Fast & Slow Pointers Solution
 
@@ -44,6 +46,7 @@ class Solution:
             if slow == fast:
                 return True  # found the cycle
         return False
+
 
 # inked List Cycle II
 # Example 1:

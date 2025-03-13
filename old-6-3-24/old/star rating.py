@@ -19,9 +19,7 @@ def StarRating(strParam):
     full_stars = int(param // 1)
     half_stars = 1 if param % 1 else 0
     empty_stars = 5 - full_stars - half_stars
-    rating = (
-        (full_stars * ["full"]) + (half_stars * ["half"]) + (empty_stars * ["empty"])
-    )[:5]
+    rating = ((full_stars * ["full"]) + (half_stars * ["half"]) + (empty_stars * ["empty"]))[:5]
     return " ".join(rating)
 
 

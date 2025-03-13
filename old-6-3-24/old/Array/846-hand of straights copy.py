@@ -152,9 +152,8 @@ hand = [
     16,
     17,
     21,
-    11]
+    11,
+]
 
 groupSize = 10
-print(
-    Solution().isNStraightHand(hand, groupSize)
-)
+print(Solution().isNStraightHand(hand, groupSize))

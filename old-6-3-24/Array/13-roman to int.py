@@ -28,6 +28,4 @@ class Solution:
 
 # expected 1994
 s = "MCMXCIV"
-print(
-    Solution().romanToInt(s)
-)
+print(Solution().romanToInt(s))

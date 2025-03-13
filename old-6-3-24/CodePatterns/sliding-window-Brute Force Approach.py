@@ -23,8 +23,7 @@ def maxSum(arr, n, k):
 
 
 # Driver code
-arr = [1, 4, 2, 10, 2,
-       3, 1, 0, 20]
+arr = [1, 4, 2, 10, 2, 3, 1, 0, 20]
 k = 4
 n = len(arr)
 print(maxSum(arr, n, k))

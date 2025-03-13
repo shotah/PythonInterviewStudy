@@ -5,6 +5,7 @@
 
 # {"0": [1], "2": [1, 4], "3": [4]}
 
+
 def build_graph(a, b, count_of_roads_to_flip):
     graph = {}
     path = []

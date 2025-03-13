@@ -9,11 +9,13 @@
 # Traverse the right subtree, i.e., call Postorder(right->subtree)
 # Visit the root
 
+
 class Node:
     def __init__(self, key):
         self.left = None
         self.right = None
         self.val = key
+
 
 # A function to do postorder tree traversal
 

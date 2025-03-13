@@ -77,9 +77,7 @@ if __name__ == "__main__":
     expected = 6
     head = create_linked_list(input)
     actual = Solution().pairSum(head)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")
 
     # Test Case:
@@ -87,7 +85,5 @@ if __name__ == "__main__":
     expected = 7
     head = create_linked_list(input)
     actual = Solution().pairSum(head)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")

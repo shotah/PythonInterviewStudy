@@ -61,5 +61,6 @@ class MedianFinder:
         # we have odd number of elements, the first element in max-heap is the median element
         return -float(self.max_heap[0])
 
+
 # Time Complexity: O(log N) for addNum() and O(1) for findMedian().
 # Space Complexity: O(N)

@@ -25,21 +25,21 @@ class Solution:
         curr = ""
         num = 0
 
-        for l in s:
-            if l.isdigit():
+        for letter in s:
+            if letter.isdigit():
                 # move num with * 10 over for append of l
-                num = (num * 10) + int(l)
+                num = (num * 10) + int(letter)
                 continue
-            if l == "[":
+            if letter == "[":
                 stack.append((curr, num))
                 curr = ""
                 num = 0
                 continue
-            if l == "]":
+            if letter == "]":
                 last_string, repeat_count = stack.pop()
                 curr = last_string + curr * repeat_count
                 continue
-            curr += l
+            curr += letter
         return curr
 
 

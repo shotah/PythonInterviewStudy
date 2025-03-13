@@ -18,7 +18,7 @@ class Solution:
         tested_array = []
         for x in range(len(s)):
             if length + x <= len(s):
-                substring = s[(start_sub + x): (length + x)]
+                substring = s[(start_sub + x) : (length + x)]
                 tested_array.append(self.substringIsUnique(substring))
             else:
                 break

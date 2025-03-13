@@ -39,13 +39,9 @@ class Solution:
         count = 0  # Initialize the count of equal pairs
 
         for row in grid:  # Iterate through each row in the input grid
-            row_count[
-                tuple(row)
-            ] += 1  # Convert row to tuple and increment its count in row_count
+            row_count[tuple(row)] += 1  # Convert row to tuple and increment its count in row_count
 
-        for column in zip(
-            *grid
-        ):  # Iterate through columns (transposed grid) using zip(*grid)
+        for column in zip(*grid):  # Iterate through columns (transposed grid) using zip(*grid)
             count += row_count[
                 column
             ]  # Convert column to tuple and add its count from row_count to the total
@@ -60,22 +56,16 @@ if __name__ == "__main__":
     grid = [[3, 2, 1], [1, 7, 6], [2, 7, 7]]
     expected = 1
     actual = Solution().equalPairs(grid)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {grid}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {grid}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     grid = [[3, 1, 2, 2], [1, 4, 4, 5], [2, 4, 2, 2], [2, 4, 2, 2]]
     expected = 3
     actual = Solution().equalPairs(grid)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {grid}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {grid}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     grid = [[3, 1, 2, 2], [1, 4, 4, 4], [2, 4, 2, 2], [2, 5, 2, 2]]
     expected = 3
     actual = Solution().equalPairs(grid)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {grid}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {grid}, Expected: {expected}, Actual: {actual}"

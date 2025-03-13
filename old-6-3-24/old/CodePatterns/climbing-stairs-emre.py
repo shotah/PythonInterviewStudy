@@ -37,6 +37,7 @@
 # Brute Force Solution
 # At every step, we have two options: either climb 1 step or 2 steps.
 
+
 class Solution:
     def climbStairs(self, n: int) -> int:
         # we don't take any steps, so there is only 1 way
@@ -55,6 +56,8 @@ class Solution:
         take2steps = self.climbStairs(n - 2)
 
         return take1step + take2steps
+
+
 # Time Complexity: O(2N) because we are making 2 recursive calls in the same function.
 
 # Space Complexity: O(N) which is used to store the recursion stack.
@@ -88,6 +91,8 @@ class Solution:
             dp[n] = take1step + take2steps
 
         return dp[n]
+
+
 # Time Complexity: O(N) because memoization array dp[n+1] stores the
 # results of all sub-problems. We can conclude that we will not have more
 # than n + 1 sub-problems.
@@ -111,6 +116,8 @@ class Solution:
             dp[i] = dp[i - 1] + dp[i - 2]
 
         return dp[n]
+
+
 # Time Complexity: O(N)
 # Space Complexity: O(N) which is used to store the recursion stack.
 
@@ -126,6 +133,7 @@ print(s)
 # combinations: n-1 and n-2.
 
 # These two values are enough and we don’t need to store all other past combinations.
+
 
 class Solution:
     def climbStairs(self, n: int) -> int:
@@ -145,6 +153,8 @@ class Solution:
             first = second  # walk up first to second
             second = third  # walk up second to third
         return third
+
+
 # OR more shortly;
 
 
@@ -156,5 +166,7 @@ class Solution:
         for _ in range(n):
             a, b = b, a + b
         return a
+
+
 # Time Complexity: O(N)
 # Space Complexity: O(1)

@@ -49,7 +49,5 @@ l2.next.next = ListNode(4)
 
 start_node = Solution().addTwoNumbers(l1, l2)
 while start_node:
-    print(
-        start_node.val
-    )
+    print(start_node.val)
     start_node = start_node.next

@@ -1,4 +1,3 @@
-from collections import deque
 from typing import List, Optional, Union
 
 
@@ -83,9 +82,7 @@ if __name__ == "__main__":
     head = create_binary_tree(input)  # type: ignore
     expected = find_node_with_value(head, val)
     actual = Solution().searchBST(head, val)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")
 
     # Test Case: Simple right side view
@@ -94,7 +91,5 @@ if __name__ == "__main__":
     head = create_binary_tree(input)  # type: ignore
     expected = find_node_with_value(head, val)
     actual = Solution().searchBST(head, val)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")

@@ -15,7 +15,7 @@ class Solution:
         if not root:
             return 0
         queue = deque()
-        queue.append((root))
+        queue.append(root)
         level = 1
         max_value_level = level
         max_value_of_level = root.val
@@ -28,9 +28,9 @@ class Solution:
                 level_sum += node.val
                 # Extend stack to do whatever you want.
                 if node.left:
-                    queue.append((node.left))
+                    queue.append(node.left)
                 if node.right:
-                    queue.append((node.right))
+                    queue.append(node.right)
             if level_sum > max_value_of_level:
                 max_value_of_level = level_sum
                 max_value_level = level
@@ -98,9 +98,7 @@ if __name__ == "__main__":
     expected = 2
     head = create_binary_tree(input)
     actual = Solution().maxLevelSum(head)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")
 
     # Test Case: Simple right side view
@@ -108,9 +106,7 @@ if __name__ == "__main__":
     expected = 2
     head = create_binary_tree(input)
     actual = Solution().maxLevelSum(head)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")
 
     # Test Case: Simple right side view
@@ -118,7 +114,5 @@ if __name__ == "__main__":
     expected = 3
     head = create_binary_tree(input)
     actual = Solution().maxLevelSum(head)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")

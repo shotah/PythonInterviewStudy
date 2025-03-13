@@ -35,6 +35,7 @@ class Solution:
             num ^= i
         return num
 
+
 # Problem: Single Number III
 # Example:
 
@@ -66,6 +67,7 @@ class Solution:
             else:  # the bit is not set
                 num2 ^= num
         return [num1, num2]
+
 
 # Time Complexity: O(N) where N is the total number of elements in the input array.
 

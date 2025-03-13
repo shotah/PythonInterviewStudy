@@ -20,6 +20,7 @@
 # Because nums[0] + nums[1] = 2 + 7 = 9,
 # return [0, 1].
 
+
 # Two Pointers Solution
 def twoSum(self, nums: List[int], target: int) -> List[int]:
     left, right = 0, len(nums) - 1
@@ -32,6 +33,7 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
         else:
             right -= 1  # we need a pair with a smaller sum
     return [-1, -1]
+
 
 # Time Complexity: O(N) where N is the number of elements in the input array (nums).
 # Space Complexity: O(1), algorithm runs in constant space.
@@ -47,5 +49,7 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
         else:
             num_map[nums[i]] = i
     return [-1, -1]
+
+
 # Time Complexity: O(N) where N is the number of elements in the input array (nums).
 # Space Complexity: O(N), in the worst case, we will be pushing N numbers to HashMap.

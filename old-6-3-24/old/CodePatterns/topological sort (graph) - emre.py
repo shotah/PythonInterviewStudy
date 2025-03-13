@@ -80,6 +80,7 @@ class Solution:
         # scheduling is not possible if there is a cyclic dependency
         return len(sorted_list) == numCourses
 
+
 # Time Complexity: O(V + E) where V is the total number of courses and E is the total number of prerequisites.
 
 # Space Complexity: O(V + E) since we are storing all of the prerequisites

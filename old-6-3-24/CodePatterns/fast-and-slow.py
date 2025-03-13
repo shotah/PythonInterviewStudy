@@ -1,6 +1,7 @@
 # Python program to detect loop in the linked list
 # Node class
 
+
 class Node:
     # Constructor to initialize the node object
     def __init__(self, data):
@@ -22,14 +23,14 @@ class LinkedList:
     # Utility function to print it the linked LinkedList
     def printList(self):
         temp = self.head
-        while (temp):
+        while temp:
             print(temp.data)
             temp = temp.next
 
     def detectLoop(self):
         slow_p = self.head
         fast_p = self.head
-        while (slow_p and fast_p and fast_p.next):
+        while slow_p and fast_p and fast_p.next:
             slow_p = slow_p.next
             fast_p = fast_p.next.next
             if slow_p == fast_p:
@@ -46,7 +47,7 @@ llist.push(10)
 
 # Create a loop for testing
 llist.head.next.next.next.next = llist.head
-if (llist.detectLoop()):
+if llist.detectLoop():
     print("Found Loop")
 else:
     print("No Loop")

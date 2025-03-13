@@ -3,15 +3,8 @@ class Solution:
         return (x2 - x1) * (y2 - y1)
 
     def computeArea(
-            self,
-            ax1: int,
-            ay1: int,
-            ax2: int,
-            ay2: int,
-            bx1: int,
-            by1: int,
-            bx2: int,
-            by2: int) -> int:
+        self, ax1: int, ay1: int, ax2: int, ay2: int, bx1: int, by1: int, bx2: int, by2: int
+    ) -> int:
         """Length: gets the lowest point of x2, and the upper most of x1, then return 0 or above"""
         xOverlap = max(min(ax2, bx2) - max(ax1, bx1), 0)
         """Width: gets the lowest point of y2, and the upper most of y1, then return 0 or above"""

@@ -30,8 +30,6 @@ s = "   -42"
 # s= "words and 987"
 s = "-+12"
 s = "-91283472332"
-s = '3.14159'
+s = "3.14159"
 s = "42"
-print(
-    Solution().myAtoi(s)
-)
+print(Solution().myAtoi(s))

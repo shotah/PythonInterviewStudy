@@ -15,6 +15,7 @@
 # Input: 1 -> 2 -> 3 -> 4 -> 5 -> NULL
 # Output: 5 -> 4 -> 3 -> 2 -> 1 -> NULL
 
+
 # In-Place Reversal Solution
 class ListNode:
     def __init__(self, val):
@@ -34,6 +35,7 @@ class Solution:
             previous = current  # point previous to the current node
             current = next  # move on
         return previous
+
 
 # Time Complexity: O(N) where N is the number of nodes in the Linked Lists.
 # Space Complexity: O(1), algorithm runs in constant space.

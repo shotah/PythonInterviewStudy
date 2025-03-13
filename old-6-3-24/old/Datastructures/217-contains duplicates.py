@@ -4,6 +4,4 @@ class Solution:
 
 
 nums = [1, 2, 3, 1]
-print(
-    Solution().containsDuplicate(nums)
-)
+print(Solution().containsDuplicate(nums))

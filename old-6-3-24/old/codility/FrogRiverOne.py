@@ -57,6 +57,7 @@
 
 # the function should return −1.
 
+
 def solution(x, a):
     if not x or not a:
         return -1

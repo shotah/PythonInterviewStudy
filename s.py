@@ -41,7 +41,7 @@ class DigiLogs:
     def is_digilog(self, log) -> bool:
         try:
             return str(int(log.split()[1])) == log.split()[1]
-        except Exception as _:
+        except Exception:
             return False
 
     def process(self, log: str) -> None:
@@ -60,7 +60,7 @@ class LetLogs:
     def is_letlog(self, log) -> bool:
         try:
             return str(int(log.split()[1])) != log.split()[1]
-        except Exception as _:
+        except Exception:
             return True
 
     def process(self, log: str) -> None:
@@ -78,7 +78,7 @@ class Solution:
         self.digilogs = DigiLogs()
         self.letlogs = LetLogs()
 
-    def process_logs(self, input) -> list:
+    def process_logs(self, input) -> list:  # noqa: CAC001
         results = []
         for log in input:
             if self.digilogs.is_digilog(log):

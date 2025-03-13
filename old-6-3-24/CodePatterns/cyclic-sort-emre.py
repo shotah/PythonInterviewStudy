@@ -19,6 +19,7 @@
 # Input: [9, 6, 4, 2, 3, 5, 7, 0, 1]
 # Output: 8
 
+
 class Solution:
     def missingNumber(self, nums: list[int]) -> int:
         start = 0

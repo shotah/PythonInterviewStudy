@@ -45,6 +45,7 @@ class Solution:
         print(min_heap)
         return min_heap[0]
 
+
 # Input: [3, 2, 3, 1, 2, 4, 5, 5, 6] and k = 4
 # Output: 4
 

@@ -1,6 +1,7 @@
 # Python program to merge overlapping Intervals in
 # O(n Log n) time and O(1) extra space
 
+
 def mergeIntervals(arr):
     # Sorting based on the increasing order
     # of the start intervals
@@ -14,7 +15,7 @@ def mergeIntervals(arr):
         # If this is not first Interval and overlaps
         # with the previous one, Merge previous and
         # current Intervals
-        if (arr[index][1] >= arr[i][0]):
+        if arr[index][1] >= arr[i][0]:
             arr[index][1] = max(arr[index][1], arr[i][1])
         else:
             index = index + 1

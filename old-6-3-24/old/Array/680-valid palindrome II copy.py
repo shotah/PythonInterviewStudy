@@ -8,7 +8,7 @@ class Solution:
         while left < right:
             if s[left] != s[right]:
                 one = s[left:right]
-                two = s[left + 1:right + 1]
+                two = s[left + 1 : right + 1]
                 return one == one[::-1] or two == two[::-1]
             left += 1
             right -= 1
@@ -19,6 +19,4 @@ s = "abc"
 s = "abca"
 s = "udvpezejpldkmmdrskmomkmobzvvlsetwrvnsygvuoepggxzjgcacystdvzqcmumjwdczmnyblvivhqyimwsmhftlthdjwbtrisbuluphpcwvcmgludyrwlnxrnpralrfpepjuwtpzpifcrbwxnaduzuxclorbhmfijfvkhgyvrtdofjnyzvrpcpdynbkxnqpaomzcldrtgfltwelrjmbjdugsdubbhvnvuzntviblsvbpgdpfumzukftpptfkuzmufpdgpbvslbivtnzuvnvhbbudsgudjbmjrlewtlfgtrdlczmoapqnxkbnydpcprvzynjfodtrvyghkvfjifmhbrolcxuzudanxwbrcfipzptwujpepfrlarpnrxnlwrydulgmcvwcphpulubsirtbwjdhtltfhmswmiyqhvivlbynmzdcdwjmumcqzvdtsycacgjzxggpeouvgysnvrwteslvvzbomkmomksrdmmkdlpjezepvdu"
 
-print(
-    Solution().validPalindrome(s)
-)
+print(Solution().validPalindrome(s))

@@ -1,8 +1,8 @@
-# # You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+# You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
 
-# # Find two lines that together with the x-axis form a container, such that the container contains the most water.
+# Find two lines that together with the x-axis form a container, such that the container contains the most water.
 
-# # Return the maximum amount of water a container can store.
+# Return the maximum amount of water a container can store.
 
 
 # class Solution:
@@ -75,8 +75,6 @@ if __name__ == "__main__":
     height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
     expected = 49
     actual = Solution().maxArea(height)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {height}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {height}, Expected: {expected}, Actual: {actual}"
 
     print("\nInline tests finished.")

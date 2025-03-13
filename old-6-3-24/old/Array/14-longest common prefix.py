@@ -12,6 +12,4 @@ class Solution:
 # Output: "fl"
 strs = ["flower", "flow", "flight"]
 # strs = ["ab", "a"]
-print(
-    Solution().longestCommonPrefix(strs)
-)
+print(Solution().longestCommonPrefix(strs))

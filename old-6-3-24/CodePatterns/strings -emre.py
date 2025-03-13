@@ -52,7 +52,7 @@ print("e.m.r.e" not in emre)
 # the actual meaning of escape character (\) such as C:\Program Files.
 
 # Output: "emre.me"
-print("\"emre.me\"")
+print('"emre.me"')
 
 # Output: \"emre.me\"
 print(r"\"emre.me\"")

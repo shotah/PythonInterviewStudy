@@ -16,11 +16,9 @@ t = [
     [[[1, 2], [3, 4], [5, 6], [7, 8]], 4],
     [[[1, 2], [2, 3], [3, 4], [4, 5]], 2],
     [[[2, 3], [2, 3]], 1],
-    [[[-1, 1], [0, 1], [2, 3], [1, 2]], 2]
+    [[[-1, 1], [0, 1], [2, 3], [1, 2]], 2],
 ]
 
 for points, expected in t:
     r = Solution().findMinArrowShots(points)
-    print(
-        f"{r} == {expected} \n"
-    )
+    print(f"{r} == {expected} \n")

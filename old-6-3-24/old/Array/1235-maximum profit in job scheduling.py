@@ -34,9 +34,7 @@ class Solution:
         # return highest value job from memo.
         return memo[index]
 
-    def jobScheduling(
-        self, startTime: list[int], endTime: list[int], profit: list[int]
-    ) -> int:
+    def jobScheduling(self, startTime: list[int], endTime: list[int], profit: list[int]) -> int:
         # break jobs up into their own lists.
         jobs = [[startTime[i], endTime[i], profit[i]] for i in range(len(startTime))]
         # sort in order of start time.

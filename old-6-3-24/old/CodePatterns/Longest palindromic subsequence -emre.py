@@ -23,6 +23,7 @@
 # Output: 2
 # One possible longest palindromic subsequence is "bb".
 
+
 # Brute Force Solution
 class Solution:
     def longestPalindromeSubseq(self, s: str) -> int:
@@ -45,6 +46,7 @@ class Solution:
         subseq2 = self.longestPalindromeSubseq_recursive(s, start, end - 1)
 
         return max(subseq1, subseq2)
+
 
 # Time Complexity: O(2N) because we are making 2 recursive calls in the same function.
 
@@ -80,6 +82,8 @@ class Solution:
                 memo[start][end] = max(subseq1, subseq2)
 
         return memo[start][end]
+
+
 # Time Complexity: O(N2) because memoization array, memo[len(s)][len(s)].
 # We will not have more than N*N subsequences.
 
@@ -107,6 +111,7 @@ class Solution:
                 else:  # case 2: skip one element either from the beginning or the end
                     memo[start][end] = max(memo[start + 1][end], memo[start][end - 1])
         return memo[0][len(s) - 1]
+
 
 # Time Complexity: O(N2)
 

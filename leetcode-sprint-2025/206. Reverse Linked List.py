@@ -51,9 +51,7 @@ if __name__ == "__main__":
     head = create_linked_list(input)
     actual_head = Solution().reverseList(head)
     actual = linked_list_to_list(actual_head)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")
 
     # Test Case:
@@ -62,7 +60,5 @@ if __name__ == "__main__":
     head = create_linked_list(input)
     actual_head = Solution().reverseList(head)
     actual = linked_list_to_list(actual_head)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")

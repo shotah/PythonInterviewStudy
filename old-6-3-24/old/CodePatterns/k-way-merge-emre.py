@@ -29,7 +29,7 @@
 from heapq import heappop, heappush
 
 
-class ListNode(object):
+class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
@@ -55,6 +55,7 @@ class Solution:
             if tail.next:
                 heappush(min_heap, tail.next)
         return head.next
+
 
 # Time Complexity: O(N log K) where N is the total number of elements in all the K input arrays.
 

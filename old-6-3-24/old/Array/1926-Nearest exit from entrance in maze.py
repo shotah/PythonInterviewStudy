@@ -13,9 +13,7 @@ class Solution:
     max_hight = 0
     max_width = 0
 
-    def __test_step(
-        self, maze, location: list[int], visited: list
-    ) -> tuple[bool, list]:
+    def __test_step(self, maze, location: list[int], visited: list) -> tuple[bool, list]:
         if location[0] == -1 or location[1] == -1 or location in visited:
             return (False, visited)
         try:
@@ -26,9 +24,7 @@ class Solution:
             return (False, visited)
         return (False, visited)
 
-    def __add_nodes(
-        self, maze: list[list[str]], current_node: Node, visited: list = []
-    ) -> Node:
+    def __add_nodes(self, maze: list[list[str]], current_node: Node, visited: list = []) -> Node:
         location = current_node.location
         north = [location[0] - 1, location[1]]
         (available, visited) = self.__test_step(maze, north, visited)

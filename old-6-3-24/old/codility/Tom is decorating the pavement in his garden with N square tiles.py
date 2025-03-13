@@ -3,6 +3,7 @@
 # Tom arranged the tiles in a row
 # Given A = ["RGBW", "GBRW"], the function should return 1.
 
+
 def rotate_right(tile: str) -> str:
     """
     Rotates the tile clockwise
@@ -64,7 +65,7 @@ def solution(a):
     if not a:
         return 0
     tile_count = len(a)
-    min_count = float('inf')
+    min_count = float("inf")
     while 0 < tile_count < min_count:
         print(f"0 < {tile_count} < {min_count}")
         cur_count = solve_tile_pattern(a)
@@ -75,10 +76,8 @@ def solution(a):
 
 
 a = ["RGBW", "GBRW"]
-a = ['GBRW', 'RBGW', 'BWGR', 'BRGW']
-a = ['WBGR', 'WBGR', 'WRGB', 'WRGB', 'RBGW']
+a = ["GBRW", "RBGW", "BWGR", "BRGW"]
+a = ["WBGR", "WBGR", "WRGB", "WRGB", "RBGW"]
 a = ["GBRW", "RBGW", "BWGR", "BRGW"]
 s = solution(a)
-print(
-    s
-)
+print(s)

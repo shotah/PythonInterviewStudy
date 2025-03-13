@@ -26,13 +26,13 @@ list_empty = []
 list_ints = [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]
 
 # list of strings
-list_strs = ['emre', 'dot', 'me']
+list_strs = ["emre", "dot", "me"]
 
 # list of mixed data types
-list_mixed = [1, 'emre.me', 5.73, True]
+list_mixed = [1, "emre.me", 5.73, True]
 
 # nested list
-list_nested = [['emre', 'dot', 'me'], [1], 5.73, True]
+list_nested = [["emre", "dot", "me"], [1], 5.73, True]
 
 # Output: []
 print(list_empty)
@@ -53,7 +53,7 @@ print(list_nested)
 # Accessing Elements of a List
 
 # list
-list_emre = ['e', 'm', 'r', 'e', '.', 'm', 'e']
+list_emre = ["e", "m", "r", "e", ".", "m", "e"]
 
 # Output: e
 print(list_emre[0])
@@ -62,7 +62,7 @@ print(list_emre[0])
 print(list_emre[-5])
 
 # nested list
-list_nested = ['emre', [1, 2, 3, [4]], False, 7.3, ['bolat']]
+list_nested = ["emre", [1, 2, 3, [4]], False, 7.3, ["bolat"]]
 
 # Output: emre
 print(list_nested[0])
@@ -90,7 +90,7 @@ print(list_nested[-1][0][3])
 # [:-3:-1]  # the last two items, reversed
 # [-3::-1]  # everything except the last two items, reversed
 
-list = ['e', 'm', 'r', 'e', '.', 'm', 'e']
+list = ["e", "m", "r", "e", ".", "m", "e"]
 
 # Output: ['e', 'm', 'r', 'e', '.', 'm', 'e']
 print(list[:])
@@ -149,10 +149,10 @@ print(list_nums)
 
 # Concatenation and Repeating
 # create list
-list = ['e', 'm', 'r', 'e']
+list = ["e", "m", "r", "e"]
 
 # Output: ['e', 'm', 'r', 'e', '.', 'm', 'e']
-print(list + ['.'] + ['m', 'e'])
+print(list + ["."] + ["m", "e"])
 
 # Output: ['e', 'm', 'r', 'e', 'e', 'm', 'r', 'e']
 print(list * 2)
@@ -163,16 +163,16 @@ print(list * 2)
 # a list.
 
 # create list
-list = ['e', 'm', 'e']
+list = ["e", "m", "e"]
 
 # insert 'r' to 2nd position
-list.insert(2, 'r')
+list.insert(2, "r")
 
 # Output: ['e', 'm', 'r', 'e']
 print(list)
 
 # insert ['e', '.', 'm'] to 3rd position with using slices
-list[3:3] = ['e', '.', 'm']
+list[3:3] = ["e", ".", "m"]
 
 # Output: ['e', 'm', 'r', 'e', '.', 'm', 'e']
 print(list)
@@ -181,7 +181,7 @@ print(list)
 # We can delete one or more items, even an entire list with the del keyword.
 
 # create a list
-list_emre = ['e', 'm', 'r', 'e', '.', 'm', 'e']
+list_emre = ["e", "m", "r", "e", ".", "m", "e"]
 
 # delete the 4th element
 del list_emre[4]
@@ -212,7 +212,7 @@ print(list_emre)
 # We can also use the clear() method to empty a list.
 
 # create list
-list_emre = ['e', 'm', 'r', 'e', '.', 'm', 'e']
+list_emre = ["e", "m", "r", "e", ".", "m", "e"]
 
 # removes the given item
 list_emre.remove(".")
@@ -246,10 +246,10 @@ print(list_emre)
 # Index method searches and finds given index and returns its position.
 
 # create list
-list = ['e', 'm', 'r', 'e', '.', 'm', 'e']
+list = ["e", "m", "r", "e", ".", "m", "e"]
 
 # search for "r"
-index_of_r = list.index('r')
+index_of_r = list.index("r")
 
 # Output: 2
 print(index_of_r)
@@ -257,7 +257,7 @@ print(index_of_r)
 # (smallest/first position) of the item returns.
 
 # search for "m"
-index_of_m = list.index('m')
+index_of_m = list.index("m")
 
 # Output: 1
 print(index_of_m)
@@ -267,10 +267,10 @@ print(index_of_m)
 # count() method counts how many times an item has occurred in a list.
 
 # create list
-list = ['e', 'm', 'r', 'e', '.', 'm', 'e']
+list = ["e", "m", "r", "e", ".", "m", "e"]
 
 # count the number of times "e" has occurred
-count_of_e = list.count('e')
+count_of_e = list.count("e")
 
 # Output: 3
 print(count_of_e)
@@ -286,7 +286,7 @@ print(count_of_e)
 # sort() method doesn’t return any value, it changes the original list.
 
 # create list
-list = ['e', 'm', 'r', 'e', '.', 'm', 'e']
+list = ["e", "m", "r", "e", ".", "m", "e"]
 
 # sort the list
 list.sort()
@@ -302,7 +302,7 @@ print(list)
 # If you want the original list, use sorted().
 
 # create list
-list = ['e', 'm', 'r', 'e', '.', 'm', 'e']
+list = ["e", "m", "r", "e", ".", "m", "e"]
 
 # sorted
 sorted_list = sorted(list)
@@ -320,7 +320,7 @@ print(reverse_sorted_list)
 # For example, let’s sort a list according to string length with using built-in len() method of Python.
 
 # create list
-list = ['emre', 'lists', 'sorting', 'python', 'is', 'fun']
+list = ["emre", "lists", "sorting", "python", "is", "fun"]
 
 # sort according to string length
 list.sort(key=len)
@@ -334,7 +334,7 @@ print(list)
 # reverse() method does not take any arguments. It reverses the elements and updates the list.
 
 # create list
-list = ['e', 'm', 'r', 'e', '.', 'm', 'e']
+list = ["e", "m", "r", "e", ".", "m", "e"]
 
 # reversed
 list.reverse()
@@ -343,7 +343,7 @@ list.reverse()
 print(list)
 # Alternatively, you can use reversed(list) as well.
 
-list = ['emre', '.', 'me']
+list = ["emre", ".", "me"]
 
 for i in reversed(list):
     print(i)
@@ -358,7 +358,7 @@ for i in reversed(list):
 # copy()
 # copy() method does not take any arguments and returns a list without modifying the original list.
 
-list = ['e', 'm', 'r', 'e', '.', 'm', 'e']
+list = ["e", "m", "r", "e", ".", "m", "e"]
 
 new_list = list.copy()
 new_list = new_list[:-3]
@@ -373,13 +373,13 @@ print(new_list)
 # Testing List Membership
 # We can test if an item exists in a list or not, using the keyword in.
 
-list = ['e', 'm', 'r', 'e', '.', 'm', 'e']
+list = ["e", "m", "r", "e", ".", "m", "e"]
 
 # Output: True
-print('e' in list)
+print("e" in list)
 
 # Output: True
-print('.' in list)
+print("." in list)
 
 # Output: False
-print('a' in list)
+print("a" in list)

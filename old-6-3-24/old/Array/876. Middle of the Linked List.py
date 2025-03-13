@@ -25,6 +25,4 @@ for v in t:
 
 s = Solution().middleNode(head)
 if s:
-    print(
-        s.val
-    )
+    print(s.val)

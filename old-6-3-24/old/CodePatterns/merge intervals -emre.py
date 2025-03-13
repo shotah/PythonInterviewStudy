@@ -18,6 +18,7 @@
 # Output: [[1, 5]]
 # Explanation: Intervals [1, 4] and [4, 5] are considered overlapping.
 
+
 class Solution:
     def merge(self, intervals):
         if len(intervals) < 2:
@@ -40,6 +41,7 @@ class Solution:
 
         merged.append([start, end])  # add the last interval
         return merged
+
 
 # Time Complexity: O(N * log N) where N is the total number of intervals.
 # In the beginning, since we sort the intervals, our algorithm will take

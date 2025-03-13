@@ -30,6 +30,7 @@
 # Output: false
 # Explanation: The array cannot be partitioned into equal sum subsets.
 
+
 # Brute Force Solution
 class Solution:
     def canPartition(self, nums: List[int]) -> bool:
@@ -48,10 +49,12 @@ class Solution:
             return False
 
         if nums[current_index] <= sum:
-            if (self.can_partition_recursive(nums, sum - nums[current_index], current_index + 1)):
+            if self.can_partition_recursive(nums, sum - nums[current_index], current_index + 1):
                 return True
 
         return self.can_partition_recursive(nums, sum, current_index + 1)
+
+
 # Time Complexity: O(2N) where N represents the total number.
 
 # Space Complexity: O(N) which will be used to store recursion stack
@@ -91,6 +94,8 @@ class Solution:
             dp[current_index][sum] = self.can_partition_recursive(dp, nums, sum, current_index + 1)
 
         return dp[current_index][sum]
+
+
 # Time Complexity: O(N * S) where N represents the total numbers and S is the total sum of all numbers.
 
 # Space Complexity: O(N * S)
@@ -129,6 +134,8 @@ class Solution:
 
         # the bottom-right corner will have our answer
         return dp[len(nums) - 1][s]
+
+
 # Time Complexity: O(N * S) where N represents the total numbers and S is the total sum of all numbers.
 
 # Space Complexity: O(N * S)

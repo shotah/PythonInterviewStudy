@@ -50,6 +50,7 @@ class Solution:
                 start = mid + 1
         return -1
 
+
 # Time Complexity: O(log N) where N is the total elements in the given array.
 
 # Space Complexity: O(1)

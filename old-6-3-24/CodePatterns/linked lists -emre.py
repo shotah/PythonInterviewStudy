@@ -1,5 +1,6 @@
 # https://emre.me/data-structures/linked-lists/
 
+
 # Implementation of a Singly Linked List
 class Node:
     def __init__(self, data):
@@ -8,6 +9,7 @@ class Node:
         """
         self.val = data
         self.next = None
+
 
 # Creating an Empty Singly Linked List
 
@@ -19,6 +21,7 @@ class LinkedList:
         self.head = None
         self.tail = None
         self.size = 0
+
 
 # Insert a New Node at the Beginning
 
@@ -35,6 +38,7 @@ def prepend(self, data):
         self.head = new_node
     self.size += 1
 
+
 # Insert a New Node at the End
 
 
@@ -49,6 +53,7 @@ def append(self, data):
         self.tail.next = new_node
         self.tail = new_node
     self.size += 1
+
 
 # Accessing a Node
 
@@ -66,6 +71,7 @@ def get(self, index):
     for _ in range(index):
         current = current.next
     return current.val
+
 
 # Insert a New Node at the Index
 

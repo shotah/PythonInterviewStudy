@@ -64,9 +64,7 @@ if __name__ == "__main__":
     expected = []
     actual_head = Solution().deleteMiddle(head)
     actual = linked_list_to_list(actual_head)
-    assert (
-        actual == expected
-    ), f"Test Case 1 Failed: Input: [], Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case 1 Failed: Input: [], Expected: {expected}, Actual: {actual}"
     print("Test Case 1 Passed!")
 
     # Test Case 2: Single node list
@@ -74,9 +72,7 @@ if __name__ == "__main__":
     expected = []
     actual_head = Solution().deleteMiddle(head)
     actual = linked_list_to_list(actual_head)
-    assert (
-        actual == expected
-    ), f"Test Case 2 Failed: Input: [1], Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case 2 Failed: Input: [1], Expected: {expected}, Actual: {actual}"
     print("Test Case 2 Passed!")
 
     # Test Case 3: Two node list
@@ -84,9 +80,7 @@ if __name__ == "__main__":
     expected = [1]
     actual_head = Solution().deleteMiddle(head)
     actual = linked_list_to_list(actual_head)
-    assert (
-        actual == expected
-    ), f"Test Case 3 Failed: Input: [1, 2], Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case 3 Failed: Input: [1, 2], Expected: {expected}, Actual: {actual}"
     print("Test Case 3 Passed!")
 
     # Test Case 4: Three node list (odd length)
@@ -94,9 +88,7 @@ if __name__ == "__main__":
     expected = [1, 3]
     actual_head = Solution().deleteMiddle(head)
     actual = linked_list_to_list(actual_head)
-    assert (
-        actual == expected
-    ), f"Test Case 4 Failed: Input: [1, 2, 3], Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case 4 Failed: Input: [1, 2, 3], Expected: {expected}, Actual: {actual}"
     print("Test Case 4 Passed!")
 
     # Test Case 5: Four node list (even length)

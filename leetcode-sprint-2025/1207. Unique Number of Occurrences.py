@@ -27,14 +27,10 @@ if __name__ == "__main__":
     arr = [1, 2, 2, 1, 1, 3]
     expected = True
     actual = Solution().uniqueOccurrences(arr)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {arr}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {arr}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     arr = [1, 2]
     expected = False
     actual = Solution().uniqueOccurrences(arr)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {arr}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {arr}, Expected: {expected}, Actual: {actual}"

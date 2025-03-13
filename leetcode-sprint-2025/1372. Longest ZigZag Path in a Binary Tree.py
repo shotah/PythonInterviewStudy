@@ -1,12 +1,9 @@
-from enum import Enum
 from typing import List, Optional, Self, Union
 
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(
-        self, val=0, left: Optional[Self] = None, right: Optional[Self] = None
-    ):
+    def __init__(self, val=0, left: Optional[Self] = None, right: Optional[Self] = None):
         self.val = val
         self.left = left
         self.right = right
@@ -99,9 +96,7 @@ if __name__ == "__main__":
     expected = 3
     head = create_binary_tree(input)
     actual = Solution().longestZigZag(head)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")
 
     # Test Case:
@@ -109,7 +104,5 @@ if __name__ == "__main__":
     expected = 4
     head = create_binary_tree(input)
     actual = Solution().longestZigZag(head)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")

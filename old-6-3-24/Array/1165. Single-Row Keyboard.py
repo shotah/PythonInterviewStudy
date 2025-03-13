@@ -13,6 +13,4 @@ class Solution:
 keyboard = "abcdefghijklmnopqrstuvwxyz"
 word = "cba"
 s = Solution().calculateTime(keyboard, word)
-print(
-    s
-)
+print(s)

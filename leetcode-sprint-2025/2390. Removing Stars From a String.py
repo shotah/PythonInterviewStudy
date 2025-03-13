@@ -16,6 +16,4 @@ if __name__ == "__main__":
     s = "leet**cod*e"
     expected = "lecoe"
     actual = Solution().removeStars(s)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"

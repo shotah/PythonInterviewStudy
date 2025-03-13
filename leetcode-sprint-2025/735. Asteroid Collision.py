@@ -73,22 +73,16 @@ if __name__ == "__main__":
     asteroids = [5, 10, -5]
     expected = [5, 10]
     actual = Solution().asteroidCollision(asteroids)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {asteroids}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {asteroids}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     asteroids = [8, -8]
     expected = []
     actual = Solution().asteroidCollision(asteroids)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {asteroids}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {asteroids}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     asteroids = [10, 2, -5]
     expected = [10]
     actual = Solution().asteroidCollision(asteroids)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {asteroids}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {asteroids}, Expected: {expected}, Actual: {actual}"

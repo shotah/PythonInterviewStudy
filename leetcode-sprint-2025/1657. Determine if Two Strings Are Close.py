@@ -27,24 +27,18 @@ if __name__ == "__main__":
     word2 = "bca"
     expected = True
     actual = Solution().closeStrings(word1, word2)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {word1}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {word1}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     word1 = "a"
     word2 = "aa"
     expected = False
     actual = Solution().closeStrings(word1, word2)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {word1}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {word1}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     word1 = "cabbba"
     word2 = "abbccc"
     expected = True
     actual = Solution().closeStrings(word1, word2)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {word1}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {word1}, Expected: {expected}, Actual: {actual}"

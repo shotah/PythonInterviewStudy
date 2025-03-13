@@ -39,6 +39,7 @@
 # N is an integer within the range [2..100,000];
 # each element of array A is an integer within the range [−1,000..1,000].
 
+
 def solution(a):
     if not a or len(a) == 1:
         return 0

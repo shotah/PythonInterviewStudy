@@ -29,34 +29,26 @@ if __name__ == "__main__":
     nums = [1, 2, 3, 4, 5]
     expected = True
     actual = Solution().increasingTriplet(nums)
-    assert (
-        actual == expected
-    ), f"Test Case 1 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case 1 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
 
     # Test Case 2
     nums = [5, 4, 3, 2, 1]
     expected = False
     actual = Solution().increasingTriplet(nums)
-    assert (
-        actual == expected
-    ), f"Test Case 2 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case 2 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
 
     # Add more test cases here in the same format
     # Test Case 3 (Example)
     nums = [2, 1, 5, 0, 4, 6]
     expected = True
     actual = Solution().increasingTriplet(nums)
-    assert (
-        actual == expected
-    ), f"Test Case 3 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case 3 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
 
     # Add more test cases here in the same format
     # Test Case (Example)
     nums = [20, 100, 10, 12, 5, 13]
     expected = True
     actual = Solution().increasingTriplet(nums)
-    assert (
-        actual == expected
-    ), f"Test Case 4 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case 4 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
 
     print("\nInline tests finished.")

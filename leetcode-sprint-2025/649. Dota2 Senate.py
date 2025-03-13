@@ -25,14 +25,10 @@ if __name__ == "__main__":
     senate = "RD"
     expected = "Radiant"
     actual = Solution().predictPartyVictory(senate)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {senate}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {senate}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     senate = "RDD"
     expected = "Dire"
     actual = Solution().predictPartyVictory(senate)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {senate}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {senate}, Expected: {expected}, Actual: {actual}"

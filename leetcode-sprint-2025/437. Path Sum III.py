@@ -40,15 +40,11 @@ class Solution:
         current_path_sum += node.val
 
         # Check if there's a prefix sum that leads to targetSum ending at current node
-        count_of_target_paths = self.prefix_sums.get(
-            current_path_sum - self.target_sum, 0
-        )
+        count_of_target_paths = self.prefix_sums.get(current_path_sum - self.target_sum, 0)
         self.count += count_of_target_paths  # Add to total count
 
         # Update prefix_sums count for the current_path_sum (for future paths)
-        self.prefix_sums[current_path_sum] = (
-            self.prefix_sums.get(current_path_sum, 0) + 1
-        )
+        self.prefix_sums[current_path_sum] = self.prefix_sums.get(current_path_sum, 0) + 1
 
         # Recursively explore left and right subtrees
         self.dfs(node.left, current_path_sum)

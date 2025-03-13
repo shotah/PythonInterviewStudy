@@ -1,5 +1,5 @@
 def solution(N):
-    binary = format(N, 'b')
+    binary = format(N, "b")
     max_gap = 0
     latest_gap = 0
     for n in map(int, binary):

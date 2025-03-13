@@ -10,6 +10,7 @@
 # Implementation
 # Lets summarize all of them with a complete Python Hash Table implementation.
 
+
 class HashTable:
     def __init__(self):
         self.size = 13
@@ -64,6 +65,7 @@ class HashTable:
 
     def __setitem__(self, key, data):
         self.put(key, data)
+
 
 # Now we can try our HashTable() implementation together.
 

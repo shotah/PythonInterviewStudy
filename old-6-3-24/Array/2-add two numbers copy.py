@@ -14,11 +14,7 @@ class Solution:
         first_node = ListNode()
         result_node = first_node
         while l1 or l2:
-            value = (
-                l1.val + l2.val + value_arr[0]
-                if value_arr else
-                l1.val + l2.val
-            )
+            value = l1.val + l2.val + value_arr[0] if value_arr else l1.val + l2.val
             value_arr = list(map(int, str(value)))
             result_node.val = value_arr[-1]
             result_node.next = ListNode()
@@ -34,24 +30,18 @@ l1 = ListNode(2)
 l1.next = ListNode(4)
 l1.next.next = ListNode(3)
 while l1:
-    print(
-        l1.val
-    )
+    print(l1.val)
     l1 = l1.next
 
 l2 = ListNode(5)
 l2.next = ListNode(6)
 l2.next.next = ListNode(4)
 while l2:
-    print(
-        l2.val
-    )
+    print(l2.val)
     l2 = l2.next
 
 
 start_node = Solution().addTwoNumbers(l1, l2)
 while start_node:
-    print(
-        start_node.val
-    )
+    print(start_node.val)
     start_node = start_node.next

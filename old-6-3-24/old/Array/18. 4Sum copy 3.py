@@ -17,9 +17,7 @@ class Solution:
                     [i1, j1] = elements[0], elements[1]
                     for items in sums[s - x]:
                         if i1 not in items and j1 not in items:
-                            possible = sorted(
-                                [arr[i1], arr[j1], arr[items[0]], arr[items[1]]]
-                            )
+                            possible = sorted([arr[i1], arr[j1], arr[items[0]], arr[items[1]]])
                             ans.add(tuple(possible))
             checked.add(s - x)
         return sorted(ans)

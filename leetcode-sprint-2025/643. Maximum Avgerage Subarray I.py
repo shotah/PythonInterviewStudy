@@ -19,24 +19,18 @@ if __name__ == "__main__":
     k = 4
     expected = 12.75000
     actual = Solution().findMaxAverage(nums, k)
-    assert (
-        actual == expected
-    ), f"Test Case 1 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case 1 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
 
     # Test Case 1
     nums = [5]
     k = 1
     expected = 5.0
     actual = Solution().findMaxAverage(nums, k)
-    assert (
-        actual == expected
-    ), f"Test Case 1 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case 1 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
 
     # Test Case 1
     nums = [0, 1, 1, 3, 3]
     k = 4
     expected = 2.0
     actual = Solution().findMaxAverage(nums, k)
-    assert (
-        actual == expected
-    ), f"Test Case 1 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case 1 Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"

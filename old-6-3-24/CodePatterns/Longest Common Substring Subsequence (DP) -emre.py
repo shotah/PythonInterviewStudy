@@ -37,6 +37,7 @@
 # 1 <= text2.length <= 1000
 # The input strings consist of lowercase English characters only.
 
+
 # Brute Force Solution
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
@@ -48,8 +49,11 @@ class Solution:
         if text1[i] == text2[j]:
             return 1 + self.longestCommonSubsequence_recursive(text1, text2, i + 1, j + 1)
 
-        return max(self.longestCommonSubsequence_recursive(text1, text2, i + 1, j),
-                   self.longestCommonSubsequence_recursive(text1, text2, i, j + 1))
+        return max(
+            self.longestCommonSubsequence_recursive(text1, text2, i + 1, j),
+            self.longestCommonSubsequence_recursive(text1, text2, i, j + 1),
+        )
+
 
 # Time Complexity: O(2N+M) where N and M are the lengths of two input strings.
 
@@ -71,9 +75,13 @@ class Solution:
             if text1[i] == text2[j]:
                 memo[i][j] = 1 + self.longestCommonSubsequence_recursive(memo, text1, text2, i + 1, j + 1)
             else:
-                memo[i][j] = max(self.longestCommonSubsequence_recursive(memo, text1, text2, i + 1, j),
-                                 self.longestCommonSubsequence_recursive(memo, text1, text2, i, j + 1))
+                memo[i][j] = max(
+                    self.longestCommonSubsequence_recursive(memo, text1, text2, i + 1, j),
+                    self.longestCommonSubsequence_recursive(memo, text1, text2, i, j + 1),
+                )
         return memo[i][j]
+
+
 # Time Complexity: O(N * M) where N and M are the lengths of two input strings.
 
 # Space Complexity: O(N * M)
@@ -99,6 +107,8 @@ class Solution:
                     memo[i][j] = max(memo[i - 1][j], memo[i][j - 1])
                 max_length = max(max_length, memo[i][j])
         return max_length
+
+
 # Time Complexity: O(N * M) where N and M are the lengths of two input strings.
 
 # Space Complexity: O(N * M)

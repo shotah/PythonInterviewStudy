@@ -28,16 +28,12 @@ if __name__ == "__main__":
     nums = [0, 1, 0, 3, 12]
     expected = [1, 3, 12, 0, 0]
     Solution().moveZeroes(nums)
-    assert (
-        nums == expected
-    ), f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {nums}"
+    assert nums == expected, f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {nums}"
 
     # Test Case
     nums = [0, 0, 1]
     expected = [1, 0, 0]
     Solution().moveZeroes(nums)
-    assert (
-        nums == expected
-    ), f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {nums}"
+    assert nums == expected, f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {nums}"
 
     print("\nInline tests finished.")

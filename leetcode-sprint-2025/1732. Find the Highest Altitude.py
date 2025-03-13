@@ -22,14 +22,10 @@ if __name__ == "__main__":
     gain = [-5, 1, 5, 0, -7]
     expected = 1
     actual = Solution().largestAltitude(gain)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {gain}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {gain}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     gain = [-4, -3, -2, -1, 4, 3, 2]
     expected = 0
     actual = Solution().largestAltitude(gain)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {gain}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {gain}, Expected: {expected}, Actual: {actual}"

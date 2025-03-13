@@ -29,22 +29,16 @@ if __name__ == "__main__":
     nums = [1, 7, 3, 6, 5, 6]
     expected = 3
     actual = Solution().pivotIndex(nums)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     nums = [1, 2, 3]
     expected = -1
     actual = Solution().pivotIndex(nums)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     nums = [2, 1, -1]
     expected = 0
     actual = Solution().pivotIndex(nums)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"

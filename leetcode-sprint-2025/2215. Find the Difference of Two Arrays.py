@@ -28,15 +28,11 @@ if __name__ == "__main__":
     nums2 = [2, 4, 6]
     expected = [[1, 3], [4, 6]]
     actual = Solution().findDifference(nums1, nums2)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {nums1}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {nums1}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     nums1 = [1, 2, 3, 3]
     nums2 = [1, 1, 2, 2]
     expected = [[3], []]
     actual = Solution().findDifference(nums1, nums2)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {nums1}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {nums1}, Expected: {expected}, Actual: {actual}"

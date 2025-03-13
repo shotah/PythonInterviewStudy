@@ -15,7 +15,7 @@ class Solution:
         if not root:
             return []
         queue = deque()
-        queue.append((root))
+        queue.append(root)
         right_edge = []
         prev_node = root
         while queue:
@@ -26,9 +26,9 @@ class Solution:
                 prev_node = node
                 # Extend stack to do whatever you want.
                 if node.left:
-                    queue.append((node.left))
+                    queue.append(node.left)
                 if node.right:
-                    queue.append((node.right))
+                    queue.append(node.right)
             if prev_node:
                 right_edge.append(prev_node.val)
         return right_edge
@@ -94,9 +94,7 @@ if __name__ == "__main__":
     expected = [1, 3, 4]
     head = create_binary_tree(input)
     actual = Solution().rightSideView(head)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")
 
     # Test Case 2: Another right side view example
@@ -114,7 +112,5 @@ if __name__ == "__main__":
     expected = [1, 3]
     head = create_binary_tree(input)
     actual = Solution().rightSideView(head)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {input}, Expected: {expected}, Actual: {actual}"
     print("Test Case Passed!")

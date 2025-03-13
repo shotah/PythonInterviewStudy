@@ -1,7 +1,4 @@
-
-
 # Definition for singly-linked list.
-from copy import copy
 from typing import Optional
 
 
@@ -9,6 +6,8 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
+
 # class Solution:
 #     def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
 #         # you have to do a one step and a double step
@@ -50,10 +49,10 @@ class Solution:
 
 s = Solution()
 
-l = [1, 3, 4, 7, 1, 2, 6]
-head = ListNode(l.pop(0))
+list_of_nums = [1, 3, 4, 7, 1, 2, 6]
+head = ListNode(list_of_nums.pop(0))
 prev = head
-for i in l:
+for i in list_of_nums:
     newNode = ListNode(i)
     prev.next = newNode
     prev = newNode

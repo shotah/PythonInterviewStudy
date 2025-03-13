@@ -16,6 +16,4 @@ class Solution:
 
 arr = [1, 2, 2, 1, 1, 3]
 arr = [1, 2]
-print(
-    Solution().uniqueOccurrences(arr)
-)
+print(Solution().uniqueOccurrences(arr))

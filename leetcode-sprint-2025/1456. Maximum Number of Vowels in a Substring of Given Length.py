@@ -50,33 +50,25 @@ if __name__ == "__main__":
     k = 3
     expected = 3
     actual = Solution().maxVowels(s, k)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     s = "aeiou"
     k = 2
     expected = 2
     actual = Solution().maxVowels(s, k)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     s = "leetcode"
     k = 3
     expected = 2
     actual = Solution().maxVowels(s, k)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     s = "weallloveyou"
     k = 7
     expected = 4
     actual = Solution().maxVowels(s, k)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"

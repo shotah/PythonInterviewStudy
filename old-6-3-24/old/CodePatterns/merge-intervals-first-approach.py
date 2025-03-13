@@ -1,4 +1,3 @@
-
 def mergeIntervals(intervals):
     # Sort the array on the basis of start values of intervals.
     intervals.sort()

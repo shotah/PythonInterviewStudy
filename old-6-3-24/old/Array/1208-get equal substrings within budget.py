@@ -1,11 +1,10 @@
-
 class Solution:
     costs = []
 
     def __get_costs(self, s: str, t: str):
         for s_c, t_c in zip(s, t):
-            s_ch = bytes((s_c), 'utf-8')
-            t_ch = bytes((t_c), 'utf-8')
+            s_ch = bytes((s_c), "utf-8")
+            t_ch = bytes((t_c), "utf-8")
             self.costs.append(t_ch[0] - s_ch[0])
 
     def equalSubstring(self, s: str, t: str, maxCost: int) -> int:
@@ -41,6 +40,4 @@ vals = [
 
 for s, t, maxCost, expected in vals:
     sol = Solution().equalSubstring(s, t, maxCost)
-    print(
-        f"{sol} == {expected}"
-    )
+    print(f"{sol} == {expected}")

@@ -9,29 +9,29 @@ class TreeNode:
         self.right = None
 
 
-class Solution:
-    def __init__(self) -> None:
-        self.ans = None
-        self.p = None
-        self.q = None
+# class Solution:
+#     def __init__(self) -> None:
+#         self.ans = None
+#         self.p = None
+#         self.q = None
 
-    def dfs(self, node: Optional[TreeNode]) -> bool:
-        if not node:
-            return False
-        left = self.dfs(node.left)
-        right = self.dfs(node.right)
-        mid = node == self.p or node == self.q
-        if mid + left + right >= 2:
-            self.ans = node
-        return mid or left or right
+#     def dfs(self, node: Optional[TreeNode]) -> bool:
+#         if not node:
+#             return False
+#         left = self.dfs(node.left)
+#         right = self.dfs(node.right)
+#         mid = node == self.p or node == self.q
+#         if mid + left + right >= 2:
+#             self.ans = node
+#         return mid or left or right
 
-    def lowestCommonAncestor(
-        self, root: Optional[TreeNode], p: Optional[TreeNode], q: Optional[TreeNode]
-    ) -> Optional[TreeNode]:
-        self.p = p
-        self.q = q
-        self.dfs(root)
-        return self.ans
+#     def lowestCommonAncestor(
+#         self, root: Optional[TreeNode], p: Optional[TreeNode], q: Optional[TreeNode]
+#     ) -> Optional[TreeNode]:
+#         self.p = p
+#         self.q = q
+#         self.dfs(root)
+#         return self.ans
 
 
 class Solution:

@@ -24,6 +24,7 @@
 
 # Implementation
 
+
 # min_heapify() and build_min_heap()
 def get_left_child(i):
     return 2 * i + 1
@@ -46,12 +47,14 @@ def min_heapify(arr, i):
         arr[i], arr[smallest] = arr[smallest], arr[i]
         min_heapify(arr, smallest)
 
+
 # and now we can repeatedly call min_heapify() function in order to build a Min Heap.
 
 
 def build_min_heap(arr):
     for i in reversed(range(len(arr) // 2)):
         min_heapify(arr, i)
+
 
 # max_heapify() and build_max_heap()
 
@@ -68,6 +71,7 @@ def max_heapify(arr, i):
     if largest != i:
         arr[i], arr[largest] = arr[largest], arr[i]
         max_heapify(arr, largest)
+
 
 # and now we can repeatedly call max_heapify() function in order to build a Max Heap.
 

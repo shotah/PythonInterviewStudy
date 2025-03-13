@@ -16,13 +16,8 @@ class Solution:
         return r
 
 
-t = [
-    ["tree", "eert"],
-    ["cccaaa", "cccaaa"]
-]
+t = [["tree", "eert"], ["cccaaa", "cccaaa"]]
 
 for s, expected in t:
     r = Solution().frequencySort(s)
-    print(
-        f"{s}, {r} == {expected}"
-    )
+    print(f"{s}, {r} == {expected}")

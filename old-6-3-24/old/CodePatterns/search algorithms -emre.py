@@ -5,11 +5,13 @@
 # In short we can say that, performance of Linear Search is O(1)
 # for the best case and O(N) for the average case and worst case.
 
+
 def linear_search(arr, key):
     for i in range(len(arr)):
         if arr[i] == key:
             return i
     return -1
+
 
 # Binary Search Implementation without Recursion
 
@@ -30,6 +32,7 @@ def binary_search(arr, key):
         else:
             return mid
     return -1
+
 
 # Binary Search Implementation with Recursion
 

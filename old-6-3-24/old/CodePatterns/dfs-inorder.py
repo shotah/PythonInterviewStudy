@@ -7,11 +7,13 @@
 # Visit the root.
 # Traverse the right subtree, i.e., call Inorder(right->subtree)
 
+
 class Node:
     def __init__(self, key):
         self.left = None
         self.right = None
         self.val = key
+
 
 # A function to do inorder tree traversal
 

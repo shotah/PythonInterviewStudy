@@ -1,11 +1,10 @@
-
 class Solution:
     def equalSubstring(self, s: str, t: str, maxCost: int) -> int:
         result = 0
         for s_c, t_c in zip(s, t):
             while maxCost > 0 and s_c != t_c:
-                s_ch = bytes((s_c), 'utf-8')
-                t_ch = bytes((t_c), 'utf-8')
+                s_ch = bytes((s_c), "utf-8")
+                t_ch = bytes((t_c), "utf-8")
                 print(f"{s_ch[0]} < {t_ch[0]}")
                 if s_ch[0] < t_ch[0]:
                     s_c = bytes([s_ch[0] + 1]).decode("utf-8")
@@ -29,6 +28,4 @@ vals = [
 
 for s, t, maxCost, expected in vals:
     sol = Solution().equalSubstring(s, t, maxCost)
-    print(
-        f"{sol} == {expected}"
-    )
+    print(f"{sol} == {expected}")

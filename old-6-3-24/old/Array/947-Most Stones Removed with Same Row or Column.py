@@ -42,7 +42,4 @@ stones = [[0, 1], [1, 0], [1, 1]]
 # stones = [[0,0]]
 # 4
 # stones = [[3,2],[3,1],[4,4],[1,1],[0,2],[4,0]]
-print(
-    Solution().removeStones(stones)
-
-)
+print(Solution().removeStones(stones))

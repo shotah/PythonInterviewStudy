@@ -6,23 +6,23 @@ class Solution:
         stack = []
         curr = ""
         num = 0
-        for l in s:
-            if l.isdigit():
+        for letter in s:
+            if letter.isdigit():
                 # move num with * 10 over for append of l
-                num = (num * 10) + int(l)
+                num = (num * 10) + int(letter)
                 continue
-            if l == "[":
+            if letter == "[":
                 # setting num... curr should be empty
                 stack.append((curr, num))
                 curr = ""
                 num = 0
                 continue
             # Handles the closing bracket and writes the string
-            if l == "]":
+            if letter == "]":
                 last_string, repeat_count = stack.pop()
                 curr = last_string + curr * repeat_count
                 continue
-            curr += l
+            curr += letter
         return curr
 
 
@@ -33,6 +33,4 @@ if __name__ == "__main__":
     s = "3[a]2[bc]"
     expected = "aaabcbc"
     actual = Solution().decodeString(s)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"

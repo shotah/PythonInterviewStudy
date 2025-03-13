@@ -36,7 +36,7 @@ class Solution:
                 return True
             if s[i] == t[j]:
                 i += 1
-        return i == mhuh
+        return i == m
 
 
 if __name__ == "__main__":
@@ -47,17 +47,13 @@ if __name__ == "__main__":
     t = "ahbgdc"
     expected = True
     actual = Solution().isSubsequence(s, t)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
 
     # Test Case
     s = "acb"
     t = "ahbgdc"
     expected = False
     actual = Solution().isSubsequence(s, t)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {s}, Expected: {expected}, Actual: {actual}"
 
     print("\nInline tests finished.")

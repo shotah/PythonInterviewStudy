@@ -9,6 +9,4 @@ class Solution:
 x = -123
 x = 1563847412
 
-print(
-    Solution().reverse(x)
-)
+print(Solution().reverse(x))

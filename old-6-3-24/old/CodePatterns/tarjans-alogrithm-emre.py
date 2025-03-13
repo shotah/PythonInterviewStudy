@@ -72,6 +72,7 @@ class Solution:
                 # the current low link value
                 low_links[node] = min(low_links[node], ids[next_node])
 
+
 # Time Complexity: O(E + V) –> One pass, linear time solution
 
 # Space Complexity: O(N)

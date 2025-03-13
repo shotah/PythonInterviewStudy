@@ -22,6 +22,7 @@
 # Output: 12.75
 # Explanation: Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
 
+
 # Brute Force Solution
 class Solution:
     def findMaxAverage(self, nums: list[int], k: int) -> float:
@@ -40,6 +41,7 @@ class Solution:
                 return average
 
         return max_average
+
 
 # Sliding Window Solution
 

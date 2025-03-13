@@ -21,10 +21,10 @@ class Solution:
             len1 = self.expandAroundCenter(s, i, i)
             len2 = self.expandAroundCenter(s, i, i + 1)
             max_len = max(len1, len2)
-            if (max_len > end - start):
+            if max_len > end - start:
                 start: int = i - int((max_len - 1) / 2)
                 end: int = i + int(max_len / 2)
-        return s[(start):(end + 1)]
+        return s[(start) : (end + 1)]
 
 
 s = "abcabcbb"

@@ -8,6 +8,7 @@
 #   A[3] = 5
 # the function should return 4, as it is the missing element.
 
+
 def solution(a):
     if not a:
         return 1

@@ -4,7 +4,7 @@ from functools import lru_cache
 class Solution:
     def __bisect_left(self, a, x, lo=0, hi=None, *, key):
         if lo < 0:
-            raise ValueError('lo must be non-negative')
+            raise ValueError("lo must be non-negative")
         if hi is None:
             hi = len(a)
         while lo < hi:
@@ -32,6 +32,4 @@ startTime = [1, 2, 3, 3]
 endTime = [3, 4, 5, 6]
 profit = [50, 10, 40, 70]
 
-print(
-    Solution().jobScheduling(startTime, endTime, profit)
-)
+print(Solution().jobScheduling(startTime, endTime, profit))

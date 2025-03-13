@@ -17,6 +17,7 @@
 #     # if we ended up here we did something wrong and it must be false
 #     return False
 
+
 def SumMultiplier(arr):
     arr.sort()
     if arr[-1] * arr[-2] > sum(arr):

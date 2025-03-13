@@ -20,6 +20,4 @@ if __name__ == "__main__":
     k = 2
     expected = 6
     actual = Solution().longestOnes(nums, k)
-    assert (
-        actual == expected
-    ), f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"
+    assert actual == expected, f"Test Case Failed: Input: {nums}, Expected: {expected}, Actual: {actual}"

@@ -11,6 +11,4 @@ class Solution:
 x = 121
 x = 1221
 x = 1121
-print(
-    Solution().isPalindrome(x)
-)
+print(Solution().isPalindrome(x))

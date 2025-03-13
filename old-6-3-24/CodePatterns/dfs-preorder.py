@@ -9,11 +9,13 @@
 # Traverse the left subtree, i.e., call Preorder(left->subtree)
 # Traverse the right subtree, i.e., call Preorder(right->subtree)
 
+
 class Node:
     def __init__(self, key):
         self.left = None
         self.right = None
         self.val = key
+
 
 # A function to do preorder tree traversal
 

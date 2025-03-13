@@ -19,6 +19,4 @@ height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
 # height = [1,1]
 
 sol = Solution().maxArea(height)
-print(
-    f"\nSolution: {sol}"
-)
+print(f"\nSolution: {sol}")

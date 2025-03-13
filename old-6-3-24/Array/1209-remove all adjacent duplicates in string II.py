@@ -12,13 +12,8 @@ class Solution:
         return "".join([a * b for a, b in stack])
 
 
-vals = [
-    ["abcd", 2, "abcd"],
-    ["deeedbbcccbdaa", 3, "aa"]
-]
+vals = [["abcd", 2, "abcd"], ["deeedbbcccbdaa", 3, "aa"]]
 
 for s, k, expected in vals:
     sol = Solution().removeDuplicates(s, k)
-    print(
-        f"{sol} == {expected}"
-    )
+    print(f"{sol} == {expected}")
