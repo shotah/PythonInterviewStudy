@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/top-k-frequent-words/
- * 
+ *
  * 692. 前K个高频单词
- * 
+ *
  * Medium
- * 
+ *
  * 76ms 97.98%
  * 37.9mb 12.50%
  */
@@ -31,6 +31,6 @@ const topKFrequent = (words, k) => {
       return a.value > b.value ? -1 : 1;
     }
   })
-  
+
   return temp.slice(0, k).map(item => item.key);
 }

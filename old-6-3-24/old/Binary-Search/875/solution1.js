@@ -1,10 +1,10 @@
 /**
  * https://leetcode.com/problems/koko-eating-bananas/
- * 
+ *
  * 875. Koko Eating Bananas
- * 
+ *
  * Medium
- * 
+ *
  * 72ms 91.82%
  * 37.8mb 71.83%
  */

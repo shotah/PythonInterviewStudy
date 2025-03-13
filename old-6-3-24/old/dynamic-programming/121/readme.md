@@ -16,11 +16,11 @@
 ```s
 
             Math.min(min[i - 1], prices[i]) i > 0
-  min[i] = 
+  min[i] =
             prices[i]                       i === 0
 
             Math.max(max[j + 1], prices[j]) j < len - 1
-  max[j] = 
+  max[j] =
             prices[j]                       j === len - 1
 
 ```

@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/remove-palindromic-subsequences/
- * 
+ *
  * 1332. 删除回文子序列
- * 
+ *
  * Easy
- * 
+ *
  * 56ms 84.21%
  * 34.2mb 100.00%
  */

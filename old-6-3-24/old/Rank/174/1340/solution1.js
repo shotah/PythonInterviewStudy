@@ -1,15 +1,15 @@
 /**
  * https://leetcode-cn.com/problems/jump-game-v/
- * 
+ *
  * 1340. 跳跃游戏 V
- * 
+ *
  * Hard
- * 
+ *
  * 92ms 93.33%
  * 38.2mb 100.00%
- * 
+ *
  * 考察点
- * - 递归 
+ * - 递归
  */
 const maxJumps = (arr, d) => {
   const record = [];

@@ -34,7 +34,7 @@ const rob = nums => {
   if (!max) {
     return 0
   }
-  
+
   const dp = new Array(max + 1).fill(0)
 
   dp[1] = nums[0]

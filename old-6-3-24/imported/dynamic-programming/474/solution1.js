@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/ones-and-zeroes/
- * 
+ *
  * 474. Ones and Zeroes
- * 
+ *
  * Medium
  */
 const findMaxForm = (strs, m, n) => {

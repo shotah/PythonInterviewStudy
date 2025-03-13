@@ -19,7 +19,7 @@ const addTwoNumbers = function(l1, l2) {
 
         currentHead.next = new ListNode(sum % 10);
         currentHead = currentHead.next;
-        
+
         l1 && (l1 = l1.next);
         l2 && (l2 = l2.next);
     }

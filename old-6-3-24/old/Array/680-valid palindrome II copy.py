@@ -1,5 +1,6 @@
 from copy import deepcopy
 
+
 class Solution:
     def validPalindrome(self, s: str) -> bool:
         left = 0
@@ -13,10 +14,11 @@ class Solution:
             right -= 1
         return True
 
-s= "abc"
-s= "abca"
-s="udvpezejpldkmmdrskmomkmobzvvlsetwrvnsygvuoepggxzjgcacystdvzqcmumjwdczmnyblvivhqyimwsmhftlthdjwbtrisbuluphpcwvcmgludyrwlnxrnpralrfpepjuwtpzpifcrbwxnaduzuxclorbhmfijfvkhgyvrtdofjnyzvrpcpdynbkxnqpaomzcldrtgfltwelrjmbjdugsdubbhvnvuzntviblsvbpgdpfumzukftpptfkuzmufpdgpbvslbivtnzuvnvhbbudsgudjbmjrlewtlfgtrdlczmoapqnxkbnydpcprvzynjfodtrvyghkvfjifmhbrolcxuzudanxwbrcfipzptwujpepfrlarpnrxnlwrydulgmcvwcphpulubsirtbwjdhtltfhmswmiyqhvivlbynmzdcdwjmumcqzvdtsycacgjzxggpeouvgysnvrwteslvvzbomkmomksrdmmkdlpjezepvdu"
+
+s = "abc"
+s = "abca"
+s = "udvpezejpldkmmdrskmomkmobzvvlsetwrvnsygvuoepggxzjgcacystdvzqcmumjwdczmnyblvivhqyimwsmhftlthdjwbtrisbuluphpcwvcmgludyrwlnxrnpralrfpepjuwtpzpifcrbwxnaduzuxclorbhmfijfvkhgyvrtdofjnyzvrpcpdynbkxnqpaomzcldrtgfltwelrjmbjdugsdubbhvnvuzntviblsvbpgdpfumzukftpptfkuzmufpdgpbvslbivtnzuvnvhbbudsgudjbmjrlewtlfgtrdlczmoapqnxkbnydpcprvzynjfodtrvyghkvfjifmhbrolcxuzudanxwbrcfipzptwujpepfrlarpnrxnlwrydulgmcvwcphpulubsirtbwjdhtltfhmswmiyqhvivlbynmzdcdwjmumcqzvdtsycacgjzxggpeouvgysnvrwteslvvzbomkmomksrdmmkdlpjezepvdu"
 
 print(
-  Solution().validPalindrome(s)
+    Solution().validPalindrome(s)
 )

@@ -3,12 +3,12 @@ class Solution:
         arr = p.replace(".*", ",ANY,")
         arr = arr.replace("*", ",MANY,")
         arr = arr.replace(".", ",SINGLE,")
-        
+
         arr = arr.split(",")
         arr = list(filter(None, arr))
         print(f"broken arr={','.join(arr)}")
         it = iter(arr)
-        for match, char in list(zip(it,it)):
+        for match, char in list(zip(it, it)):
             print(char)
             for string in list(filter(None, s.split(match))):
                 print(f"looking for: {match} w/{char} in {string}, Remaining to parse: {s}")
@@ -43,10 +43,10 @@ class Solution:
             return False
         return True
 
-
     def isMatch(self, s: str, p: str) -> bool:
-        if s == p: return True
-        if not "." in p and not "*" in p:
+        if s == p:
+            return True
+        if "." not in p and "*" not in p:
             return False
         return self.__test_astrict(s, p)
 
@@ -82,4 +82,3 @@ for s, p, e in tests:
     print(f"Testing: {s},{p}")
     print(f"Result: {Solution().isMatch(s, p)} == {e}")
     print("\n")
-

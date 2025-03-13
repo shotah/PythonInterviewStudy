@@ -1,12 +1,12 @@
 /**
  * https://leetcode.com/problems/house-robber-ii/
- * 
+ *
  * 213. House Robber II
- * 
+ *
  * [Medium]
- * 
+ *
  * 198的变题
- * 
+ *
  * 考虑首位是邻居的问题
  */
 const rob = nums => {

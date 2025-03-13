@@ -20,8 +20,9 @@ class Solution:
                 a = p_a + a
             ast_lst.append(a)
         return ast_lst
-    
-asteroids =[5,10,-5]
+
+
+asteroids = [5, 10, -5]
 c = Solution()
 r = c.asteroidCollision(asteroids)
 print(r)

@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/long-pressed-name/
- * 
+ *
  * 925. 长按键入
- * 
+ *
  * Easy
- * 
+ *
  * 100%
  * 42.24%
  */

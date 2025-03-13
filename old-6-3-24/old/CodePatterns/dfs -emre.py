@@ -3,11 +3,11 @@
 
 # How to identify?
 
-# This approach is quite useful when dealing with the problems 
+# This approach is quite useful when dealing with the problems
 # involving traversal of a tree.
 
-# When the problem asks the traversal of a tree, 
-# you should think about Depth First Search (DFS) 
+# When the problem asks the traversal of a tree,
+# you should think about Depth First Search (DFS)
 # pattern and using it in combination with a recursive approach.
 
 
@@ -45,6 +45,6 @@ class Solution:
 
 # Time Complexity: O(N) where N is the total number of nodes in the tree.
 
-# Space Complexity: O(N), this space will be used to store the recursion stack. 
-# The worst case will happen when the given tree is a linked list 
+# Space Complexity: O(N), this space will be used to store the recursion stack.
+# The worst case will happen when the given tree is a linked list
 # (i.e. every node has only one child)

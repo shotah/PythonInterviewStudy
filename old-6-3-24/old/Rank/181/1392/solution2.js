@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/longest-happy-prefix/
- * 
+ *
  * 1392. 最长快乐前缀
- * 
+ *
  * Hard
- * 
+ *
  * 96ms 100.00%
  * 45.4mb 100.00%
  */

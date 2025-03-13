@@ -1,13 +1,13 @@
 /**
  * https://leetcode-cn.com/problems/queries-on-a-permutation-with-key/
- * 
+ *
  * 1409. 查询带键的排列
- * 
+ *
  * Medium
- * 
+ *
  * 76ms
  * 41mb
- * 
+ *
  * 时间复杂度 O(n^2)
  * 空间复杂度 O(n)
  */

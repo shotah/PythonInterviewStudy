@@ -6,10 +6,11 @@ def solution(A, K):
     If no a or k then return array
     If array and key then rotate array and return array
     """
-    if not A or not K: return A
+    if not A or not K:
+        return A
     while K > 0:
-      A.insert(0, A.pop())
-      K -= 1
+        A.insert(0, A.pop())
+        K -= 1
     return A
 
 

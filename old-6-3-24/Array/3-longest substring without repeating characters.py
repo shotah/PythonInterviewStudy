@@ -1,34 +1,35 @@
 import time
+
 start_time = time.time()
+
 
 class Solution:
     def substringIsUnique(self, sub: str):
-      current_set = {}
-      for letter in sub:
-        if letter not in current_set:
-          current_set[letter] = 1
-        else:
-          return False
-      return True
-    
-    def test_substring_by_length(self, s: str,  length: int):
-      start_sub =  0
-      tested_array = []
-      for x in range(len(s)):
-        if length + x <= len(s):
-          substring = s[(start_sub + x): (length + x)]
-          tested_array.append( self.substringIsUnique(substring) )
-        else:
-          break
-      return any(tested_array)
-      
-    def lengthOfLongestSubstring(self, s: str) -> int:
-      for length in range(1, len(s)+1):
-        if not self.test_substring_by_length(s, length):
-          return length -1
-      return len(s)
+        current_set = {}
+        for letter in sub:
+            if letter not in current_set:
+                current_set[letter] = 1
+            else:
+                return False
+        return True
 
-      
+    def test_substring_by_length(self, s: str, length: int):
+        start_sub = 0
+        tested_array = []
+        for x in range(len(s)):
+            if length + x <= len(s):
+                substring = s[(start_sub + x): (length + x)]
+                tested_array.append(self.substringIsUnique(substring))
+            else:
+                break
+        return any(tested_array)
+
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        for length in range(1, len(s) + 1):
+            if not self.test_substring_by_length(s, length):
+                return length - 1
+        return len(s)
+
 
 s = "abcabcbb"
 s = "aa"

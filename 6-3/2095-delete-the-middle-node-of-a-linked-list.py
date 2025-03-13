@@ -40,8 +40,8 @@ class Solution:
         fast = head
         prev = None
 
-        while fast and fast.next: 
-            prev= slow
+        while fast and fast.next:
+            prev = slow
             slow = slow.next
             fast = fast.next.next
         prev.next = slow.next
@@ -50,7 +50,7 @@ class Solution:
 
 s = Solution()
 
-l = [1,3,4,7,1,2,6]
+l = [1, 3, 4, 7, 1, 2, 6]
 head = ListNode(l.pop(0))
 prev = head
 for i in l:

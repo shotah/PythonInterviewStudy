@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/create-target-array-in-the-given-order/submissions/
- * 
+ *
  * 5364. 按既定顺序创建目标数组
- * 
+ *
  * Easy
- * 
+ *
  * 72ms 100.00%
  * 34mb 100.00%
  */

@@ -19,8 +19,8 @@
   &emsp;&emsp;那么在计算最长单调递增序列的过程中，需要不断的更新当前最长单调递增序列的个数，状态转移方程为：
 
 ```s
-                amount[j]              dp[j] + 1 > dp[i] 
-  amount[i] =  
+                amount[j]              dp[j] + 1 > dp[i]
+  amount[i] =
                 amount[i] + amount[j]  dp[j] + 1 === dp[i]
 ```
 

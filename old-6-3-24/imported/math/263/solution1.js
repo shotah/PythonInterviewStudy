@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/ugly-number/
- * 
+ *
  * 263. Ugly Number
- * 
+ *
  * Medium
  */
 const isUgly = num => {

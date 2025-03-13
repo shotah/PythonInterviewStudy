@@ -1,18 +1,18 @@
 /**
  * https://leetcode.com/problems/number-of-longest-increasing-subsequence/
- * 
+ *
  * 673. Number of Longest Increasing Subsequence
- * 
+ *
  * [Medium]
- * 
- * dp 
- * 
+ *
+ * dp
+ *
  * 在300的基础上就需要最大单调递增序列的个数
- * 
+ *
  * 需要定义两个状态
- * 
+ *
  * dp[i] 以下标i的字符结尾的最长单调递增序列的长度
- * 
+ *
  * amount[i] 以下标i的字符结尾的最长单调递增序列的个数
  */
 

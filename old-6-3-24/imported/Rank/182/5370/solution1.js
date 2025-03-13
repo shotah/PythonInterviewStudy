@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/design-underground-system/submissions/
- * 
+ *
  * Medium
- * 
+ *
  * 5370. 设计地铁系统
- * 
+ *
  * 300ms 100.00%
  * 59.3mb 100.00%
  */

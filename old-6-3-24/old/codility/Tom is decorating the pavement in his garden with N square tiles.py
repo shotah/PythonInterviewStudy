@@ -13,15 +13,17 @@ def rotate_right(tile: str) -> str:
     print("rotating right", tile, after_tile)
     return after_tile
 
+
 def rotate_left(tile: str) -> str:
     """
     rotates tile counter clockwise
-    """    
+    """
     arr_tile = list(tile)
     arr_tile.append(arr_tile.pop(0))
     after_tile = "".join(arr_tile)
     print("rotating left", tile, after_tile)
     return after_tile
+
 
 def solve_tile_pattern(a):
     """
@@ -54,11 +56,13 @@ def solve_tile_pattern(a):
         previous_right_color = right_color
     return rotate_count
 
+
 def solution(a):
     """
     Attempts any order of tiles to get the min number of tiles
     """
-    if not a: return 0
+    if not a:
+        return 0
     tile_count = len(a)
     min_count = float('inf')
     while 0 < tile_count < min_count:
@@ -69,7 +73,6 @@ def solution(a):
         tile_count -= 1
     return min_count
 
-      
 
 a = ["RGBW", "GBRW"]
 a = ['GBRW', 'RBGW', 'BWGR', 'BRGW']

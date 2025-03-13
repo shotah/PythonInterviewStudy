@@ -1,17 +1,17 @@
 /**
  * https://leetcode-cn.com/problems/implement-strstr/
- * 
+ *
  * 28. 实现strStr()
- * 
+ *
  * Easy
- * 
+ *
  * KMP
- * 
+ *
  * http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html
- * 
- * 
+ *
+ *
  * O(m+n)
- * 
+ *
  * 88.51%
  * 7.95%
  */

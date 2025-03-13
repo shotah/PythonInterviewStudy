@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/reducing-dishes/
- * 
+ *
  * 做菜顺序
- * 
+ *
  * Hard
- * 
+ *
  * 64ms 100.00%
  * 34.6mb 100.00%
  */

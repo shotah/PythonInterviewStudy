@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/minimum-value-to-get-positive-step-by-step-sum/
- * 
+ *
  * 5372. 逐步求和得到正数的最小值
- * 
- * Easy 
- * 
+ *
+ * Easy
+ *
  * 时间复杂度 O(n)
  * 空间复杂度 O(1)
  */

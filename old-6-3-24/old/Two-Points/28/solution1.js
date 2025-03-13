@@ -1,23 +1,23 @@
 /**
  * https://leetcode-cn.com/problems/implement-strstr/
- * 
+ *
  * 28. 实现strStr()
- * 
+ *
  * Easy
- * 
+ *
  * 暴力求解
- * 
+ *
  * 88ms 68.90%
- * 
+ *
  * 35.3mb 17.83%
- * 
+ *
  * O(m*n)
  */
 const strStr = (haystack, needle) => {
   if (needle === '') {
     return 0
   }
-  
+
   for (let i = 0, max = haystack.length; i < max; i++) {
     if (isValid(haystack, needle, i)) {
       return i

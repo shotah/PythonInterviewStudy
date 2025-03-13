@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/validate-binary-tree-nodes/
- * 
+ *
  * 5170. 验证二叉树
- * 
+ *
  * Medium
- * 
+ *
  * 76ms 100.00%
  * 39.7mb 100.00%
  */
@@ -30,7 +30,7 @@ function help(n, leftChild, rightChild, record) {
   if (leftItem !== -1) {
     record.add(leftItem);
     a = help(leftItem, leftChild, rightChild, record);
-  } 
+  }
 
   if (rightItem !== -1) {
     record.add(rightItem);

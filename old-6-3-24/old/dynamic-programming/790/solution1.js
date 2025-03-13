@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/domino-and-tromino-tiling/
- * 
+ *
  * 790. Domino and Tromino Tiling
- * 
+ *
  * Medium
  */
 const kMod = 10 ** 9 + 7

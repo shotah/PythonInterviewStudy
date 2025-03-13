@@ -1,15 +1,20 @@
 from typing import Optional
+
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
-    
+
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        if not list1 and not list2: return None
-        if list1 and not list2: return list1
-        if list2 and not list1: return list2
+        if not list1 and not list2:
+            return None
+        if list1 and not list2:
+            return list1
+        if list2 and not list1:
+            return list2
         merged = None
         if list1 and not list2 or list1 and list2 and list1.val <= list2.val:
             merged = list1
@@ -28,6 +33,7 @@ class Solution:
                 list2 = list2.next
                 merged = merged.next
         return result
+
 
 list1 = ListNode(1)
 list1.next = ListNode(2)

@@ -31,6 +31,7 @@ clean:
 PHONY: lint
 lint:
 	pre-commit run --all-files
+	pipenv run pre-commit run --all-files
 
 PHONY: install
 install:

@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/combination-sum-iii/
- * 
+ *
  * 216. Combination Sum III
- * 
+ *
  * Medium
  */
 const combinationSum3 = (k, n) => {

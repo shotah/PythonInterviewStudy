@@ -1,12 +1,12 @@
 /**
  * https://leetcode-cn.com/problems/binary-subarrays-with-sum/
- * 
+ *
  * 930. 和相同的二元子数组
- * 
+ *
  * Medium
- * 
+ *
  * 朴素解法
- * 
+ *
  * 2040ms 38.46%
  * 37.2mb 50.00%
  */

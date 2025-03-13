@@ -1,12 +1,12 @@
 /**
  * https://leetcode-cn.com/problems/k-th-symbol-in-grammar/
- * 
+ *
  * 779. 第K个语法符号
- * 
+ *
  * Medium
- * 
+ *
  * heap out of memory
- * 
+ *
  */
 const kthGrammar = (N, K) => {
   let str = '0';

@@ -1,10 +1,10 @@
 /**
  * https://leetcode.com/problems/minimum-size-subarray-sum/
- * 
+ *
  * 209. Minimum Size Subarray Sum
- * 
+ *
  * Medium
- * 
+ *
  * 220ms 12.92%
  * 35.5ms 63.30%
  */

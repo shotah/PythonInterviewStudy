@@ -8,8 +8,10 @@ class Node:
         """
         self.val = data
         self.next = None
-        
+
 # Creating an Empty Singly Linked List
+
+
 class LinkedList:
     def __init__(self):
         # create a new singly linked list
@@ -18,7 +20,9 @@ class LinkedList:
         self.tail = None
         self.size = 0
 
-# Insert a New Node at the Beginning 
+# Insert a New Node at the Beginning
+
+
 def prepend(self, data):
     # insert a new node at the beginning of the linked list
     # takes O(1) time
@@ -30,8 +34,10 @@ def prepend(self, data):
         new_node.next = self.head
         self.head = new_node
     self.size += 1
-    
+
 # Insert a New Node at the End
+
+
 def append(self, data):
     # inserts a new node at the end of the linked list
     # takes O(1) time
@@ -45,6 +51,8 @@ def append(self, data):
     self.size += 1
 
 # Accessing a Node
+
+
 def get(self, index):
     # get the value of index-th node in the linked list
     # return None if node not found
@@ -58,8 +66,10 @@ def get(self, index):
     for _ in range(index):
         current = current.next
     return current.val
-  
+
 # Insert a New Node at the Index
+
+
 def add_at_index(self, index, data):
     # insert a new node at the index-th node of the linked list
     # takes O(n) time

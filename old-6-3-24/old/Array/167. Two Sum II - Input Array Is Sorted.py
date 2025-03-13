@@ -8,10 +8,10 @@ class Solution:
             values[num] = idx + 1
 
 
-numbers = [2,7,11,15]
+numbers = [2, 7, 11, 15]
 target = 9
 # [1, 2]
-numbers = [2,3,4]
+numbers = [2, 3, 4]
 target = 6
 
 s = Solution().twoSum(numbers, target)

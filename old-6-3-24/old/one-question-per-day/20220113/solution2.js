@@ -1,9 +1,9 @@
 /**
- * 
+ *
  * 时间复杂度 O(nlogn)
  * 空间复杂度 O(n)
- * @param {*} nums 
- * @returns 
+ * @param {*} nums
+ * @returns
  */
  const dominantIndex = function(nums) {
     let sortNums = [...nums].sort((a,b) => a - b)

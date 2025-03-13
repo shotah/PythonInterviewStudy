@@ -2,12 +2,12 @@
 
 # How to identify?
 
-# If the problem description involves dealing with Permutations 
-# and Combinations of a given set of elements or subsets, 
-# you should think about Subsets pattern which is very 
+# If the problem description involves dealing with Permutations
+# and Combinations of a given set of elements or subsets,
+# you should think about Subsets pattern which is very
 # useful to solve these kinds of problems.
 
-# This pattern describes an efficient Breadth First Search (BFS) 
+# This pattern describes an efficient Breadth First Search (BFS)
 # approach to handle all these problems.
 
 
@@ -49,7 +49,8 @@ class Solution:
         # return results
         return subsets
 
-nums = [1,2,3]
+
+nums = [1, 2, 3]
 s = Solution().subsets(nums)
 print(s)
 # Time Complexity: O(2N) since, in each step, number of subsets doubles.

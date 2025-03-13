@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/check-if-there-is-a-valid-path-in-a-grid/
- * 
+ *
  * 1391. 检查网格中是否存在有效路径
- * 
+ *
  * Medium
- * 
+ *
  * 112ms 100.00%
  * 50mb 100.00%
  */
@@ -22,7 +22,7 @@ const hasValidPath = grid => {
     if (x === rows - 1 && y === cols - 1) {
       return true;
     }
-    
+
     // 四个方向 上 右 下 左
     for (let i = 0; i < 4; i++) {
 

@@ -1,10 +1,10 @@
 /**
- * 
+ *
  * 空间换时间，二维转化为一维
  * 时间复杂度 O(n)
  * 空间复杂度 O(n)
- * @param {*} nums 
- * @param {*} target 
+ * @param {*} nums
+ * @param {*} target
  */
  const twoSum = (nums, target) => {
     const record = new Map();

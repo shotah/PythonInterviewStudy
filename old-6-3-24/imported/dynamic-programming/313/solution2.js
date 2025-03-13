@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/super-ugly-number/
- * 
+ *
  * 313. 超级丑数
- * 
+ *
  * Medium
- * 
+ *
  * 88ms 94%
  * 38.4mb 41.67%
  */

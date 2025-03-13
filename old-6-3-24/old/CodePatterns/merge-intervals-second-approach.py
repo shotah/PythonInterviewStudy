@@ -1,6 +1,6 @@
 # Python program to merge overlapping Intervals in
 # O(n Log n) time and O(1) extra space
- 
+
 def mergeIntervals(arr):
     # Sorting based on the increasing order
     # of the start intervals
@@ -20,8 +20,10 @@ def mergeIntervals(arr):
             index = index + 1
             arr[index] = arr[i]
     print("The Merged Intervals are :", end=" ")
-    for i in range(index+1):
+    for i in range(index + 1):
         print(arr[i], end=" ")
+
+
 # Driver code
 arr = [[6, 8], [1, 9], [2, 4], [4, 7]]
 mergeIntervals(arr)

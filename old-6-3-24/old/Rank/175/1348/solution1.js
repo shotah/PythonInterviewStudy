@@ -1,16 +1,16 @@
 /**
  * https://leetcode-cn.com/problems/tweet-counts-per-frequency/
- * 
+ *
  * 1348. 推文计数
- * 
+ *
  * Medium
- * 
+ *
  * 592ms 54.17%
  * 53.9mb 100.00%
  */
 const TweetCounts = function () {
   this.recordList = {};
-  
+
 }
 
 TweetCounts.prototype.recordTweet = function(tweetName, time) {

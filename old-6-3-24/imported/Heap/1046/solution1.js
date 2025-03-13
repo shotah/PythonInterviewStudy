@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/last-stone-weight/
- * 
+ *
  * 1046. 最后一块石头的重量
- * 
+ *
  * Easy
- * 
+ *
  * 56ms 98.88%
  * 34.2mb 100.00%
  */

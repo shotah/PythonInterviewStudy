@@ -1,10 +1,10 @@
 /**
  * 时间复杂度 O(n*m)
  * 空间复杂度 O(n*m)
- * @param {*} original 
+ * @param {*} original
  * @param {*} m s
- * @param {*} n 
- * @returns 
+ * @param {*} n
+ * @returns
  */
 const construct2DArray = function(original, m, n) {
     const maxLength = original.length;

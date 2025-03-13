@@ -1,11 +1,11 @@
 /**
- * 
+ *
  * https://leetcode.com/problems/shopping-offers/
- * 
+ *
  * 638. Shopping Offers
- * 
+ *
  * Medium
- * 
+ *
  */
 const shoppingOffers = (price, special, needs) => {
   const max = price.length
@@ -30,7 +30,7 @@ const shoppingOffers = (price, special, needs) => {
     }
     min = Math.min(shoppingOffers(price, special, newNeeds) + m, min)
   }
-  return min  
+  return min
 }
 
 function checkAmount (needs) {

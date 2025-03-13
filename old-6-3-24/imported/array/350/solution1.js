@@ -1,9 +1,9 @@
 /**
  * 哈希表
- * 
+ *
  * 时间复杂度 O(m + n)
  * 空间复杂度 O(min(m + n))
- * 
+ *
  */
 const intersect = (nums1, nums2) => {
   const record = new Map();

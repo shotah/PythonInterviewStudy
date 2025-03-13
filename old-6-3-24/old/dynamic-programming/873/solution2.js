@@ -1,10 +1,10 @@
 /**
  * https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/
- * 
+ *
  * 873. Length of Longest Fibonacci Subsequence
- * 
+ *
  * Medium
- * 
+ *
  */
 const lenLongestFibSubseq = A => {
   const max = A.length

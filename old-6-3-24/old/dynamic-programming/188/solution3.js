@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
- * 
+ *
  * 188. Best Time to Buy and Sell Stock IV
- * 
+ *
  * Hard
  */
 const maxProfit = (k, prices) => {
@@ -16,7 +16,7 @@ const maxProfit = (k, prices) => {
   }
 
   let dp = []
-  
+
   // 初始状态
   for (let i = 0; i <= max; i++) {
     dp[i] = 0

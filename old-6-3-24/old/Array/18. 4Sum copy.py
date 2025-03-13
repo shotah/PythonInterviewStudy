@@ -1,5 +1,6 @@
 import json
 
+
 class Solution:
     def fourSum(self, nums: list[int], target: int) -> list[list[int]]:
         if len(nums) < 4: return []

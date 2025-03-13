@@ -1,13 +1,13 @@
 /**
  * https://leetcode-cn.com/problems/partition-labels/
- * 
+ *
  * 763. 划分字母区间
- * 
+ *
  * Medium
- * 
+ *
  * 88ms 96.67%
  * 36.2mb 71.43%
- * 
+ *
  * 本题的核心在于：每段的长度由其中字母最大的出现下标决定
  */
 const partitionLabels = (S) => {

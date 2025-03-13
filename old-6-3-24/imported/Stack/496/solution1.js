@@ -1,13 +1,13 @@
 /**
  * https://leetcode-cn.com/problems/next-greater-element-i/
- * 
+ *
  * 496. 下一个更大元素 I
- * 
+ *
  * Easy
- * 
+ *
  * 72ms 77.24%
  * 34.9mb 79.10%
- * 
+ *
  * O(n*m)
  */
 const nextGreaterElement = (num1, num2) => {

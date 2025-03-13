@@ -1,7 +1,8 @@
 class Solution:
     traveled_path = []
+
     def __test_step(self, maze, row: int, column: int) -> bool:
-        if row == -1 or column == -1 or [row, column] in self.traveled_path: 
+        if row == -1 or column == -1 or [row, column] in self.traveled_path:
             return False
         try:
             print(f"Testing {maze[row][column]}")
@@ -9,7 +10,7 @@ class Solution:
                 self.traveled_path.append([row, column])
                 print(f"traveled_path: {self.traveled_path}")
                 return True
-        except:
+        except BaseException:
             return False
 
     def __take_step(self, maze: list[list[str]], location: list[int]) -> list[int]:
@@ -54,52 +55,53 @@ class Solution:
             if new_location == location:
                 return -1
             location = new_location
-            steps +=1
-            height_broken = 0 >= location[0] or location[0] >= height -1
-            length_broken = 0 >= location[1] or location[1] >= length -1
+            steps += 1
+            height_broken = 0 >= location[0] or location[0] >= height - 1
+            length_broken = 0 >= location[1] or location[1] >= length - 1
             print(f"height_broken {height_broken}, length_broken {length_broken}")
-            if height_broken or length_broken: break
+            if height_broken or length_broken:
+                break
         return steps
 
 
 maze = [
-    ["+","+",".","+"],
-    [".",".",".","+"],
-    ["+","+","+","."]
+    ["+", "+", ".", "+"],
+    [".", ".", ".", "+"],
+    ["+", "+", "+", "."]
 ]
-entrance = [1,2]
+entrance = [1, 2]
 
-maze = [["+","+","+"],[".",".","."],["+","+","+"]]
-entrance = [1,0]
+maze = [["+", "+", "+"], [".", ".", "."], ["+", "+", "+"]]
+entrance = [1, 0]
 
-maze =[[".","+"]]
-entrance = [0,0]
-
-maze = [
-    ["+",".","+","+","+","+","+"],
-    ["+",".","+",".",".",".","+"],
-    ["+",".","+",".","+",".","+"],
-    ["+",".",".",".","+",".","+"],
-    ["+","+","+","+","+",".","+"]
-]
-entrance = [0,1]
+maze = [[".", "+"]]
+entrance = [0, 0]
 
 maze = [
-    ["+",".","+","+","+","+","+"],
-    ["+",".","+",".",".",".","+"],
-    ["+",".","+",".","+",".","+"],
-    ["+",".",".",".","+",".","+"],
-    ["+","+","+","+","+","+","."]
+    ["+", ".", "+", "+", "+", "+", "+"],
+    ["+", ".", "+", ".", ".", ".", "+"],
+    ["+", ".", "+", ".", "+", ".", "+"],
+    ["+", ".", ".", ".", "+", ".", "+"],
+    ["+", "+", "+", "+", "+", ".", "+"]
 ]
-entrance = [0,1]
+entrance = [0, 1]
+
 maze = [
-    ["+",".","+","+","+","+","+"],
-    ["+",".","+",".",".",".","+"],
-    ["+",".","+",".","+",".","+"],
-    ["+",".",".",".",".",".","+"],
-    ["+","+","+","+",".","+","."]
+    ["+", ".", "+", "+", "+", "+", "+"],
+    ["+", ".", "+", ".", ".", ".", "+"],
+    ["+", ".", "+", ".", "+", ".", "+"],
+    ["+", ".", ".", ".", "+", ".", "+"],
+    ["+", "+", "+", "+", "+", "+", "."]
 ]
-entrance = [0,1]
+entrance = [0, 1]
+maze = [
+    ["+", ".", "+", "+", "+", "+", "+"],
+    ["+", ".", "+", ".", ".", ".", "+"],
+    ["+", ".", "+", ".", "+", ".", "+"],
+    ["+", ".", ".", ".", ".", ".", "+"],
+    ["+", "+", "+", "+", ".", "+", "."]
+]
+entrance = [0, 1]
 print(
-  Solution().nearestExit(maze, entrance)
+    Solution().nearestExit(maze, entrance)
 )

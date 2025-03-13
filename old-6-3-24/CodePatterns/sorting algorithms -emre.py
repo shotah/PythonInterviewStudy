@@ -1,7 +1,8 @@
 # https://emre.me/algorithms/sorting-algorithms/
 
 # Time Complexities of Sorting Algorithms
-# If we are talking about algorithms, then the most important factor which affects our decision process is time and space complexity.
+# If we are talking about algorithms, then the most important factor which
+# affects our decision process is time and space complexity.
 
 # Algorithm	Time Complexity (Best)	Time Complexity (Average)	Time Complexity (Worst)	Space Complexity
 # Bubble Sort	O(n)	O(n2)	O(n2)	O(1)
@@ -15,6 +16,9 @@
 
 
 # Bubble Sort
+import heapq
+
+
 def bubble_sort(array):
     # We set swapped to True so the loop runs at least once
     swapped = True
@@ -152,7 +156,6 @@ def heap_sort(arr):
 
 
 # Heap Sort With Heapq
-import heapq
 
 
 def heap_sort(array):
@@ -228,6 +231,7 @@ def quick_sort_helper(items, low, high):
 # sort()
 # We can change our list to have it’s contents sorted with the sort() method:
 
+
 arr = [4, 7, 224, 19, 1, 5, 3, 10, 187, 13, 2]
 arr.sort()
 
@@ -240,8 +244,8 @@ print(arr)
 # Output: [224, 187, 19, 13, 10, 7, 5, 4, 3, 2, 1]
 
 # sorted()
-# The sorted() function can sort any iterable object, 
-# that includes - lists, strings, tuples, dictionaries, sets, 
+# The sorted() function can sort any iterable object,
+# that includes - lists, strings, tuples, dictionaries, sets,
 # and custom iterators you can create.
 
 arr = [4, 7, 224, 19, 1, 5, 3, 10, 187, 13, 2]
@@ -249,7 +253,7 @@ sorted_arr = sorted(arr)
 
 print(sorted_arr)
 # Output: [1, 2, 3, 4, 5, 7, 10, 13, 19, 187, 224]
- 
+
 reverse_sorted_arr = sorted(arr, reverse=True)
 
 print(reverse_sorted_arr)

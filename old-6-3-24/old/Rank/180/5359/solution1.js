@@ -1,20 +1,20 @@
 /**
  * https://leetcode-cn.com/problems/maximum-performance-of-a-team/
- * 
+ *
  * 5359. 最大的团队表现值
- * 
+ *
  * Hard
- * 
+ *
  * 1、堆 实现优先队列
  * 2、BigInt
- * 
+ *
  * 360ms 100.00%;
  * 60.4mb 100.00%
  */
 const maxPerformance = (n, speed, efficiency, k) => {
   let list = efficiency.map((item, index) => [item, speed[index]]);
   list.sort((a, b) => b[0] - a[0]);
-  
+
   let pq = new PriorityQueue();
   let sum = 0;
   let ans = 0;

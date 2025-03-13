@@ -1,5 +1,6 @@
 from typing import Optional
 
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -7,16 +8,18 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 class Solution:
     def countNodes(self, root: Optional[TreeNode]) -> int:
-      count = 0
-      if root is None: return count
-      if root.left:
-        count += self.countNodes(root.left)
-      if root.right:
-        count += self.countNodes(root.right)
-      count += 1
-      return count
+        count = 0
+        if root is None:
+            return count
+        if root.left:
+            count += self.countNodes(root.left)
+        if root.right:
+            count += self.countNodes(root.right)
+        count += 1
+        return count
 
 
 # [1,2,3,4,5,6]
@@ -37,4 +40,3 @@ print(count)
 #     start_node.val
 #   )
 #   start_node = start_node.right
-

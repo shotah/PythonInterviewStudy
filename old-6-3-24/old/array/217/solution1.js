@@ -2,10 +2,10 @@
  * 哈希表
  * 时间复杂度 O(n)
  * 空间复杂度 O(n)
- * 
+ *
  * 因为本题只需要记录是否重复，所以直接使用 JavaScript 中的 Set 数据结构记录是否重复即可。
- * @param {*} nums 
- * @returns 
+ * @param {*} nums
+ * @returns
  */
 const containsDuplicate = function(nums) {
   const record = new Set();

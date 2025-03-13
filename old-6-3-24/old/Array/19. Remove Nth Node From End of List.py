@@ -4,6 +4,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 class Solution:
     def removeNthFromEnd(self, head, n):
         fast = slow = head
@@ -18,22 +19,21 @@ class Solution:
         return head
 
 
-
-nums = [1,2,3,4,5]
+nums = [1, 2, 3, 4, 5]
 n = 2
 # nums = [1]
 # n = 1
-nums = [1,2]
+nums = [1, 2]
 n = 1
-nums = [1,2]
+nums = [1, 2]
 n = 0
 # [2]
-nums = [1,2,3,4,5]
+nums = [1, 2, 3, 4, 5]
 n = 2
 
 head = ListNode(nums.pop(0))
 node = head
-while len(nums) > 0 :
+while len(nums) > 0:
     node.next = ListNode(nums.pop(0))
     node = node.next
 

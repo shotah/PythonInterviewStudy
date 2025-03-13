@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/ugly-number-iii/
- * 
+ *
  * 1201. 丑数 III
- * 
+ *
  * Medium
- * 
+ *
  * time limit
  */
 const nthUglyNumber = (n, a, b, c) => {

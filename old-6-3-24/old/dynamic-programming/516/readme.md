@@ -20,7 +20,7 @@
 
 ```S
             dp[i + 1]dp[j - 1]  s[i] = s[j]
-dp[i][j] =     
+dp[i][j] =
             max(dp[i + 1][j], dp[i][j - 1]) s[i] != s[j]
 ```
 

@@ -1,13 +1,13 @@
 /**
  * https://leetcode-cn.com/problems/bulb-switcher-iii/
- * 
+ *
  * 1375. 灯泡开关 III
- * 
+ *
  * Medium
- * 
+ *
  * 64ms 100.00%
  * 41mb 100.00%
- * 
+ *
  * 重点如何保证当前是 前 n 盏灯全亮
  */
 

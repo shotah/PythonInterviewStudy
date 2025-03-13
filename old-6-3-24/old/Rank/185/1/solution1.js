@@ -1,12 +1,12 @@
 /**
  * https://leetcode-cn.com/problems/reformat-the-string/
- * 
+ *
  * 重新格式化字符串
- * 
+ *
  * Easy
- * 
+ *
  * 时间复杂度 O(n)
- * 
+ *
  * 空间复杂度 O(n)
  */
 const reformat = s => {

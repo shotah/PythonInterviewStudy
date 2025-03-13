@@ -1,11 +1,11 @@
 /**
- * 
+ *
  * https://leetcode.com/problems/combination-sum-iv/
- * 
+ *
  * 377. Combination Sum IV
- * 
+ *
  * Medium
- * 
+ *
  */
 const combinationSum4 = (nums, target) => {
   const max = nums.length

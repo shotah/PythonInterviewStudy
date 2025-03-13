@@ -1,9 +1,11 @@
 class Solution:
     def closeStrings(self, word1: str, word2: str) -> bool:
-        if len(word1) != len(word2): return False
+        if len(word1) != len(word2):
+            return False
         return True
-      
-t =[
+
+
+t = [
     ["abc", "bca", True],
     ["a", "aa", False],
     ["cabbba", "cabbba", True],

@@ -1,7 +1,7 @@
 /**
  * 时间复杂度：O(n)
  * 空间复杂度：O(n)
- * 
+ *
  */
 const constructFromPrePost = (pre, post) => {
   if (pre.length === 0) {

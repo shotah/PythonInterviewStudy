@@ -22,7 +22,7 @@ const reverseBetween = (head, m, n) => {
 
   preHead.next = null;
   rightHead.next = null;
-  
+
   reverseLinkedList(leftHead);
 
   preHead.next = rightHead;

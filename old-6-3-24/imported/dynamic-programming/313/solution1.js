@@ -1,12 +1,12 @@
 /**
  * https://leetcode-cn.com/problems/super-ugly-number/
- * 
+ *
  * 313. 超级丑数
- * 
+ *
  * Medium
- * 
+ *
  * 136ms 30.00%
- * 
+ *
  * 43mb 20.83%
  */
 const nthSuperUglyNumber = (n, primes) => {

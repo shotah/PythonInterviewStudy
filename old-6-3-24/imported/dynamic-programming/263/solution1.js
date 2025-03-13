@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/ugly-number/
- * 
+ *
  * 263. 丑数
- * 
+ *
  * Easy
- * 
+ *
  * 72ms 94.92%
  * 35.6mb 42.86%
  */

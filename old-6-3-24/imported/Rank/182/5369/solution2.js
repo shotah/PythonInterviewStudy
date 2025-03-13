@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/count-number-of-teams/
- * 
+ *
  * 5369. 统计作战单位数
- * 
+ *
  * Medium
- * 
+ *
  * 64ms 100.00%
  * 34.2mb 100.00%
  */

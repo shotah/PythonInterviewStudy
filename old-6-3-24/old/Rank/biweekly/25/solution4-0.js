@@ -1,13 +1,13 @@
 /**
  * https://leetcode-cn.com/problems/number-of-ways-to-wear-different-hats-to-each-other/
- * 
+ *
  * 每个人戴不同帽子的方案数
- * 
+ *
  * Hard
- * 
- * 
+ *
+ *
  * 时间复杂度 O(m^n);
- * 
+ *
  * 哈希表 + DFS
  */
 const MOD = 10 ** 9 + 7;

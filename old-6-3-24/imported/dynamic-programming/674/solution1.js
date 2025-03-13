@@ -1,27 +1,27 @@
 /**
- * 
+ *
  * https://leetcode.com/problems/longest-continuous-increasing-subsequence/
- * 
+ *
  * 674. Longest Continuous Increasing Subsequence
- * 
+ *
  * [Easy]
- * 
+ *
  * dp
- * 
+ *
  * 定义状态
- * 
+ *
  *  dp[i]表示以下标i结尾的递增序列的长度
- * 
+ *
  * 边界状态
- * 
+ *
  *  无
- * 
+ *
  * 状态转移方程
  *             1               nums[i] <= nums[i - 1]
  *  dp[i] =
  *             dp[i - 1] + 1   nums[i] > nums[i - 1]
- * 
- * 
+ *
+ *
  */
 
 const findLengthOfLCIS = nums => {

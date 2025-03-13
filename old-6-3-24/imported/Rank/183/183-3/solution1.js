@@ -1,9 +1,9 @@
 /**
- * 
+ *
  * https://leetcode-cn.com/problems/longest-happy-string/submissions/
- * 
+ *
  * 最长快乐字符串
- * 
+ *
  * 72ms 100.00%
  * 35.7mb 100.00%
  */
@@ -34,7 +34,7 @@ const longestDiverseString = (a, b, c) => {
       currentKey = key;
       break;
     }
-    
+
     let count = 0;
     for (let j = 0; j < 3; j++) {
       if (list[j][1] === 0) {

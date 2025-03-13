@@ -2,17 +2,19 @@
 
 # How to identify?
 
-# This approach is quite useful to solve the problems whenever 
-# we are given a sorted Array or Linked List or Matrix, 
+# This approach is quite useful to solve the problems whenever
+# we are given a sorted Array or Linked List or Matrix,
 # and we are asked to find a certain element.
 
-# This pattern describes an efficient way to handle all 
+# This pattern describes an efficient way to handle all
 # problems involving Binary Search.
 
 
 # LeetCode 704 - Binary Search [easy]
 
-# Given a sorted (in ascending order) integer array nums of n elements and a target value, write a function to search target in nums. If target exists, then return its index, otherwise return -1.
+# Given a sorted (in ascending order) integer array nums of n elements and
+# a target value, write a function to search target in nums. If target
+# exists, then return its index, otherwise return -1.
 
 # Example 1:
 
@@ -32,6 +34,7 @@
 
 
 from typing import List
+
 
 class Solution:
     def search(self, nums: List[int], target: int) -> int:

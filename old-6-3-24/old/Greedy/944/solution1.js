@@ -1,12 +1,12 @@
 /**
  * https://leetcode-cn.com/problems/delete-columns-to-make-sorted/
- * 
+ *
  * 944. 删列造序
- * 
+ *
  * Easy
- * 
+ *
  * HashTable
- * 
+ *
  * 96ms 98.46%
  * 39.2mb 72.22%
  */

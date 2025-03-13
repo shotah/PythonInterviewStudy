@@ -1,5 +1,7 @@
 import time
+
 start_time = time.time()
+
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
@@ -11,6 +13,7 @@ class Solution:
             max_substring_length = max(max_substring_length, index - start_of_tested_string + 1)
             char_position_dictionary[char] = index + 1
         return max_substring_length
+
 
 s = "abcabcbb"
 # s = "aa"

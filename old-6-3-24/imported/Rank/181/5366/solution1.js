@@ -1,8 +1,8 @@
 /**
  * https://leetcode-cn.com/problems/check-if-there-is-a-valid-path-in-a-grid/
- * 
+ *
  * 1391. 检查网格中是否存在有效路径
- * 
+ *
  * Medium
  */
 const direactions = [[-1, 0], [0, 1], [1, 0], [0, -1]] // 上 右 下 左

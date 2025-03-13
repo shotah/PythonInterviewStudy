@@ -2,11 +2,11 @@
 
 # How to identify?
 
-# This approach is quite useful when dealing with the problems 
+# This approach is quite useful when dealing with the problems
 # involving traversal of a tree in a level-by-level order.
 
-# When the problem asks the traversal of a tree, 
-# you should think about Breadth First Search (BFS) 
+# When the problem asks the traversal of a tree,
+# you should think about Breadth First Search (BFS)
 # pattern and using it in combination with the Queue structure.
 
 
@@ -26,14 +26,17 @@
 #   [9,20],
 #   [15,7]
 # ]\
-  
+
 # Breadth First Search Solution
 from typing import List
+
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
+
 
 class Solution:
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
@@ -59,4 +62,5 @@ class Solution:
 
 # Time Complexity: O(N) where N is the total number of nodes in the tree.
 
-# Space Complexity: O(N), since we need an O(N) space to return the result. We will also need O(N) for the queue.
+# Space Complexity: O(N), since we need an O(N) space to return the
+# result. We will also need O(N) for the queue.

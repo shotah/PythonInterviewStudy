@@ -1,12 +1,12 @@
 /**
  * https://leetcode-cn.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/
- * 
+ *
  * 1333. 餐厅过滤器
- * 
+ *
  * Medium
- * 
+ *
  * 排序题目
- * 
+ *
  * 88ms 90.91%
  * 41.7mb 100.00%
  */

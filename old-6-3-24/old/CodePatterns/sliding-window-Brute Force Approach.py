@@ -1,11 +1,12 @@
 import sys
-  
+
 # O(n * k) solution for finding
 # maximum sum of a subarray of size k
 INT_MIN = -sys.maxsize - 1
-  
+
 # Returns maximum sum in a
 # subarray of size k.
+
 
 def maxSum(arr, n, k):
     # Initialize result
@@ -19,6 +20,7 @@ def maxSum(arr, n, k):
         # Update result if required.
         max_sum = max(current_sum, max_sum)
     return max_sum
+
 
 # Driver code
 arr = [1, 4, 2, 10, 2,

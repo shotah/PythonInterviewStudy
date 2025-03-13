@@ -1,14 +1,14 @@
 /**
  * https://leetcode-cn.com/problems/sort-integers-by-the-number-of-1-bits/
- * 
- * 
+ *
+ *
  * 5323. 根据数字二进制下 1 的数目排序
- * 
+ *
  * Easy
- * 
+ *
  * 76ms 100.00%
  * 36.1mb 100.00%
- * 
+ *
  */
 
 const sortByBits = arr => {

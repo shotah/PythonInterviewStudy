@@ -1,20 +1,20 @@
 /**
  * https://leetcode-cn.com/problems/find-the-duplicate-number/
- * 
+ *
  * 287. 寻找重复数
- * 
+ *
  * Medium
- * 
+ *
  * 二分搜索方法
- * 
+ *
  * 不使用额外空间
- * 
+ *
  * 有序数组 1 ~ n - 1
- * 
+ *
  * 小于等于中间数的个数 来判断 重复数字落在那个区间
- * 
+ *
  * O(nlogn)
- * 
+ *
  * 84ms 86.83%
  * 35.2mb 71.43%
  */

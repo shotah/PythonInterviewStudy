@@ -12,22 +12,23 @@ class Solution:
                 else:
                     s_c = bytes([s_ch[0] - 1]).decode("utf-8")
                 print(s_c, t_c, maxCost)
-                maxCost -=1
+                maxCost -= 1
             if s_c == t_c:
                 result += 1
             if not maxCost:
                 return result
         return result
 
+
 vals = [
-#   ["abcd", "bcdf", 3, 3],
-#   ["abcd", "cdef", 3, 1],
-#   ["abcd", "acde", 0, 1],
-  ["krrgw", "zjxss", 19, 2]
+    #   ["abcd", "bcdf", 3, 3],
+    #   ["abcd", "cdef", 3, 1],
+    #   ["abcd", "acde", 0, 1],
+    ["krrgw", "zjxss", 19, 2]
 ]
 
 for s, t, maxCost, expected in vals:
     sol = Solution().equalSubstring(s, t, maxCost)
     print(
-      f"{sol} == {expected}"
+        f"{sol} == {expected}"
     )

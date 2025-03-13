@@ -13,6 +13,7 @@ class Solution:
             result[template_num] += char
         return ''.join(result)
 
+
 s = "PAYPALISHIRING"
 numRows = 3
 print(Solution().convert(s, numRows))

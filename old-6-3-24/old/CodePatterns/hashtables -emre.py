@@ -64,8 +64,9 @@ class HashTable:
 
     def __setitem__(self, key, data):
         self.put(key, data)
-        
+
 # Now we can try our HashTable() implementation together.
+
 
 hash_table = HashTable()
 hash_table[99] = "cat"
@@ -82,6 +83,3 @@ print(hash_table.slots)
 
 print(hash_table.data)
 # Output: ['tiger', None, 'lion', None, 'dog', 'cow', 'pig', None, 'cat', None, 'bird', 'goat', None]
-
-
-

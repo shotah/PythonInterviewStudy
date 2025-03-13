@@ -1,13 +1,13 @@
 /**
  * https://leetcode-cn.com/problems/k-closest-points-to-origin/submissions/
- * 
+ *
  * 973. 最接近原点的 K 个点
- * 
+ *
  * Medium
- * 
+ *
  * 192ms 100.00%
  * 48mb 70%
- * 
+ *
  * O(n)
  */
 const kClosest = (points, K) => {

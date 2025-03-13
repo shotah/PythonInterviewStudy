@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/cinema-seat-allocation/submissions/
- * 
+ *
  * 5349. 安排电影院座位
- * 
+ *
  * Medium
- * 
+ *
  * 360ms 100.00%
  * 49.4mb 100.00%
  */

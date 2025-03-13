@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/count-largest-group/
- * 
+ *
  * 统计最大组的数目
- * 
+ *
  * Easy
- * 
+ *
  * 84ms 100.00%
  * 37.8mb 100.00%
  */

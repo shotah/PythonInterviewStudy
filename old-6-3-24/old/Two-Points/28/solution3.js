@@ -1,14 +1,14 @@
 /**
  * https://leetcode-cn.com/problems/implement-strstr/
- * 
+ *
  * 28. 实现strStr()
- * 
+ *
  * Easy
- * 
+ *
  * Boyer Moore
- * 
+ *
  * 后移 = 坏字符的位置 - 该字符在pattern出现的位置
- * 
+ *
  * 95.96%
  * 35.78%
  */
@@ -45,4 +45,3 @@ const strStr = (haystack, needle) => {
   }
   return -1
 }
-

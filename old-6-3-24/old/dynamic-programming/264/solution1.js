@@ -1,13 +1,13 @@
 /**
  * https://leetcode-cn.com/problems/ugly-number-ii/
- * 
+ *
  * 264. 丑数 II
- * 
+ *
  * Medium
- * 
+ *
  * 68ms 94.37%
  * 36.6mb 96.92%
- * 
+ *
  */
 const nthUglyNumber = n => {
   const ans = [1];

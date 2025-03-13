@@ -10,14 +10,15 @@
 # after the third jump, at position 10 + 30 + 30 + 30 = 100
 from math import ceil
 
-def solution(START, GOAL, DISTANCE):
-    if START >= GOAL: return 0
-    return ceil((GOAL - START)/DISTANCE)
 
+def solution(START, GOAL, DISTANCE):
+    if START >= GOAL:
+        return 0
+    return ceil((GOAL - START) / DISTANCE)
 
 
 X = 10
 Y = 85
 D = 30
-s = solution(X,Y,D)
+s = solution(X, Y, D)
 print(s)

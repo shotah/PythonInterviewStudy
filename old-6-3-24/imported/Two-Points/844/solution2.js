@@ -1,11 +1,11 @@
 /**
  * https://leetcode-cn.com/problems/backspace-string-compare/
- * 
+ *
  * 844. 比较含退格的字符串
- * 
+ *
  * Easy
- * 
- * 
+ *
+ *
  */
 var backspaceCompare = function (S, T) {
     let a = backspace(S);

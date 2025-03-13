@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/linked-list-in-binary-tree/
- * 
+ *
  * 5346. 二叉树中的列表
- * 
- * Medium 
- * 
+ *
+ * Medium
+ *
  * 88ms 100.00%
  * 42.4mb 100.00%
  */

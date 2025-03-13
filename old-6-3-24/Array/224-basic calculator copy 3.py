@@ -2,11 +2,13 @@ class Solution:
     def __recurs(self, incoming_string, index):
         total_sum = curr_sum = 0
         sign = 1
-        while index < len(incoming_string)-1:
+        while index < len(incoming_string) - 1:
             index += 1
             curr_char = incoming_string[index]
-            if curr_char == " ": continue
-            if curr_char == ")": break
+            if curr_char == " ":
+                continue
+            if curr_char == ")":
+                break
             if curr_char.isdigit():
                 curr_sum = 10 * curr_sum + int(curr_char)
             elif curr_char == "(":
@@ -16,8 +18,10 @@ class Solution:
                 sign = 1 if curr_char == "+" else -1
                 curr_sum = 0
         return index, total_sum + (sign * curr_sum)
+
     def calculate(self, incoming_string: str) -> int:
         return self.__recurs(incoming_string, -1)[1]
+
 
 s = "(1+(4+5+2)-3)+(6+8)"
 # s = "1 + 1"

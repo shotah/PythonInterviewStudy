@@ -1,5 +1,5 @@
 from collections import deque
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
 
 # Definition for a binary tree node.

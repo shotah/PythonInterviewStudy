@@ -1,12 +1,11 @@
 # https://emre.me/coding-patterns/in-place-reversal-of-a-linked-list/
 
 # How to identify?
-# This approach is quite useful when dealing with reversal of Linked Lists 
+# This approach is quite useful when dealing with reversal of Linked Lists
 # when there is a constraint to do it without using extra memory.
 
-# When the problem gives this constraint and Linked Lists 
+# When the problem gives this constraint and Linked Lists
 # data structure, you should think about In-place Reversal of a Linked List pattern.
-
 
 
 # Reverse a singly linked list.
@@ -22,6 +21,7 @@ class ListNode:
         self.val = val
         self.next = None
 
+
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
         if head is None:
@@ -34,6 +34,6 @@ class Solution:
             previous = current  # point previous to the current node
             current = next  # move on
         return previous
-      
+
 # Time Complexity: O(N) where N is the number of nodes in the Linked Lists.
 # Space Complexity: O(1), algorithm runs in constant space.

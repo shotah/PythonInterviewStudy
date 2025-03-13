@@ -1,12 +1,12 @@
 /**
  * https://leetcode-cn.com/problems/restore-the-array/
- * 
+ *
  * 恢复数组
- * 
+ *
  * Hard
- * 
+ *
  * 时间复杂度 O(n^2)
- * 
+ *
  * 空间复杂度 O(n)
  */
 const MOD = 10 ** 9 + 7;

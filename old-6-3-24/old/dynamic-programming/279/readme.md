@@ -19,7 +19,7 @@
   &emsp;&emsp;状态转移方程：
 
 ```s
-  if k * k = i 
+  if k * k = i
     dp[i] = 1
   else
     dp[i] = Math.min(dp[i], dp[i - j] + dp[j])

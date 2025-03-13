@@ -1,12 +1,12 @@
 /**
  * https://leetcode-cn.com/problems/apply-discount-every-n-orders/
- * 
+ *
  * 1357. 每隔 n 个顾客打折
- * 
+ *
  * Medium
- * 
+ *
  * 276ms 100.00%
- * 
+ *
  * 56.8mb 100.00%
  */
 

@@ -1,10 +1,10 @@
 /**
  * https://leetcode.com/problems/find-smallest-letter-greater-than-target/
- * 
+ *
  * 744. Find Smallest Letter Greater Than Target
- * 
+ *
  * Easy
- * 
+ *
  * 48ms 100.00%
  * 36.3mb 72.67%
  */

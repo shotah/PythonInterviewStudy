@@ -14,18 +14,20 @@ class Solution:
         "IV": 4,
         "I": 1,
     }
+
     def romanToInt(self, s: str) -> int:
         result = 0
         arr_s = list(s)
         for i in range(len(arr_s)):
-            if len(arr_s) -1 > i and self.t[arr_s[i]] < self.t[arr_s[i+1]]:
+            if len(arr_s) - 1 > i and self.t[arr_s[i]] < self.t[arr_s[i + 1]]:
                 result -= self.t[arr_s[i]]
             else:
                 result += self.t[arr_s[i]]
         return result
 
+
 # expected 1994
 s = "MCMXCIV"
 print(
-  Solution().romanToInt(s)
+    Solution().romanToInt(s)
 )

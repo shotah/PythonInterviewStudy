@@ -2,8 +2,8 @@
  * 模拟
  * 时间复杂度 O(n)
  * 空间复杂度 O(1)
- * @param {*} n 
- * @returns 
+ * @param {*} n
+ * @returns
  */
 const totalMoney = function(n) {
     let ans = 0;

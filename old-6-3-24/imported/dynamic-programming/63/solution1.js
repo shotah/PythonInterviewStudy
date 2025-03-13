@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/unique-paths-ii/
- * 
+ *
  * 63. Unique Paths II
- * 
+ *
  * Medium
  */
 const uniquePathsWithObstacles = obstacleGrid => {
@@ -24,7 +24,7 @@ const uniquePathsWithObstacles = obstacleGrid => {
       dp[i] = [dp[i - 1][0]]
     }
   }
-  
+
   for (let j = 1; j < y; j++) {
     if (obstacleGrid[0][j] == 1) {
       dp[0][j] = 0

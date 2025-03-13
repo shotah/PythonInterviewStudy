@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/closest-divisors/
- * 
+ *
  * 5171. 最接近的因数
- * 
+ *
  * Medium
- * 
+ *
  * 108ms 100.00%
  * 34.7mb 100.00%
  */

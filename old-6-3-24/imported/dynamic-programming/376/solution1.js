@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/wiggle-subsequence/
- * 
+ *
  * 376. Wiggle Subsequence
- * 
+ *
  * Medium
  */
 const wiggleMaxLength = nums => {

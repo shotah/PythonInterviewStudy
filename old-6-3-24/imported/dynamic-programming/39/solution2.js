@@ -1,20 +1,20 @@
 /**
- * 
+ *
  * https://leetcode.com/problems/combination-sum/
- * 
+ *
  * 39. Combination Sum
- * 
+ *
  * Medium
- * 
+ *
  * DFS
- * 
+ *
  */
 var combinationSum = function(candidates, target) {
   const ans = []
   const dfs = (currentIndex, currentArray, target) => {
     if (target === 0) {
       ans.push(currentArray.slice())
-      return 
+      return
     }
     if (target < 0) {
       return

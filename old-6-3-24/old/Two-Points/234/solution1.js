@@ -1,13 +1,13 @@
 /**
  * https://leetcode-cn.com/problems/palindrome-linked-list/
- * 
+ *
  * 234. 回文链表
- * 
+ *
  * Easy
- * 
+ *
  * 96.51%
  * 37.67%
- * 
+ *
  */
 const isPalindrome = head => {
   const arr = []

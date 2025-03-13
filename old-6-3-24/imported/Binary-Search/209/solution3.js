@@ -1,12 +1,12 @@
 /**
  * https://leetcode.com/problems/minimum-size-subarray-sum/
- * 
+ *
  * 209. Minimum Size Subarray Sum
- * 
+ *
  * Medium
- * 
+ *
  * 双指针 解法
- * 
+ *
  * 76ms 97.96%
  * 35.5MB 40.00%
  */
@@ -26,7 +26,7 @@ const minSubArrayLen = (s, nums) => {
     } else {
       sum += nums[++end]
     }
-  } 
+  }
 
   if (ans === Number.MAX_SAFE_INTEGER) {
     return 0

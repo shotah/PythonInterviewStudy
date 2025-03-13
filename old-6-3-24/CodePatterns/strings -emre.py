@@ -13,7 +13,9 @@ print(emre[4:5])
 
 
 # Concatenation and Repetition
-# Strings are immutable in Python, they cannot be modified after being created. Using concatenation (+) and repetition (*) operators returns a new string.
+# Strings are immutable in Python, they cannot be modified after being
+# created. Using concatenation (+) and repetition (*) operators returns a
+# new string.
 
 # created some strings
 str1 = "emre"
@@ -46,7 +48,8 @@ print("e.m.r.e" not in emre)
 
 
 # Raw String
-# Raw string operator (r) is useful for the cases where you need to print the actual meaning of escape character (\) such as C:\Program Files.
+# Raw string operator (r) is useful for the cases where you need to print
+# the actual meaning of escape character (\) such as C:\Program Files.
 
 # Output: "emre.me"
 print("\"emre.me\"")
@@ -56,7 +59,9 @@ print(r"\"emre.me\"")
 
 
 # .upper() and .lower()
-# The functions .upper() and .lower() will return a string with all the letters from the original string converted to upper or lower case letters.
+# The functions .upper() and .lower() will return a string with all the
+# letters from the original string converted to upper or lower case
+# letters.
 
 # created a new string
 str1 = "Emre.Me"
@@ -86,7 +91,6 @@ print(str1.swapcase())
 
 # Output: Emre dot me
 print(str1.capitalize())
-
 
 
 # Boolean Methods
@@ -175,7 +179,8 @@ print(str1.split("."))
 print(str1.replace(".", "-"))
 
 # .strip(), .rstrip() and .lstrip()
-# Returns a copy of the string with the leading .lstrip() and trailing .rstrip() whitespace removed. Method .strip() removes both.
+# Returns a copy of the string with the leading .lstrip() and trailing
+# .rstrip() whitespace removed. Method .strip() removes both.
 
 # create a new string
 str1 = "   emre.me   "
@@ -211,11 +216,13 @@ str1 = "emre.me"
 
 # Output: 3
 print(str1.count("e"))
-# With using three parameters .count(substring, left, right), the count is performed within the slice [left:right].
+# With using three parameters .count(substring, left, right), the count is
+# performed within the slice [left:right].
 
 # create a new string
 str1 = "emre.me"
 
 # Output: 1
 print(str1.count("e", 1, 6))
-# Output is 1 because, by writing .count("e", 1, 6), we actually count the number of e characters in [1:6] split of emre.me, which is mre.m.
+# Output is 1 because, by writing .count("e", 1, 6), we actually count the
+# number of e characters in [1:6] split of emre.me, which is mre.m.

@@ -1,5 +1,6 @@
 import collections
 
+
 class Solution:
     def isNStraightHand(self, hand, groupSize):
         dict_of_items_and_count = collections.Counter(hand)
@@ -12,11 +13,10 @@ class Solution:
         return True
 
 
-
 # true
-hand = [1,2,3,6,2,3,4,7,8]
+hand = [1, 2, 3, 6, 2, 3, 4, 7, 8]
 groupSize = 3
-# #False 
+# #False
 # hand = [8,10,12]
 # groupSize = 3
 # # false
@@ -24,5 +24,5 @@ groupSize = 3
 # groupSize = 10
 
 print(
-  Solution().isNStraightHand(hand, groupSize)
+    Solution().isNStraightHand(hand, groupSize)
 )

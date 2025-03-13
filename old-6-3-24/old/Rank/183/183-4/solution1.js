@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/stone-game-iii/solution/dp-yi-ge-zhuan-yi-fang-cheng-jie-jue-by-enko-2/
- * 
+ *
  * 5379. 石子游戏 III
- * 
+ *
  * Hard
- * 
+ *
  * 156ms 100.00%
  * 59.2mb 100.00%
  */

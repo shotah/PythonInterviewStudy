@@ -1,11 +1,11 @@
 /**
  * 时间复杂度 O(n)
  * 空间复杂度 O(1)
- * 
+ *
  * 单独一段 还是连续一段
- * 
+ *
  * max = Number.max(连续的一段，新的起点)
- * @param {*} nums 
+ * @param {*} nums
  */
 const maxSubArray = (nums) => {
   let ans = nums[0]

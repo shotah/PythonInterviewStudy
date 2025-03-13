@@ -44,19 +44,22 @@
 # each element of array A is an integer within the range [1..1,000,000,000].
 
 def solution(a):
-    if not a: return 0
-    if len(a) ==1: return 0
+    if not a:
+        return 0
+    if len(a) == 1:
+        return 0
     a.sort()
     for i, n in enumerate(a):
-        if i == len(a) -1:
+        if i == len(a) - 1:
             return 1
-        if n+1 != a[i+1]:
+        if n + 1 != a[i + 1]:
             return 0
     return 1
 
-a = [3,1,4]
+
+a = [3, 1, 4]
 # 0
-a = [3,1,4, 2]
+a = [3, 1, 4, 2]
 # 1
 
 

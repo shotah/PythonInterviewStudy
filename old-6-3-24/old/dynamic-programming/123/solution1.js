@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
- * 
+ *
  * 123. Best Time to Buy and Sell Stock III
- * 
+ *
  * Hard
  */
 const maxProfit = prices => {
@@ -10,7 +10,7 @@ const maxProfit = prices => {
   if (max < 2) {
     return 0
   }
-  
+
   // 第一次交易的状态
   const sell1 = [0]
   const hold1 = [-prices[0]]

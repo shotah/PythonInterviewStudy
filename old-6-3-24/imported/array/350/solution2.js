@@ -6,7 +6,7 @@
 const intersect = (nums1, nums2) => {
     nums1.sort((a, b) => a - b);
     nums2.sort((a, b) => a - b);
-    
+
     const maxLen1 = nums1.length;
     const maxLen2 = nums2.length;
 

@@ -1,15 +1,15 @@
 /**
  * https://leetcode-cn.com/problems/ugly-number-iii/
- * 
+ *
  * 1201. 丑数 III
- * 
+ *
  * Medium
- * 
+ *
  * 二分法
- * 
+ *
  * 60ms 94.12%
  * 34.2mb 80.00%
- * 
+ *
  */
 const nthUglyNumber = (n, a, b, c) => {
   let start = 1;

@@ -10,7 +10,7 @@ function binarySearch(arr, target) {
       end = mid
     }
   }
-  
+
   return start
 }
 

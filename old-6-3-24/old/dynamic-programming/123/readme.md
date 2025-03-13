@@ -12,7 +12,7 @@ const maxProfit = prices => {
   if (max < 2) {
     return 0
   }
-  
+
   // 第一次交易的状态
   const sell1 = [0]
   const hold1 = [-prices[0]]

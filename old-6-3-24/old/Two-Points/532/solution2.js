@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/
- * 
+ *
  * 532. 数组中的K-diff数对
- * 
+ *
  * Easy
- * 
+ *
  * 99.12%
  * 25.00%
  */
@@ -15,7 +15,7 @@ const findPairs = (nums, k) => {
 
   const record = new Set()
   const result = new Set()
-  
+
 
   for (let i = 0, max = nums.length; i < max; i++) {
     const num = nums[i]

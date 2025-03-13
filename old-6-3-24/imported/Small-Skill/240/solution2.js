@@ -1,14 +1,14 @@
 /**
  * https://leetcode.com/problems/search-a-2d-matrix-ii/
- * 
+ *
  * 240. Search a 2D Matrix II
- * 
+ *
  * Medium
- * 
+ *
  * 76ms 94.61%
- * 
+ *
  * 37.6mb 37.71%
- * 
+ *
  */
 const searchMatrix = (matrix, target) => {
   let rows = matrix.length

@@ -49,7 +49,7 @@ const findTargetSumWays = (nums, S) => {
 ```
 
   &emsp;&emsp;那么它的状态转移方程则为：
-    
+
 ```s
   dp[i][j] = dp[i - 1][j - nums[i - 1]] + dp[i - 1][j + nums[i - 1]]
 ```

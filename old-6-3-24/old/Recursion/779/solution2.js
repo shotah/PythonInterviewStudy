@@ -1,15 +1,15 @@
 /**
  * https://leetcode-cn.com/problems/k-th-symbol-in-grammar/
- * 
+ *
  * 779. 第K个语法符号
- * 
+ *
  * Medium
- * 
+ *
  * 76ms 64.15%
  * 33.8mb 20.00%
- * 
+ *
  * 规律
- * 
+ *
  *   0        1
  *  / \      / \
  * 0   1    1   0

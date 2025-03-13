@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
- * 
+ *
  * 714. Best Time to Buy and Sell Stock with Transaction Fee
- * 
+ *
  * Medium
  */
 const maxProfit = (prices, fee) => {

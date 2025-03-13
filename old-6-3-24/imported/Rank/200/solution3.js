@@ -1,6 +1,6 @@
 /**
  * 时间复杂度 O(n^3)
- * 
+ *
  * 104ms 41.6mb
  */
 const minSwaps = function(grid) {
@@ -26,7 +26,7 @@ const minSwaps = function(grid) {
       continue;
     }
 
-    let isFlag = true; // 不可以将右上角全部填充成 0 
+    let isFlag = true; // 不可以将右上角全部填充成 0
     for (let j = i + 1; j < row; j++) {
       if (record[j] >= currentMinZero) {
         step += (j - i);

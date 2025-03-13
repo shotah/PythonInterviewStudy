@@ -1,10 +1,10 @@
 /**
- * 
+ *
  * https://leetcode.com/problems/push-dominoes/
- * 
- * 
+ *
+ *
  * 838. Push Dominoes
- * 
+ *
  * Medium
  */
 const pushDominoes = dominoes => {

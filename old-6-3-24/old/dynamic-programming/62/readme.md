@@ -8,7 +8,7 @@
 
 ```JavaScript
 const uniquePaths = (m, n) => {
-  
+
   const grid = []
 
   const cache = {}
@@ -70,7 +70,7 @@ const uniquePaths = (m, n) => {
 
 ```JavaScript
 const uniquePaths = (m, n) => {
-  
+
   const dp = []
 
   for (let i = 0; i < n; i++) {

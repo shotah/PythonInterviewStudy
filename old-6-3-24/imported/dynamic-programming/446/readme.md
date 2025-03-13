@@ -64,7 +64,7 @@ const numberOfArithmeticSlices = A => {
         dp[i].set(diff, dp[i].get(diff) + dp[j].get(diff))
         ans += dp[j].get(diff)
       }
-    }  
+    }
   }
   return ans
 }

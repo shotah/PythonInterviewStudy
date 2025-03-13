@@ -14,7 +14,8 @@ def guess(num: int) -> int:
 
 class Solution:
     def guessNumber(self, n: int) -> int:
-        if n <=1: return n
+        if n <= 1:
+            return n
         bottom = 0
         current_guess = int(n / 2)
         for _ in range(current_guess + 2):
@@ -35,5 +36,7 @@ class Solution:
                 n = current_guess
                 current_guess = bottom + int((current_guess - n) / 2)
                 continue
+
+
 n = 2
 print(Solution().guessNumber(n))

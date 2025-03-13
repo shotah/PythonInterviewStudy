@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/minimum-subsequence-in-non-increasing-order/submissions/
- * 
+ *
  * 非递增顺序的最小子序列
- * 
+ *
  * Easy
- * 
+ *
  * 80ms 100%
  * 35.5mb 100.00%
  */

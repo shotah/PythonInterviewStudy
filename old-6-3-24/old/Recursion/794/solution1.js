@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/valid-tic-tac-toe-state/
- * 
+ *
  * 794. 有效的井字游戏
- * 
+ *
  * Medium
- * 
+ *
  * 76ms 83.33%
  * 33.9mb 83.33%
  */

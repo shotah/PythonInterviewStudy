@@ -4,7 +4,7 @@ class Solution:
         return_value = -reversed_string if x < 0 else reversed_string
         print(return_value.bit_length())
         return return_value if return_value.bit_length() < 32 else 0
-            
+
 
 x = -123
 x = 1563847412

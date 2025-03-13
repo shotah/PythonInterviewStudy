@@ -1,11 +1,11 @@
 /**
  * https://leetcode.com/problems/minimum-cost-for-tickets/
- * 
+ *
  * 983. Minimum Cost For Tickets
- * 
+ *
  * Medium
- * 
- * 
+ *
+ *
  */
 
 const mincostTickets = (days, costs) => {

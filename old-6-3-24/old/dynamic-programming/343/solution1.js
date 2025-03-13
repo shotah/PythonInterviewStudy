@@ -1,10 +1,10 @@
 /**
  * https://leetcode.com/problems/integer-break/
- * 
+ *
  * 343. Integer Break
- * 
+ *
  * Medium
- * 
+ *
  */
 const integerBreak = n => {
   const dp = new Array(n + 1).fill(1)

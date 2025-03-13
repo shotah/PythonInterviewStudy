@@ -47,5 +47,5 @@
 # for i, n in enumerate(liste):
 
 print(
-  ["stuff"] * 3
+    ["stuff"] * 3
 )

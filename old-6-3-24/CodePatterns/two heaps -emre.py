@@ -2,14 +2,14 @@
 
 # How to identify?
 
-# This approach is quite useful when dealing with the problems 
+# This approach is quite useful when dealing with the problems
 # where we are given a set of elements such that we can divide them into two parts.
 
-# To be able to solve these kinds of problems, 
-# we want to know the smallest element in one part 
-# and the biggest element in the other part. 
-# Two Heaps pattern uses two Heap data structure 
-# to solve these problems; a Min Heap to find the 
+# To be able to solve these kinds of problems,
+# we want to know the smallest element in one part
+# and the biggest element in the other part.
+# Two Heaps pattern uses two Heap data structure
+# to solve these problems; a Min Heap to find the
 # smallest element and a Max Heap to find the biggest element.
 
 
@@ -28,13 +28,13 @@
 # addNum(1)
 # addNum(2)
 # findMedian() -> 1.5
-# addNum(3) 
+# addNum(3)
 # findMedian() -> 2
 
 # Two Heaps Solution
 # brute force
 
-from heapq import heappush, heappop
+from heapq import heappop, heappush
 
 
 class MedianFinder:

@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/k-closest-points-to-origin/
- * 
+ *
  * 973. 最接近原点的 K 个点
- * 
+ *
  * Medium
- * 
+ *
  * 排序解决 O(nlogn)
  */
 const kClosest = (points, K) => {

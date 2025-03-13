@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/
- * 
+ *
  * 5337. 每个元音包含偶数次的最长子字符串
- * 
+ *
  * Medium
- * 
+ *
  * 104ms 100.00%
  * 39.9mb 100.00%
  */

@@ -1,16 +1,16 @@
 /**
  * https://leetcode-cn.com/problems/string-matching-in-an-array/
- * 
+ *
  * 数组中的字符串匹配
- * 
+ *
  * Easy
- * 
+ *
  * 100ms
- * 
+ *
  * 34.6mb
- * 
+ *
  * 时间复杂度 O(n^2)
- * 
+ *
  * 空间复杂度 O(n)
  */
 const stringMatching = words => {

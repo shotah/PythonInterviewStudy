@@ -1,5 +1,5 @@
-from typing import Optional, List, Self, Union
 from enum import Enum
+from typing import List, Optional, Self, Union
 
 
 # Definition for a binary tree node.

@@ -1,13 +1,14 @@
 # https://emre.me/algorithms/tarjans-algorithm/
 
 
-
 # LeetCode 1192 - Critical Connections in a Network [hard]
 
-# There are n servers numbered from 0 to n-1 connected by undirected server-to-server connections forming a network where connections[i] = [a, b] 
-# represents a connection between servers a and b. Any server can reach any other server directly or indirectly through the network.
+# There are n servers numbered from 0 to n-1 connected by undirected server-to-server connections forming a network where connections[i] = [a, b]
+# represents a connection between servers a and b. Any server can reach
+# any other server directly or indirectly through the network.
 
-# A critical connection is a connection that, if removed, will make some server unable to reach some other server.
+# A critical connection is a connection that, if removed, will make some
+# server unable to reach some other server.
 
 # Return all critical connections in the network in any order.
 
@@ -62,11 +63,13 @@ class Solution:
                 continue
             if not visited[next_node]:
                 self.dfs(next_node, node, bridges, graph, id, visited, ids, low_links)
-                low_links[node] = min(low_links[node], low_links[next_node])  # on callback, generates low link values
+                # on callback, generates low link values
+                low_links[node] = min(low_links[node], low_links[next_node])
                 if ids[node] < low_links[next_node]:  # found the bridge!
                     bridges.append([node, next_node])
             else:
-                # tried to visit an already visited node, which may have a lower id than the current low link value
+                # tried to visit an already visited node, which may have a lower id than
+                # the current low link value
                 low_links[node] = min(low_links[node], ids[next_node])
 
 # Time Complexity: O(E + V) –> One pass, linear time solution

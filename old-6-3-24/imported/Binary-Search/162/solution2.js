@@ -1,13 +1,13 @@
   /**
    * https://leetcode.com/problems/find-peak-element/
-   * 
+   *
    * 162. Find Peak Element
-   * 
+   *
    * Medium
-   * 
+   *
    * 52ms 90.60%
    * 33.9mb 55.70%
-   * 
+   *
    */
   const findPeakElement = nums => {
     const max = nums.length

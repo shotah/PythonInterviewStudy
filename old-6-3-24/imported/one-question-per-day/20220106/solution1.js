@@ -1,8 +1,8 @@
 /**
  * 时间复杂度O(n)
  * 空间复杂度O(n)
- * @param {*} path 
- * @returns 
+ * @param {*} path
+ * @returns
  */
 const simplifyPath = function(path) {
     const paths = path.split('/');

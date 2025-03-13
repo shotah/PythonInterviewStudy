@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/largest-divisible-subset/
- * 
+ *
  * 368. Largest Divisible Subset
- * 
+ *
  * Medium
  */
 const largestDivisibleSubset = nums => {

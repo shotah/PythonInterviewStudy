@@ -1,14 +1,14 @@
 /**
  * https://leetcode-cn.com/problems/minimum-number-of-frogs-croaking/
- * 
+ *
  * 数青蛙
- * 
+ *
  * Medium
- * 
+ *
  * 时间复杂度 O(n^2)
- * 
+ *
  * 空间复杂度 O(n)
- * 
+ *
  */
 const strs = ['c', 'r', 'o', 'a', 'k'];
 const charToMap = {

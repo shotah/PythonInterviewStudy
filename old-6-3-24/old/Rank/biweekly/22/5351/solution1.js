@@ -1,14 +1,14 @@
 /**
  * https://leetcode-cn.com/problems/pizza-with-3n-slices/comments/
- * 
+ *
  * 5351. 3n 块披萨
- * 
+ *
  * Hard
- * 
+ *
  * dp[i][j] 前 i 块披萨中拿 j 块最大和值。
- * 
+ *
  * 96ms 100.00%
- * 
+ *
  * 37.6mb 100.00%
  */
 
@@ -17,7 +17,7 @@ const maxSizeSlices = slices => {
   const max = slices.length;
   const maxCanHava = Math.floor(max / 3);
   let dp = Array.from({ length: max }, () => Array(maxCanHava + 1).fill(0));
-  
+
   // 第一块拿，最后一块不能拿
   dp[0][1] = slices[0];
 

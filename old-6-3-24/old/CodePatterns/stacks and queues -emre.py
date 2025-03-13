@@ -1,8 +1,13 @@
 # https://emre.me/data-structures/stacks-and-queues/
 
-# Stacks, like the name suggests, follow Last-In-First-Out (LIFO) principle while Queues work with first come first served approach, in other words with First-In-First-Out (FIFO) principle.
+# Stacks, like the name suggests, follow Last-In-First-Out (LIFO)
+# principle while Queues work with first come first served approach, in
+# other words with First-In-First-Out (FIFO) principle.
 
 # Implementation of Stacks with Using Lists
+from collections import deque
+
+
 class Stack:
     def __init__(self):
         self.stack = []
@@ -24,7 +29,8 @@ class Stack:
 
 
 # Implementation of Stacks with Using collections.deque class
-from collections import deque
+
+
 class Stack:
     def __init__(self):
         self.stack = deque()
@@ -45,6 +51,8 @@ class Stack:
         return self.size() == 0
 
 # Implementation of Queues
+
+
 class Queue:
     def __init__(self):
         self.queue = []
@@ -63,9 +71,10 @@ class Queue:
 
     def is_empty(self):
         return self.size() == 0
-      
+
+
 # Implementation of Queues with Using collections.deque class
-from collections import deque
+
 
 class Queue:
     def __init__(self):

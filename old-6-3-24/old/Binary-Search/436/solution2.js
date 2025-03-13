@@ -1,10 +1,10 @@
 /**
  * https://leetcode.com/problems/find-right-interval/
- * 
+ *
  * 436. Find Right Interval
- * 
+ *
  * Medium
- * 
+ *
  * 108ms 100.00%
  * 46.6mb 100.00%
  */

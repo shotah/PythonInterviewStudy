@@ -11,12 +11,12 @@ const pathSum = (root, sum) => {
         }
 
         path.push(root.val);
-        
+
         const _sum = sum - root.val;
         if (!root.left && !root.right && _sum === 0) {
             ans.push([...path]);
         }
-        
+
         dfs(root.left, _sum);
         dfs(root.right, _sum);
         path.pop();

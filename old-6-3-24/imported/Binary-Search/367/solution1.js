@@ -1,10 +1,10 @@
 /**
  * https://leetcode.com/problems/valid-perfect-square/
- * 
+ *
  * 367. Valid Perfect Square
- * 
+ *
  * Easy
- * 
+ *
  * 40ms 99.67%
  * 33.8mb 79.73%
  */

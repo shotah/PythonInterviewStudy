@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/perfect-squares/
- * 
+ *
  * 279. Perfect Squares
- * 
+ *
  * Medium
  */
 const numSquares = n => {

@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/
- * 
+ *
  * 生成数组
- * 
+ *
  * Hard
- * 
+ *
  * 数位DP
  */
 const MOD = 1e9 + 7;
@@ -19,7 +19,7 @@ const numOfArrays = (n, m, k) => {
       }
       return 0;
     }
-  
+
     if (ck > k) {
       return 0;
     }

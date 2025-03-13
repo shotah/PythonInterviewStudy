@@ -1,11 +1,11 @@
 /**
  * https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/submissions/
- * 
- * 
+ *
+ *
  * 将二进制表示减到 1 的步骤数
- * 
+ *
  * Medium
- * 
+ *
  * 60ms 100.00%
  * 34.2mb 100.00%
  */

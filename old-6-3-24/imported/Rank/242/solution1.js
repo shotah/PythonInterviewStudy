@@ -31,6 +31,6 @@ const checkZeroOnes = function(s) {
   if (preStr === '1') {
     max1 = Math.max(max1, currentLen);
   }
-  
+
   return max1 > max0;
 };

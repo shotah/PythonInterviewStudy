@@ -1,5 +1,5 @@
-from functools import reduce
 import json
+from functools import reduce
 
 
 class Solution:

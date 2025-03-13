@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/rank-teams-by-votes/
- * 
+ *
  * 5345. 通过投票对团队排名
- * 
+ *
  * Medium
- * 
+ *
  * 88ms 100.00%
  * 37.6mb 100.00%
  */

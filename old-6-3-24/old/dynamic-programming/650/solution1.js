@@ -1,12 +1,12 @@
 /**
  * https://leetcode.com/problems/2-keys-keyboard/
- * 
+ *
  * 650. 2 Keys Keyboard
- * 
+ *
  * Medium
- * 
+ *
  * A => AAA
- * 
+ *
  * A 复制操作
  * AA 粘贴
  * AAA 粘贴

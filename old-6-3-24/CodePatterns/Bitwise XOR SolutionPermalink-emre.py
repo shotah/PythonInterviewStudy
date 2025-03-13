@@ -3,11 +3,11 @@
 
 # How to identify?
 
-# Knowing XOR properties well opens some surprising doors in 
-# your problem solving skills. To be able to identify 
-# XOR related problems are mostly coming from previous 
-# experiences. But if you need to eliminate the same 
-# numbers from an integer array, using Bit Manipulation 
+# Knowing XOR properties well opens some surprising doors in
+# your problem solving skills. To be able to identify
+# XOR related problems are mostly coming from previous
+# experiences. But if you need to eliminate the same
+# numbers from an integer array, using Bit Manipulation
 # Tricks is extremely helpful.
 
 
@@ -26,13 +26,15 @@
 
 # Bitwise XOR Solution
 from typing import List
+
+
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         num = 0
         for i in nums:
             num ^= i
         return num
-    
+
 # Problem: Single Number III
 # Example:
 
@@ -41,9 +43,12 @@ class Solution:
 # Note:
 
 # The order of the result is not important. So in the above example, [5, 3] is also correct.
-# Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
+# Your algorithm should run in linear runtime complexity. Could you
+# implement it using only constant space complexity?
 
 # Bitwise XOR Solution
+
+
 class Solution:
     def singleNumber(self, nums: list[int]) -> list[int]:
         # XOR of all numbers in the given list

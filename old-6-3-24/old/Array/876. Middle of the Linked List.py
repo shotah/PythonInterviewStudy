@@ -4,6 +4,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 class Solution:
     def middleNode(self, head):
         slow = fast = head
@@ -12,8 +13,9 @@ class Solution:
             fast = fast.next.next
         return slow
 
-t = [1,2,3,4,5]
-t = [1,2,3,4,5,6]
+
+t = [1, 2, 3, 4, 5]
+t = [1, 2, 3, 4, 5, 6]
 head = ListNode(t.pop(0))
 prev = head
 for v in t:

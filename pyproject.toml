@@ -2,9 +2,9 @@
 max-line-length = 110
 ignore = ["E111", "W503"]
 exclude = [".aws-sam", "__pycache__", "env", ".env", "*.md", "*.toml", "*.yaml", "*.json", "Pipfile*", "LICENSE", "makefile", ".*"]
-max-complexity = 10
-max-cognitive-complexity = 10
-max-adjustable-complexity = 7
+max-complexity = 14
+max-cognitive-complexity = 14
+max-adjustable-complexity = 10
 
 [tool.autopep8]
 max_line_length = 110
@@ -13,7 +13,7 @@ recursive = true
 aggressive = 3
 
 [tool.black]
-line-length = 88
+line-length = 110
 
 [tool.pytest.ini_options]
 addopts = "--cov=. --cov-branch --cov-report term-missing --cov-fail-under=80 --color=yes"

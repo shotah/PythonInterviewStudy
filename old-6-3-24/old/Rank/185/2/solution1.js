@@ -1,13 +1,13 @@
 /**
- * 
+ *
  * https://leetcode-cn.com/problems/display-table-of-food-orders-in-a-restaurant/
- * 
+ *
  * 点菜展示表
- * 
+ *
  * Medium
- * 
+ *
  * 时间复杂度 O(n^2)
- * 
+ *
  * 空间复杂度 O(n^2)
  */
 const displayTable = orders => {

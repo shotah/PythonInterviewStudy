@@ -1,17 +1,17 @@
 /**
- * 
+ *
  * https://leetcode.com/problems/longest-palindromic-subsequence/
- * 
- * 
+ *
+ *
  * 516. Longest Palindromic Subsequence
- * 
+ *
  * Medium
  *                  dp[i + 1]dp[j - 1]  s[i] = s[j]
- * dp[i][j]   =     
+ * dp[i][j]   =
  *                  max(dp[i + 1][j], dp[i][j - 1]) s[i] != s[j]
- * 
+ *
  * 优化存储空间。O(n)
- *         
+ *
  */
 const longestPalindromeSubseq = s => {
   const max = s.length

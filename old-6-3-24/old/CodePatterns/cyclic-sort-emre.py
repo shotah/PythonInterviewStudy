@@ -3,10 +3,10 @@
 
 # How to identify?
 
-# This approach is quite useful when dealing with numbers 
+# This approach is quite useful when dealing with numbers
 # in a given range and asking to find the duplicates/missing ones etc.
 
-# When the problem involving arrays containing numbers in a 
+# When the problem involving arrays containing numbers in a
 # given range, you should think about Cyclic Sort pattern.
 
 
@@ -33,7 +33,8 @@ class Solution:
                 return i
         return len(nums)
 
-nums = [5,1,3,4,0]
+
+nums = [5, 1, 3, 4, 0]
 s = Solution().missingNumber(nums)
 print(s)
 

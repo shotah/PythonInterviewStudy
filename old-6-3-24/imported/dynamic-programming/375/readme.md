@@ -1,7 +1,7 @@
 # [375. Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)
 
 ### 一、解题思路
-  
+
   &emsp;&emsp;这道题目还是非常有趣的，给定一个从1到n的数组，每次可以猜一个数字，当数字不正确时需要付出该数字值的代价，并且告诉我们目标数字比该数字大还是小，让我们求出能够猜出目标值至少需要花费多少代价。
 
   &emsp;&emsp;参与猜测的选手是一个比较聪明的人，不会故意的选择代价的步骤。（这一点很重要）下面是这种情况的分析：

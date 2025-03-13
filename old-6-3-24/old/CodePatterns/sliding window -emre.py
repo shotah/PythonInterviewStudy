@@ -4,15 +4,15 @@
 
 # So we want to be able to identify the problems that sliding window pattern works.
 
-# The problem involves a data structure that is ordered and 
+# The problem involves a data structure that is ordered and
 # iterable like arrays, strings, etc.
 
-# The problem is asking to find a subrange in an array/string, 
+# The problem is asking to find a subrange in an array/string,
 # contiguous longest, shortest, average or target value.
-# There is an apparent naive or brute force solution that 
+# There is an apparent naive or brute force solution that
 # runs in O(N2), O(2N) or some other large time complexity.
 
-# The amazing thing about sliding window problems is that most 
+# The amazing thing about sliding window problems is that most
 # of the time they can be solved in O(N) time and O(1) space complexity.
 
 
@@ -42,6 +42,8 @@ class Solution:
         return max_average
 
 # Sliding Window Solution
+
+
 class Solution:
     def findMaxAverage(self, nums: list[int], k: int) -> float:
         average = []

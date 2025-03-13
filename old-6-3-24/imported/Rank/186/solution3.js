@@ -14,7 +14,7 @@ const longestSubarray = (nums, limit) => {
       ans = Math.max(ans, endIndex - startIndex + 1);
       endIndex++;
       if (!record.has(nums[endIndex])) {
-        record.set(nums[endIndex], 0); 
+        record.set(nums[endIndex], 0);
       }
       record.set(nums[endIndex], record.get(nums[endIndex]) + 1);
     } else {

@@ -19,7 +19,7 @@ const bstFromPreorder = preorder => {
     }
     break
   }
-  root.left = bstFromPreorder(preorder.slice(1, index + 1))  
+  root.left = bstFromPreorder(preorder.slice(1, index + 1))
   root.right = bstFromPreorder(preorder.slice(index + 1))
   return root
 }

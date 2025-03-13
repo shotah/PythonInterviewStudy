@@ -7,7 +7,7 @@ class BinaryTree:
         self.left = None
         self.right = None
         self.root = data
-        
+
 
 # insert_left function
 def insert_left(self, value):
@@ -17,8 +17,10 @@ def insert_left(self, value):
         new_node = BinaryTree(value)
         new_node.left = self.left
         self.left = new_node
-        
+
 # insert_right function
+
+
 def insert_right(self, value):
     if self.right is None:
         self.right = BinaryTree(value)
@@ -28,6 +30,8 @@ def insert_right(self, value):
         self.right = new_node
 
 # Implementation Summary
+
+
 class BinaryTree:
     def __init__(self, data):
         self.left = None
@@ -64,6 +68,8 @@ class BinaryTree:
 
 # Binary Tree Traversals
 # Pre-order Traversal
+
+
 def pre_order(self):
     print(self.value)
 
@@ -72,8 +78,10 @@ def pre_order(self):
 
     if self.right_child:
         self.right_child.pre_order()
-        
+
 # In-order Traversal
+
+
 def in_order(self):
     if self.left:
         self.left.in_order()
@@ -82,8 +90,10 @@ def in_order(self):
 
     if self.right:
         self.right.in_order()
-        
+
 # Post-order Traversal
+
+
 def post_order(self):
     if self.left:
         self.left.post_order()
@@ -92,8 +102,9 @@ def post_order(self):
         self.right.post_order()
 
     print(self.root)
-    
+
 # Example
+
 
 a_node = BinaryTree('a')
 a_node.insert_left('b')

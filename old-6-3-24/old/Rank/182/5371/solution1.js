@@ -1,11 +1,11 @@
 /**
  * https://leetcode-cn.com/problems/find-all-good-strings/
- * 
- * 
+ *
+ *
  * 1397. 找到所有好字符串
- * 
+ *
  * Hard
- * 
+ *
  * 120ms 100.00%
  * 41.5mb 100.00%
  */
@@ -48,7 +48,7 @@ function dfs(pos, match, isTopLimit) {
   if (isTopLimit) {
     maxChar = limit[pos];
   }
-  
+
   let ans = 0;
   for (let i = 'a'; i <= maxChar; i = String.fromCharCode(i.charCodeAt(0) + 1)) {
     let currentMatch = match;

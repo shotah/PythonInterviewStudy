@@ -1,17 +1,17 @@
 /**
  * https://leetcode-cn.com/problems/chou-shu-lcof/
- * 
+ *
  * 49. 丑数
- * 
+ *
  * Medium
- * 
+ *
  * 72ms 100.00%
- * 
+ *
  * 37.3mb 100.00%
  */
 const nthUglyNumber = n => {
   const ans = [1];
-  
+
   let x = 0;
   let y = 0;
   let z = 0;

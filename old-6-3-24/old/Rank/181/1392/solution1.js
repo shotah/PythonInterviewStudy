@@ -1,8 +1,8 @@
 /**
  * https://leetcode-cn.com/problems/longest-happy-prefix/
- * 
+ *
  * 1392. 最长快乐前缀
- * 
+ *
  * Hard
  */
 const longestPrefix = s => {

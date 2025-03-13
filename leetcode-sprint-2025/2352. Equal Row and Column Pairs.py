@@ -19,7 +19,8 @@
 #             for column_i in range(len(grid[0]) if grid else 0)
 #         ]
 
-#         inverted_grid_row_counts = collections.Counter(tuple(row) for row in inverted_grid) # Count row tuples
+# inverted_grid_row_counts = collections.Counter(tuple(row) for row in
+# inverted_grid) # Count row tuples
 
 #         pairs = 0
 #         for i, row1 in enumerate(grid):

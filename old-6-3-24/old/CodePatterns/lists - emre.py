@@ -50,8 +50,6 @@ print(list_mixed)
 print(list_nested)
 
 
-
-
 # Accessing Elements of a List
 
 # list
@@ -66,7 +64,7 @@ print(list_emre[-5])
 # nested list
 list_nested = ['emre', [1, 2, 3, [4]], False, 7.3, ['bolat']]
 
-# Output: emre 
+# Output: emre
 print(list_nested[0])
 
 # Output: 1
@@ -78,7 +76,7 @@ print(list_nested[1][3][0])
 # Output: False
 print(list_nested[2])
 
-# Output: a 
+# Output: a
 print(list_nested[-1][0][3])
 
 
@@ -149,7 +147,6 @@ list_nums.extend([7, 8, 9])
 print(list_nums)
 
 
-
 # Concatenation and Repeating
 # create list
 list = ['e', 'm', 'r', 'e']
@@ -161,7 +158,9 @@ print(list + ['.'] + ['m', 'e'])
 print(list * 2)
 
 # insert()
-# We can insert one item at a desired location by using the method insert() or insert multiple items by squeezing it into an empty slice of a list.
+# We can insert one item at a desired location by using the method
+# insert() or insert multiple items by squeezing it into an empty slice of
+# a list.
 
 # create list
 list = ['e', 'm', 'e']
@@ -206,7 +205,9 @@ print(list_emre)
 # remove(), pop() and clear()
 # We can use remove() method to remove the given item or pop() method to remove an item at the given index.
 
-# The pop() method removes and returns the last item if index is not provided. This helps us implement lists as stacks (first in, last out data structure).
+# The pop() method removes and returns the last item if index is not
+# provided. This helps us implement lists as stacks (first in, last out
+# data structure).
 
 # We can also use the clear() method to empty a list.
 
@@ -241,7 +242,6 @@ list_emre.clear()
 print(list_emre)
 
 
-
 # index()
 # Index method searches and finds given index and returns its position.
 
@@ -253,7 +253,8 @@ index_of_r = list.index('r')
 
 # Output: 2
 print(index_of_r)
-# if the same element is present more than once, only the first occurrence (smallest/first position) of the item returns.
+# if the same element is present more than once, only the first occurrence
+# (smallest/first position) of the item returns.
 
 # search for "m"
 index_of_m = list.index('m')
@@ -262,14 +263,13 @@ index_of_m = list.index('m')
 print(index_of_m)
 
 
-
 # count()
 # count() method counts how many times an item has occurred in a list.
 
 # create list
 list = ['e', 'm', 'r', 'e', '.', 'm', 'e']
 
-# count the number of times "e" has occurred 
+# count the number of times "e" has occurred
 count_of_e = list.count('e')
 
 # Output: 3
@@ -330,7 +330,6 @@ print(list)
 # Alternatively, you can use sorted(list, key=len).
 
 
-
 # reverse()
 # reverse() method does not take any arguments. It reverses the elements and updates the list.
 
@@ -354,9 +353,6 @@ for i in reversed(list):
 # me
 # .
 # emre
-
-
-
 
 
 # copy()
@@ -387,5 +383,3 @@ print('.' in list)
 
 # Output: False
 print('a' in list)
-
-

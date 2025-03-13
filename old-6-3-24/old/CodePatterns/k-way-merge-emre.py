@@ -2,10 +2,10 @@
 
 # How to identify?
 
-# If the problem giving K sorted arrays and asks us to perform a sorted traversal 
+# If the problem giving K sorted arrays and asks us to perform a sorted traversal
 # of all the elements of all arrays, we need to think about K-way Merge pattern.
 
-# While solving the problems, we are going to use Heap data structure 
+# While solving the problems, we are going to use Heap data structure
 # to keep track of all elements in K arrays.
 
 
@@ -28,14 +28,17 @@
 
 from heapq import heappop, heappush
 
+
 class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
 
+
 class ListNodeExtension(ListNode):
     def __lt__(self, other):
         return self.val < other.val
+
 
 class Solution:
     def mergeKLists(self, lists: list[ListNode]) -> ListNode:

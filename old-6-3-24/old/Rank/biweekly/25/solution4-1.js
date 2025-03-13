@@ -1,16 +1,16 @@
 /**
  * https://leetcode-cn.com/problems/number-of-ways-to-wear-different-hats-to-each-other/
- * 
+ *
  * 每个人戴不同帽子的方案数
- * 
+ *
  * Hard
- * 
- * 
+ *
+ *
  * 时间复杂度 O(m^n);
- * 
+ *
  * 哈希表 + 二进制状态
- * 
- * 第 i 位为零表示 第 i 哥🎩没有被使用，1表示已经被使用 
+ *
+ * 第 i 位为零表示 第 i 哥🎩没有被使用，1表示已经被使用
  */
 const MOD = 10 ** 9 + 7;
 const numberWays = hats => {

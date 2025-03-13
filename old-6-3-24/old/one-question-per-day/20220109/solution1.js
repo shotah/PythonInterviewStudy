@@ -1,9 +1,9 @@
 /**
  * 时间复杂度 O(n)
  * 空间复杂度 O(1)
- * @param {*} releaseTimes 
- * @param {*} keysPressed 
- * @returns 
+ * @param {*} releaseTimes
+ * @param {*} keysPressed
+ * @returns
  */
 const slowestKey = function(releaseTimes, keysPressed) {
     let ans = keysPressed[0];

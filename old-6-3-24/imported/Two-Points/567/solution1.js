@@ -1,15 +1,15 @@
 /**
  * https://leetcode-cn.com/problems/permutation-in-string/
- * 
+ *
  * 567. 字符串的排列
- * 
+ *
  * Medium
- * 
+ *
  * Sliding Window + HashTable
- * 
+ *
  * 108ms 87.75%
  * 37.5mb 72.39%
- * 
+ *
  */
 const checkInclusion = (s1, s2) => {
   const l1 = s1.length

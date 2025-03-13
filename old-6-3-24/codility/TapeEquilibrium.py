@@ -40,7 +40,8 @@
 # each element of array A is an integer within the range [−1,000..1,000].
 
 def solution(a):
-    if not a or len(a) == 1: return 0
+    if not a or len(a) == 1:
+        return 0
     left_sum = sum(a[:1])
     right_sum = sum(a[1:])
     min_sol = abs(left_sum - right_sum)
@@ -50,8 +51,8 @@ def solution(a):
         cur_min = abs(left_sum - right_sum)
         min_sol = min(cur_min, min_sol)
     return min_sol
-    
-    
+
+
 a = [9, 3, 9, 3, 9, 7, 9]
 a = [2]
 a = [3, 1, 2, 4, 3]
@@ -59,4 +60,3 @@ a = [3000, 1000]
 
 s = solution(a)
 print(s)
-

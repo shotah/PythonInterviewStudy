@@ -11,7 +11,7 @@
 # Successor	O(log n)	O(n)
 
 # Implementation
-# We should start the implementation by defining BinarySearchTree() 
+# We should start the implementation by defining BinarySearchTree()
 # and Node() classes in our code.
 
 # An empty BinarySearchTree() class will look like this;
@@ -27,6 +27,7 @@ class BinarySearchTree:
 
     def __len__(self):
         return self.size
+
 
 class Node:
     def __init__(self, key, val, left=None, right=None, parent=None):
@@ -163,7 +164,7 @@ class Node:
             self.leftChild.parent = self
         if self.has_right_child():
             self.rightChild.parent = self
-  
+
     def remove(self, current_node):
         if current_node.is_leaf():  # leaf
             if current_node == current_node.parent.leftChild:
@@ -185,9 +186,9 @@ class Node:
                     current_node.parent.rightChild = current_node.leftChild
                 else:
                     current_node.replace_node_data(current_node.leftChild.key,
-                                                  current_node.leftChild.payload,
-                                                  current_node.leftChild.leftChild,
-                                                  current_node.leftChild.rightChild)
+                                                   current_node.leftChild.payload,
+                                                   current_node.leftChild.leftChild,
+                                                   current_node.leftChild.rightChild)
             else:
                 if current_node.is_left_child():
                     current_node.rightChild.parent = current_node.parent
@@ -197,9 +198,9 @@ class Node:
                     current_node.parent.rightChild = current_node.rightChild
                 else:
                     current_node.replace_node_data(current_node.rightChild.key,
-                                                  current_node.rightChild.payload,
-                                                  current_node.rightChild.leftChild,
-                                                  current_node.rightChild.rightChild)
+                                                   current_node.rightChild.payload,
+                                                   current_node.rightChild.leftChild,
+                                                   current_node.rightChild.rightChild)
 
     def delete(self, key):
         if self.size > 1:

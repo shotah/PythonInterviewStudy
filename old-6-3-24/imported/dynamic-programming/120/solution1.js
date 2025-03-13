@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/triangle/
- * 
+ *
  * 120. Triangle
- * 
+ *
  * Medium
  */
 const minimumTotal = triangle => {

@@ -1,9 +1,9 @@
 /**
  * https://leetcode-cn.com/problems/number-of-digit-one/
- * 
+ *
  * 233. 数字 1 的个数
- * 
- * Hard  
+ *
+ * Hard
  */
 const countDigitOne = n => {
   if (n <= 0) {
@@ -43,7 +43,7 @@ const countDigitOne = n => {
       }
       ans += leftCount * Math.pow(10, max - i - 1);
     }
-  
+
   }
 
   return ans;

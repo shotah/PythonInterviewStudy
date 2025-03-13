@@ -1,13 +1,13 @@
 /**
  * https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
- * 
+ *
  * 378. Kth Smallest Element in a Sorted Matrix
- * 
+ *
  * Medium
- * 
+ *
  * 64ms 97.86%
  * 38.1mb 73.13%
- * 
+ *
  */
 const kthSmallest = (matrix, k) => {
   const len = matrix.length

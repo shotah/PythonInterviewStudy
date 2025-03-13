@@ -1,10 +1,10 @@
 /**
  * hash + 排序
- * 
+ *
  * 时间复杂度 O(nlogn)
  * 空间复杂度 O(n)
- * @param {*} nums 
- * @returns 
+ * @param {*} nums
+ * @returns
  */
 const dominantIndex = function(nums) {
     if (nums.length < 2) {

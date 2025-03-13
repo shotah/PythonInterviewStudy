@@ -1,14 +1,14 @@
 /**
  * https://leetcode.com/problems/find-right-interval/
- * 
+ *
  * 436. Find Right Interval
- * 
+ *
  * Medium
- * 
+ *
  * 972ms 17.50%
- * 
+ *
  * 45.3mb 85.00%
- * 
+ *
  */
 const findRightInterval = intervals => {
   const ret = []

@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/number-of-substrings-containing-all-three-characters/
- * 
+ *
  * 5325. 包含所有三种字符的子字符串数目
- * 
+ *
  * Medium
- * 
+ *
  * 128ms 100.00%
  * 36mb 100.00%
  */

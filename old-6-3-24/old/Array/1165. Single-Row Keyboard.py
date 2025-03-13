@@ -8,10 +8,11 @@ class Solution:
             last_index = c_idx
             result += abs(move_cost)
         return result
-      
+
+
 keyboard = "abcdefghijklmnopqrstuvwxyz"
-word ="cba"
+word = "cba"
 s = Solution().calculateTime(keyboard, word)
-print( 
+print(
     s
 )

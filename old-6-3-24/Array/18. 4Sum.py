@@ -9,25 +9,25 @@ class Solution:
         a_idx = 0
         # Loops for index A to start moving Right
         while a_idx < nums_len:
-            # Increment and skip if greater than 0 and is the same as the last entry. 
+            # Increment and skip if greater than 0 and is the same as the last entry.
             if a_idx > 0 and nums[a_idx] == nums[a_idx - 1]:
                 a_idx += 1
                 continue
             b_idx = a_idx + 1
             # Loops for index B to start moving Right
             while b_idx < nums_len:
-                # Increment and skip if greater than A index + 1 and is the same as the last entry. 
+                # Increment and skip if greater than A index + 1 and is the same as the last entry.
                 if b_idx > a_idx + 1 and nums[b_idx] == nums[b_idx - 1]:
                     b_idx += 1
                     continue
                 c_idx = b_idx + 1
                 d_idx = nums_len - 1
                 while c_idx < d_idx:
-                    # Increment and skip if greater than B index + 1 and is the same as the last entry. 
+                    # Increment and skip if greater than B index + 1 and is the same as the last entry.
                     if c_idx > b_idx + 1 and nums[c_idx] == nums[c_idx - 1]:
                         c_idx += 1
                         continue
-                    # Decrement and skip if smaller than length -1 and is the same as the last entry. 
+                    # Decrement and skip if smaller than length -1 and is the same as the last entry.
                     if d_idx < nums_len - 1 and nums[d_idx] == nums[d_idx + 1]:
                         d_idx -= 1
                         continue

@@ -54,7 +54,7 @@ def solution(x,a):
         if len(path) == x:
             return i
     return -1
-    
+
 a = [1,3,1,4,2,3,5,4]
 a = [3]
 x = 5
@@ -66,5 +66,3 @@ x = 5
 
 s = solution(x, a)
 print(s)
-
-    

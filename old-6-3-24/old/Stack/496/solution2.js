@@ -1,12 +1,12 @@
 /**
  * https://leetcode-cn.com/problems/next-greater-element-i/
- * 
+ *
  * 496. 下一个更大元素 I
- * 
+ *
  * Easy
- * 
+ *
  * O(m+n)
- * 
+ *
  * 60ms 95.47%
  * 35.9mb 37.31%
  */

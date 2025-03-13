@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/smallest-k-lcci/
- * 
+ *
  * 最小K个数
- * 
+ *
  * Medium
- * 
+ *
  * 128ms 100.00%
  * 42.1mb 100.00%
  */

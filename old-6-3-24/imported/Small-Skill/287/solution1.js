@@ -1,10 +1,10 @@
 /**
  * https://leetcode.com/problems/find-the-duplicate-number/
- * 
+ *
  * 287. Find the Duplicate Number
- * 
+ *
  * Medium
- * 
+ *
  * 56ms 93.47%
  * 36.4mb 37.72%
  */

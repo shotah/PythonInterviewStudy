@@ -1,16 +1,16 @@
 /**
  * https://leetcode-cn.com/problems/get-kth-magic-number-lcci/
- * 
+ *
  * 面试题 17.09. 第 k 个数
- * 
+ *
  * Medium
- * 
+ *
  * 76ms 100.00%;
  * 34.1mb 100.00%
  */
 const getKthMagicNumber = (k) => {
   const ans = [1];
-   
+
   let x = 0;
   let y = 0;
   let z = 0;

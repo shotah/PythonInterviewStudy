@@ -1,22 +1,22 @@
 /**
- * 
+ *
  * https://leetcode-cn.com/problems/max-consecutive-ones-iii/
- * 
- * 
+ *
+ *
  * 1004. 最大连续1的个数 III
- * 
- * 
+ *
+ *
  * Medium
- * 
+ *
  * 滑动窗口算法
- * 
+ *
  * 108ms 95.83%
  * 38mb 72.22%
  */
 const longestOnes = (A, K) => {
   let oneCount = 0
   let zeroCount = 0
-  let slow = 0 
+  let slow = 0
   let fast = 0
   const max = A.length
   let ans = 0

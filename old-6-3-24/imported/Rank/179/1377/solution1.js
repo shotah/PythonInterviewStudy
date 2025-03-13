@@ -1,10 +1,10 @@
   /**
    * https://leetcode-cn.com/problems/frog-position-after-t-seconds/
-   * 
+   *
    * 1377. T 秒后青蛙的位置
-   * 
+   *
    * Hard
-   * 
+   *
    * 76ms 87.80%
    * 37.9mb 100.00%
    */
@@ -21,7 +21,7 @@
       if (edges[i][1] > edges[i][0]) {
         record.get(edges[i][0]).push(edges[i][1]);
       }
-      
+
       if (!record.has(edges[i][1])) {
         record.set(edges[i][1], []);
       }

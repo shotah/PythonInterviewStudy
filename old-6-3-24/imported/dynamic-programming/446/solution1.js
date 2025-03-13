@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/arithmetic-slices-ii-subsequence/
- * 
+ *
  * 446. Arithmetic Slices II - Subsequence
- * 
+ *
  * Hard
  */
 const numberOfArithmeticSlices = A => {
@@ -24,7 +24,7 @@ const numberOfArithmeticSlices = A => {
         dp[i].set(diff, dp[i].get(diff) + dp[j].get(diff))
         ans += dp[j].get(diff)
       }
-    }  
+    }
   }
   return ans
 }

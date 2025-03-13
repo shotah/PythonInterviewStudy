@@ -1,8 +1,8 @@
 /**
  * 时间复杂度 O(n^3)
- * 
+ *
  * 空间复杂度 O(1)
- * 
+ *
  * 124ms 37.9mb
  */
 const countGoodTriplets = function(arr, a, b, c) {

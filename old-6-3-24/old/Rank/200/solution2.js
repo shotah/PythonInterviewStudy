@@ -34,7 +34,7 @@ const getWinner = function(arr, k) {
 
 /**
  * 时间复杂度 O(n)
- * 
+ *
  * 100ms 48.3mb
  */
 const getWinner = function(arr, k) {

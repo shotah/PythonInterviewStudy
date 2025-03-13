@@ -1,11 +1,11 @@
 /**
- * 
- * 
+ *
+ *
  * https://leetcode.com/problems/predict-the-winner/
- * 
- * 
+ *
+ *
  * 486. Predict the Winner
- * 
+ *
  * Medium
  */
 const PredictTheWinner = nums => {

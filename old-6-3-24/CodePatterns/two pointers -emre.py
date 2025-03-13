@@ -4,12 +4,12 @@
 
 # So we want to be able to identify the problems that Two Pointers pattern works.
 
-# The problem involve sorted arrays (or Linked Lists), a set of pair elements, 
+# The problem involve sorted arrays (or Linked Lists), a set of pair elements,
 # or a triplet or even a subarray.
-# There is a target value to match or 
+# There is a target value to match or
 # duplicates to be removed.
 
-# Most of these type of problems can be solved in O(N) time complexity 
+# Most of these type of problems can be solved in O(N) time complexity
 # and O(1) or O(N) space complexity.
 
 
@@ -32,11 +32,13 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
         else:
             right -= 1  # we need a pair with a smaller sum
     return [-1, -1]
-  
+
 # Time Complexity: O(N) where N is the number of elements in the input array (nums).
 # Space Complexity: O(1), algorithm runs in constant space.
 
 # An Alternative Solution
+
+
 def twoSum(self, nums: List[int], target: int) -> List[int]:
     num_map = {}  # to store numbers and their indices
     for i, num in enumerate(nums):

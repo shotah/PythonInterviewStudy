@@ -9,7 +9,7 @@ class Solution:
             if c in closes:
                 if valid and valid[-1] == closes.index(c):
                     valid.pop()
-                else: 
+                else:
                     return False
         return valid == []
 

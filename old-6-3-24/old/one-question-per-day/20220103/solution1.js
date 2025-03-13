@@ -1,9 +1,9 @@
 /**
  * 手动计算
- * @param {*} day 
- * @param {*} month 
- * @param {*} year 
- * @returns 
+ * @param {*} day
+ * @param {*} month
+ * @param {*} year
+ * @returns
  */
 const dayOfTheWeek = function(day, month, year) {
     const week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];

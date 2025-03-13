@@ -1,14 +1,14 @@
 /**
  * https://leetcode-cn.com/problems/interval-list-intersections/
- * 
+ *
  * 986. 区间列表的交集
- * 
+ *
  * Medium
- * 
- * 
+ *
+ *
  * 124ms 96.43%
  * 41.9mb 25.00%
- * 
+ *
  */
 const intervalIntersection = (A, B) => {
   const aLen = A.length

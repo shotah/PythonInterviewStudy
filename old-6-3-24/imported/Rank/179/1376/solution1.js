@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/time-needed-to-inform-all-employees/
- * 
+ *
  * 1376. 通知所有员工所需的时间
- * 
+ *
  * Medium
- * 
+ *
  * 348ms 71.62%
  * 108.3mb 100.00%
  */

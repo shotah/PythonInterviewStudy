@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/remove-outermost-parentheses/
- * 
+ *
  * 1021. 删除最外层的括号
- * 
+ *
  * Easy
- * 
+ *
  * 60ms 97.18%
  * 36mb 61.54%
  */

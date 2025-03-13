@@ -1,7 +1,7 @@
 /**
  * 时间复杂度：O(n)
  * 空间复杂度：O(logn)
- * 
+ *
  */
 const help = (nums, start, end) => {
   if (start > end) {

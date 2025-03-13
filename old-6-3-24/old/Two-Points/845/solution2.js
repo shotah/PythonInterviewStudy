@@ -1,14 +1,14 @@
 /**
  * https://leetcode-cn.com/problems/longest-mountain-in-array/
- * 
+ *
  * 845. 数组中的最长山脉
- * 
+ *
  * Medium
- * 
+ *
  * 76ms 100%
- * 
+ *
  * 37.3mb 33.33%
- * 
+ *
  */
 const longestMountain = A => {
   const max = A.length

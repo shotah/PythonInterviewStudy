@@ -21,7 +21,7 @@ function backtrack(str, position, path, ans, max) {
       path.push(str.substring(position, i + 1))
       backtrack(str, i + 1, path, ans, max);
       path.pop();
-    } 
+    }
   }
 }
 

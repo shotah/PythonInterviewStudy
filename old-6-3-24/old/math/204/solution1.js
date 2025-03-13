@@ -1,10 +1,10 @@
 /**
  * https://leetcode.com/problems/count-primes/
- * 
+ *
  * 204. Count Primes
- * 
+ *
  * Medium
- * 
+ *
  * TLE
  */
 const countPrimes = n => {

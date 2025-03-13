@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/
- * 
+ *
  * 1334. 阈值距离内邻居最少的城市
- * 
+ *
  * Medium
- * 
+ *
  * 96ms 66.67%
  * 36.4mb 100.00%
  */

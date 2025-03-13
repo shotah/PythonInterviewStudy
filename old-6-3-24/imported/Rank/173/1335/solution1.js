@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/minimum-difficulty-of-a-job-schedule/
- * 
+ *
  * 1335. 工作计划的最低难度
- * 
+ *
  * Hard
- * 
+ *
  * 80ms 80.00%
  * 35.4mb 100.00%
  */
@@ -17,7 +17,7 @@ const minDifficulty = (jobDifficulty, d) => {
 
   /**
    * dp[n][d]:
-   * 
+   *
    * n 个 job d 天 花费所需要的最小难度
    */
 

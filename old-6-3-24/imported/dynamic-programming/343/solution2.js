@@ -1,10 +1,10 @@
 /**
  * https://leetcode.com/problems/integer-break/
- * 
+ *
  * 343. Integer Break
- * 
+ *
  * Medium
- * 
+ *
  */
 const integerBreak = n => {
   const map = [0, 0, 1, 2, 4]

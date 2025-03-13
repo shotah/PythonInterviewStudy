@@ -1,14 +1,14 @@
   /**
    * https://leetcode.com/problems/find-peak-element/
-   * 
+   *
    * 162. Find Peak Element
-   * 
+   *
    * Medium
-   * 
+   *
    * 64ms 21.79%
-   * 
+   *
    * 34.4mb 25.00%
-   * 
+   *
    * O(n)
    */
   const findPeakElement = nums => {

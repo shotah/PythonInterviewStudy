@@ -1,6 +1,6 @@
 /**
  * 时间复杂度 O(n)
- * 
+ *
  * 124ms 46.4mb
  */
 const maxSum = function(nums1, nums2) {

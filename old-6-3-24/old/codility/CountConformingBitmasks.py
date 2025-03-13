@@ -2,11 +2,13 @@ import re
 from itertools import product
 from typing import List, Set
 
+
 def get_zeros_indexes(a: str) -> List[int]:
     """
     finds all the zeros in the binary and gets their index.
     """
     return [index.start() for index in re.finditer(pattern="0", string=a)]
+
 
 def get_nums(a) -> Set[str]:
     """
@@ -22,11 +24,13 @@ def get_nums(a) -> Set[str]:
         result.add("".join(str_a))
     return result
 
+
 def get_bins(a: int, b: int, c: int) -> List[str]:
     """
     Method to convert ints to bins of length 30
     """
     return ["{0:030b}".format(bin) for bin in [a, b, c]]
+
 
 def solution(a: int, b: int, c: int) -> int:
     """

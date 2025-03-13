@@ -2,7 +2,7 @@
  * 直接枚举
  * 空间复杂度 O(1)
  * 时间复杂度 O(n^4)
- * @param {*} nums 
+ * @param {*} nums
  */
 const countQuadruplets = function(nums) {
     const max = nums.length;

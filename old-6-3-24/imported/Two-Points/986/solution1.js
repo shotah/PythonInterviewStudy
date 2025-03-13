@@ -1,12 +1,12 @@
 /**
  * https://leetcode-cn.com/problems/interval-list-intersections/
- * 
+ *
  * 986. 区间列表的交集
- * 
+ *
  * Medium
- * 
+ *
  * 嵌套循环
- * 
+ *
  * 176ms 28.57%
  * 42.6mb 25.00%
  */

@@ -40,7 +40,7 @@ var combinationSum = function(candidates, target) {
   const dfs = (currentIndex, currentArray, target) => {
     if (target === 0) {
       ans.push(currentArray.slice())
-      return 
+      return
     }
     if (target < 0) {
       return

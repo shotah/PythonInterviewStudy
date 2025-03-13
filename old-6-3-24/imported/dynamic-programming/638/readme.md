@@ -53,7 +53,7 @@ const shoppingOffers = (price, special, needs) => {
     }
     min = Math.min(shoppingOffers(price, special, newNeeds) + m, min)
   }
-  return min  
+  return min
 }
 
 function checkAmount (needs) {
@@ -65,4 +65,3 @@ function checkAmount (needs) {
   return true
 }
 ```
-

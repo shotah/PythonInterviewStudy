@@ -1,13 +1,13 @@
 /**
  * https://leetcode-cn.com/problems/reduce-array-size-to-the-half/
- * 
+ *
  * 1338. 数组大小减半
- * 
+ *
  * Medium
- * 
+ *
  * 132ms 92.68%
  * 66.6mb 100.00%
- * 
+ *
  * 考察点:
  * - 哈希表
  */

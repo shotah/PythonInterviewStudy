@@ -1,14 +1,14 @@
 /**
- * 
+ *
  * https://leetcode-cn.com/problems/balance-a-binary-search-tree/
- * 
+ *
  * 5179. 将二叉搜索树变平衡
- * 
+ *
  * Medium
- * 
+ *
  * 184ms 100.00%
  * 55.7mb 100.00%
- * 
+ *
  */
 const balanceBST = root => {
   const nodes = [];

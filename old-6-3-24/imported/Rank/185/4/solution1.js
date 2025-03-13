@@ -1,16 +1,16 @@
 /**
  * https://leetcode-cn.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/
- * 
+ *
  * 生成数组
- * 
+ *
  * Hard
- * 
+ *
  * 时间复杂度 O(nkm^2)
- * 
+ *
  * 空间复杂度 O(nkm)
- * 
+ *
  * dp[x][y][z]
- * 
+ *
  * 表示 x 个元素的数组 search_cost 为 y ，数组最大值为 z 的方案数
  */
 const MOD = 1e9 + 7;

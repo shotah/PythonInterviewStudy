@@ -1,13 +1,13 @@
 /**
  * https://leetcode-cn.com/problems/3sum-with-multiplicity/
- * 
+ *
  * 923. 三数之和的多种可能
- * 
+ *
  * Medium
- * 
+ *
  * 220ms 29.63%
  * 35.4mb 50.00%
- * 
+ *
  * 双指针
  */
 const MAX = 10 ** 9 + 7
@@ -48,7 +48,7 @@ const threeSumMulti = (A, target) => {
         z -= repeatZ
         continue
       }
-      
+
       if (sum > target) {
         z--
       } else {

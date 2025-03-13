@@ -1,10 +1,10 @@
 /**
  * https://leetcode.com/problems/unique-paths-ii/
- * 
+ *
  * 63. Unique Paths II
- * 
+ *
  * Medium
- * 
+ *
  * 优化空间复杂度O(n) 时间复杂度O(n^2)
  */
 const uniquePathsWithObstacles = obstacleGrid => {

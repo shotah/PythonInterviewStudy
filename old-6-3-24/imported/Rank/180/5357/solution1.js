@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/design-a-stack-with-increment-operation/
- * 
+ *
  * 5357. 设计一个支持增量操作的栈
- * 
+ *
  * Medium
- * 
+ *
  * 196ms 100.00%
  * 41.4mb 100.00%
  */
@@ -13,7 +13,7 @@ var CustomStack = function(maxSize) {
   this.ans = [];
 };
 
-/** 
+/**
  * @param {number} x
  * @return {void}
  */
@@ -33,8 +33,8 @@ CustomStack.prototype.pop = function() {
   return -1;
 };
 
-/** 
- * @param {number} k 
+/**
+ * @param {number} k
  * @param {number} val
  * @return {void}
  */

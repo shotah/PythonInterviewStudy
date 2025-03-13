@@ -1,12 +1,12 @@
 /**
  * https://leetcode.com/problems/arranging-coins/
- * 
+ *
  * 441. Arranging Coins
- * 
+ *
  * Easy
- * 
+ *
  * (k + 1) * k / 2
- * 
+ *
  * 60ms 100.00%
  * 36mb 90.18%
  */

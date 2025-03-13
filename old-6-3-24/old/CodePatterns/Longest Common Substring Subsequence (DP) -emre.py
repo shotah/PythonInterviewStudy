@@ -3,8 +3,8 @@
 
 # How to identify?
 
-# Longest Common Substring / Subsequence pattern is very useful 
-# to solve Dynamic Programming problems involving longest / 
+# Longest Common Substring / Subsequence pattern is very useful
+# to solve Dynamic Programming problems involving longest /
 # shortest common strings, substrings, subsequences etc.
 
 
@@ -13,12 +13,13 @@
 
 # Given two strings text1 and text2, return the length of their longest common subsequence.
 
-# A common subsequence of two strings is a subsequence that is common to both strings. If there is no common subsequence, return 0.
+# A common subsequence of two strings is a subsequence that is common to
+# both strings. If there is no common subsequence, return 0.
 
 # Example 1:
 
-# Input: text1 = "abcde", text2 = "ace" 
-# Output: 3  
+# Input: text1 = "abcde", text2 = "ace"
+# Output: 3
 # Explanation: The longest common subsequence is "ace" and its length is 3.
 # Example 2:
 
@@ -49,13 +50,14 @@ class Solution:
 
         return max(self.longestCommonSubsequence_recursive(text1, text2, i + 1, j),
                    self.longestCommonSubsequence_recursive(text1, text2, i, j + 1))
-        
+
 # Time Complexity: O(2N+M) where N and M are the lengths of two input strings.
 
 # Space Complexity: O(N + M) which is used to store the recursion stack.
 
 # Top-down Dynamic Programming with Memoization
 # We can use a two-dimensional array to store the already solved subproblems.
+
 
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
@@ -80,7 +82,10 @@ class Solution:
 # Lets create our two dimensional array in a bottom-up fashion.
 
 # if the characters text1[i] matches text2[j], the length of the common subsequence would be one plus the length of the common subsequence until the i-1 and j-1 indexes.
-# if the characters text1[i] and text2[j] does not match, we take the longest sequence by skipping one character either from ith string or jth character from respective strings.
+# if the characters text1[i] and text2[j] does not match, we take the
+# longest sequence by skipping one character either from ith string or jth
+# character from respective strings.
+
 
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:

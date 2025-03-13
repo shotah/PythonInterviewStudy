@@ -1,10 +1,10 @@
 /**
  * 排序时间复杂度为 O(nlogn) ，双指针的时间复杂度为 O(n)
- * 
+ *
  * 排序使用的空间复杂度为 O(logn)
- * 
- * @param {*} ages 
- * @returns 
+ *
+ * @param {*} ages
+ * @returns
  */
 const numFriendRequests = function(ages) {
     const max = ages.length;

@@ -1,10 +1,10 @@
 /**
  * 时间复杂度 O(klogk)
  * 空间复杂度 O(k)
- * @param {*} nums1 
- * @param {*} nums2 
- * @param {*} k 
- * @returns 
+ * @param {*} nums1
+ * @param {*} nums2
+ * @param {*} k
+ * @returns
  */
 const kSmallestPairs = function (nums1, nums2, k) {
     const res = [];

@@ -1,10 +1,10 @@
 /**
  * https://leetcode.com/problems/sqrtx/
- * 
+ *
  * 69. Sqrt(x)
- * 
+ *
  * Easy
- * 
+ *
  * 68ms 96.10%
  * 35.7mb 47.66%
  */
@@ -23,6 +23,6 @@ const mySqrt = x => {
   }
   if (start ** 2 === x) {
     return start
-  }  
+  }
   return start - 1
 }

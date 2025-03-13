@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/daily-temperatures/
- * 
+ *
  * 739. 每日温度
- * 
+ *
  * Medium
- * 
+ *
  * 140ms 100.00%
  * 42.6mb 44.44%
  */

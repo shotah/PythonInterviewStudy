@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/count-all-valid-pickup-and-delivery-options/submissions/
- * 
+ *
  * 5326. 有效的快递序列数目
- * 
+ *
  * Hard
- * 
+ *
  * 56ms 100.00%
  * 34.3mb 100.00%
  */

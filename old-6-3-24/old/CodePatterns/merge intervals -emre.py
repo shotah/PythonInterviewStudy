@@ -1,10 +1,10 @@
 # https://emre.me/coding-patterns/merge-intervals/
 
 # How to identify?
-# This approach is quite useful when dealing with intervals, 
+# This approach is quite useful when dealing with intervals,
 # overlapping items or merging intervals.
 
-# When the problem involves these clue words, 
+# When the problem involves these clue words,
 # you should think about Merge Intervals pattern.
 
 # Example 1:
@@ -22,13 +22,13 @@ class Solution:
     def merge(self, intervals):
         if len(intervals) < 2:
             return intervals
-        
+
         intervals.sort(key=lambda x: x[0])
-        
+
         merged = []
         start = intervals[0][0]
         end = intervals[0][1]
-        
+
         for i in range(1, len(intervals)):
             interval = intervals[i]
             if interval[0] <= end:  # overlapping intervals
@@ -37,10 +37,12 @@ class Solution:
                 merged.append([start, end])
                 start = interval[0]
                 end = interval[1]
-            
+
         merged.append([start, end])  # add the last interval
         return merged
 
-# Time Complexity: O(N * log N) where N is the total number of intervals. In the beginning, since we sort the intervals, our algorithm will take O(N * log N) to run.
+# Time Complexity: O(N * log N) where N is the total number of intervals.
+# In the beginning, since we sort the intervals, our algorithm will take
+# O(N * log N) to run.
 
 # Space Complexity: O(N), as we need to return a list containing all the merged intervals.

@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/4sum-ii/submissions/
- * 
+ *
  * 454. 4Sum II
- * 
+ *
  * Medium
  */
 const fourSumCount = (A, B, C, D) => {

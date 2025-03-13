@@ -1,17 +1,17 @@
 /**
  * https://leetcode-cn.com/problems/linked-list-cycle/
- * 
- * 
+ *
+ *
  * 141. 环形链表
- * 
+ *
  * Easy
- * 
+ *
  * 快慢指针
- * 
- * 
+ *
+ *
  * 98.59%
  * 69.73%
- * 
+ *
  */
 const hasCycle = head => {
   let first = head

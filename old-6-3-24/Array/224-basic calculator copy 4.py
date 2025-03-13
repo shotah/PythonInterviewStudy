@@ -18,8 +18,8 @@ class Solution:
                 res = 0
             elif char == ")":
                 res += sign * num
-                res *= stack.pop()  ## process sign
-                res += stack.pop()  ## process with old value
+                res *= stack.pop()  # process sign
+                res += stack.pop()  # process with old value
                 num = 0
         return res + num * sign
 

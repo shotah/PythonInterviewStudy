@@ -1,13 +1,13 @@
 /**
  * https://leetcode-cn.com/problems/remove-element/
- * 
+ *
  * 27. 移除元素
- * 
+ *
  * Easy
- * 
+ *
  * 97.20%
  * 33.05%
- * 
+ *
  * 注意终止条件的判断 start === end 时
  */
 const removeElement = (nums, val) => {

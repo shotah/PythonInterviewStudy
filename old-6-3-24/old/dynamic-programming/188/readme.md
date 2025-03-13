@@ -29,11 +29,11 @@
   &emsp;&emsp;状态转移方程:
 
 ```s
-  
+
   条件 j ∈ [1, i)
 
   dp[k][i] = Math.max(dp[k][i - 1], prices[i - 1] - prices[j - 1] + dp[k - 1][j])
-              
+
 ```
 
   &emsp;&emsp;下面为代码实现：
@@ -46,7 +46,7 @@ const maxProfit = (k, prices) => {
   }
 
   const dp = []
-  
+
   // 初始状态
   for (let i = 0; i <= k; i++) {
     dp[i] = [0, 0]
@@ -96,7 +96,7 @@ const maxProfit = (k, prices) => {
   }
 
   const dp = []
-  
+
   // 初始状态
   for (let i = 0; i <= k; i++) {
     dp[i] = [0, 0]
@@ -107,7 +107,7 @@ const maxProfit = (k, prices) => {
     }
   }
   for (let i = 1; i <= k; i++) {
-    let maxDiff = Number.MIN_SAFE_INTEGER 
+    let maxDiff = Number.MIN_SAFE_INTEGER
     for (let j = 2; j <= max; j++) {
       let max = dp[i][j - 1]
 
@@ -141,7 +141,7 @@ const maxProfit = (k, prices) => {
   }
 
   let dp = []
-  
+
   // 初始状态
   for (let i = 0; i <= max; i++) {
     dp[i] = 0

@@ -1,14 +1,14 @@
 /**
  * https://leetcode.com/problems/intersection-of-two-arrays/
- * 
+ *
  * 349. Intersection of Two Arrays
- * 
+ *
  * Easy
- * 
+ *
  * 97.18%
  * 13.61%
- * 
- * 非双指针题目 
+ *
+ * 非双指针题目
  * 采用 集合处理
  */
 const intersection = (nums1, nums2) => {

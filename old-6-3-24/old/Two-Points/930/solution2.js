@@ -1,15 +1,15 @@
 /**
  * https://leetcode-cn.com/problems/binary-subarrays-with-sum/
- * 
+ *
  * 930. 和相同的二元子数组
- * 
+ *
  * Medium
- * 
+ *
  * 前缀和
- * 
+ *
  * 96ms 100.00%
  * 42.2mb 25.00%
- * 
+ *
  */
 const numSubarraysWithSum = (A, S) => {
   const max = A.length

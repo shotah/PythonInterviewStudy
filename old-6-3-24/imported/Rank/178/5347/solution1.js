@@ -1,10 +1,10 @@
 /**
  * https://leetcode-cn.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/
- * 
+ *
  * 1368. 使网格图至少有一条有效路径的最小代价
- * 
+ *
  * Hard
- * 
+ *
  * 420ms 70.59%
  * 44.1mb 100.00%
 */

@@ -8,13 +8,14 @@ class Solution:
             previous_s = s
         return s
 
+
 vals = [
-  ["abcd", 2, "abcd"],
-  ["deeedbbcccbdaa", 3, "aa"]
+    ["abcd", 2, "abcd"],
+    ["deeedbbcccbdaa", 3, "aa"]
 ]
- 
+
 for s, k, expected in vals:
     sol = Solution().removeDuplicates(s, k)
     print(
-      f"{sol} == {expected}"
+        f"{sol} == {expected}"
     )

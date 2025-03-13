@@ -1,15 +1,18 @@
 # Definition for a binary tree node.
+from typing import Optional
+
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
-from typing import Optional
 
-class Solution:      
+class Solution:
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
-        if not root: return -1
+        if not root:
+            return -1
         result = 0
         queue = []
         queue.append(root)
@@ -24,6 +27,7 @@ class Solution:
                 if current_node.right:
                     queue.append(current_node.right)
         return result
+
 
 root = TreeNode(10)
 root.left = TreeNode(5)

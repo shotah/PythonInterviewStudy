@@ -2,7 +2,8 @@ class Solution:
 
     def isNStraightHand(self, hand: list[int], groupSize: int) -> bool:
         devisableBySize = len(hand) % groupSize == 0
-        if not devisableBySize: return False
+        if not devisableBySize:
+            return False
         hand.sort()
         gCount = 1
         nextCard = None
@@ -24,7 +25,7 @@ class Solution:
                         card = hand.pop(iidx)
                         break
                 for iidx, icard in enumerate(hand):
-                    if icard == s_card+1:
+                    if icard == s_card + 1:
                         nextCard = hand.pop(iidx)
                         break
                 print(card)
@@ -38,11 +39,10 @@ class Solution:
         return True
 
 
-
 # true
-hand = [1,2,3,6,2,3,4,7,8]
+hand = [1, 2, 3, 6, 2, 3, 4, 7, 8]
 groupSize = 3
-#false 
+# false
 # hand = [8,10,12]
 # groupSize = 3
 # false
@@ -50,5 +50,5 @@ groupSize = 3
 # groupSize = 10
 
 print(
-  Solution().isNStraightHand(hand, groupSize)
+    Solution().isNStraightHand(hand, groupSize)
 )
