@@ -22,4 +22,4 @@ jobs:
           pre-commit install
       - name: Analyzing the code with pylint
         run: |
-          pre-commit run --all-files
+          pipenv run pre-commit run --all-files
