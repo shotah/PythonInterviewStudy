@@ -20,6 +20,7 @@ jobs:
           pip install pre-commit
           pip install pipenv
           pre-commit install
+          pipenv install
       - name: Analyzing the code with pylint
         run: |
           pipenv run pre-commit run --all-files
