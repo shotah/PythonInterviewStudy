@@ -67,6 +67,7 @@ class HashTable:
 
 # Now we can try our HashTable() implementation together.
 
+
 hash_table = HashTable()
 hash_table[99] = "cat"
 hash_table[17] = "dog"

@@ -22,7 +22,7 @@ class Solution:
             if maze[location[0]][location[1]] == ".":
                 visited.append(location)
                 return (True, visited)
-        except:
+        except BaseException:
             return (False, visited)
         return (False, visited)
 

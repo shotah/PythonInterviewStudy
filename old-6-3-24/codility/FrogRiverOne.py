@@ -43,10 +43,13 @@
 
 # the function should return −1.
 
-def solution(x,a):
-    if not x or not a: return -1
-    if x == a[0] and len(a) > 1: return -1
-    if x == a[0]: return 0
+def solution(x, a):
+    if not x or not a:
+        return -1
+    if x == a[0] and len(a) > 1:
+        return -1
+    if x == a[0]:
+        return 0
     path = set()
     path.add(a[0])
     for i in range(1, len(a)):
@@ -55,7 +58,8 @@ def solution(x,a):
             return i
     return -1
 
-a = [1,3,1,4,2,3,5,4]
+
+a = [1, 3, 1, 4, 2, 3, 5, 4]
 a = [3]
 x = 5
 # (5, [3])

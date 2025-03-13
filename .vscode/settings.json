@@ -32,6 +32,7 @@
     "pypi",
     "pyproject",
     "pytest",
+    "pyupgrade",
     "starcoder",
     "Subarray"
   ],
