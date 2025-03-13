@@ -20,4 +20,4 @@ flake8-cognitive-complexity = "*"
 flake8-adjustable-complexity = "*"
 
 [requires]
-python_version = "3.13"
+python_version = "3.12"
