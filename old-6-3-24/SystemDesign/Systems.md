@@ -1,4 +1,5 @@
 # Common System Design services
+
 <!-- TOC -->
 
 - [Common System Design services](#common-system-design-services)
@@ -25,10 +26,13 @@
     - [Github Alternative](#github-alternative)
   - [Protocol documentation](#protocol-documentation)
     - [gRPC](#grpc)
+  - [Secrets & Config Management](#secrets--config-management)
   - [Capacity Planning](#capacity-planning)
     - [Back of the envelope](#back-of-the-envelope)
     - [Latency Numbers](#latency-numbers)
     - [Test your knowledge](#test-your-knowledge)
+  - [Edge/IoT Networking Notes](#edgeiot-networking-notes)
+  - [Observability You’ve Used](#observability-youve-used)
 
 <!-- /TOC -->
 
@@ -38,6 +42,7 @@ Deployment (CI/CD):
 
 - Github
 - Github actions
+
   - To validate by making sure linting and testing are running clean and passing.
   - To build and push container builds to a container registry
   - To Validate a kubernetes cluster publishing
@@ -177,7 +182,7 @@ MySQL is an open-source relational database management system. Its name is a com
 Prometheus is a free software application used for event monitoring and alerting.[2] It records real-time metrics in a time series database (allowing for high dimensionality) built using a HTTP pull model, with flexible queries and real-time alerting.[3][4] The project is written in Go and licensed under the Apache 2 License, with source code available on GitHub,[5] and is a graduated project of the Cloud Native Computing Foundation, along with Kubernetes and Envoy.[6]
 
 [prometheus Homepage](https://prometheus.io/)
-[prometheus Wikipedia](https://en.wikipedia.org/wiki/Prometheus_(software))
+[prometheus Wikipedia](<https://en.wikipedia.org/wiki/Prometheus_(software)>)
 
 ### Grafana
 
@@ -211,6 +216,35 @@ gRPC is a cross-platform open source high performance Remote Procedure Call fram
 
 [gRPC Homepage](https://grpc.io/)
 
+- **HTTP/REST**  
+  Great for frontend/backend, human-readable, browser-friendly. Easy to test.
+
+- **WebSockets**  
+  When you need bidirectional, real-time communication (e.g. live dashboards, game state sync, or chat).
+
+- **MQTT**  
+  Lightweight pub/sub protocol. Used in IoT—ideal for ESP32 + LoRa, sensor data, battery-constrained devices.
+
+- **gRPC**  
+  Compact, efficient RPC with schema enforcement. Good for microservices-to-microservices.
+
+- **UDP**  
+  Occasionally used for real-time, lossy systems like voice/video/game servers.
+
+## Secrets & Config Management
+
+- **Kubernetes Secrets**  
+  Stored as base64-encoded blobs. Works for simple use cases (like API keys), but not encrypted at rest by default.
+
+- **.env files in containers**  
+  Use with care; avoid committing them.
+
+- **Sealed Secrets (Bitnami Controller)**  
+  Encrypt secrets with a public key before committing to Git. K8s controller decrypts them at runtime. Great for GitOps.
+
+- **Manual methods**  
+  Some teams use `kubectl create secret generic` for local secrets not committed to version control.
+
 ## Capacity Planning
 
 https://www.dballona.com/en/system-design-capacity-planning-basics
@@ -227,3 +261,33 @@ https://gist.github.com/jboner/2841832
 ### Test your knowledge
 
 https://computers-are-fast.github.io/
+
+## Edge/IoT Networking Notes
+
+- **LoRa (Long Range)**  
+  Used for low-power, long-distance radio communication. Not IP-based. Needs a gateway to bridge to traditional networks.
+
+- **ESP32 with Paxcounter**  
+  Captures WiFi/Bluetooth packets for passive device tracking. Useful for presence detection and trail activity monitoring.
+
+- **LilyGO Boards**  
+  Ideal for rapid prototyping. ESP32 + LoRa radio + small display + battery support.
+
+- **Meshtastic**  
+  A community firmware using LoRa to form peer-to-peer mesh networks. Useful for location-aware, offline communication.
+
+- **Cloudless edge collection**  
+  Sensor nodes push data to a gateway, which can aggregate, filter, or queue data into Kafka or MQTT brokers for downstream use.
+
+## Observability You’ve Used
+
+- **Prometheus + Grafana**
+
+  - Sidecar pattern: run Prometheus next to each service to collect and expose metrics.
+  - Use Grafana dashboards to visualize container CPU/memory, queue depth, and uptime.
+  - Alerts via Slack/Email/Webhook from Prometheus alert manager.
+
+- **Logging**
+  - **stdout + K8s logs**: default pattern, but not long-retention.
+  - **ELK (Elasticsearch + Logstash + Kibana)** used on larger setups.
+  - For small setups: JSON logs + `kubectl logs` works fine.
